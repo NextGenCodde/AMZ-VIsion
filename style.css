@@ -128,3 +128,30 @@ dl dt {
 
 
 
+
+        .progress-container {
+            position: absolute;
+            top: 256px;
+            left: 0px;
+            height: 54%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .progress-background {
+            width: 4px;
+            height: 100%;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .progress-line {
+            width: 4px;
+            background-color: #333;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: height 0.3s;
+        }
