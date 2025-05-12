@@ -1,0 +1,130 @@
+nav {
+    height: auto !important;
+}
+
+.pin-spacer {
+    width: 100% !important;
+}
+
+.overlapping-image {
+    max-width: 100% !important;
+    width: 100% !important;
+
+}
+
+.light-section-container {
+    max-width: 100% !important;
+}
+
+.content-max-width {
+    width: 100% !important;
+}
+
+.e-con-inner {
+    max-width: 100% !important;
+}
+
+.custom-btn {
+    border: 2px solid white;
+    font-weight: 500;
+    padding: 10px 18px;
+    transition: all 0.4s;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    pointer-events: auto;
+    /* fixed */
+}
+
+.custom-btn:hover {
+    background: #fff;
+    border-color: #000;
+    color: #000;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .custom-btn {
+        display: none;
+    }
+}
+
+.image-gallery {
+    max-width: 100% !important;
+}
+
+.gallery-item {
+    padding: 0px !important;
+    height: 300px !important;
+    box-shadow: none !important;
+}
+
+.gallery-item img {
+    height: 100% !important;
+}
+
+
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.left {
+    width: 50% !important;
+    max-width: 50% !important;
+    flex: none !important;
+}
+
+.project-right {
+    flex: none;
+    max-width: auto;
+    background: #0C0C0C;
+}
+
+.accordion {
+    margin: 10px auto !important;
+}
+
+.accordion dt {
+    margin: 10px auto !important;
+}
+
+dl {
+    width: 60%;
+    margin: 10px auto;
+    background: #F5F5F5;
+    padding: 10px !important;
+    border-radius: 5px;
+}
+
+dl dt {
+    padding: 0px 5px !important;
+}
+
+.elementor-icon-list-item a {
+    color: #646464;
+}
+
+
+
+.servies-list {
+    width: 100%;
+    text-align: center;
+
+}
+
+.servies-ul {
+    text-align: center;
+    list-style: none;
+}
+
+.servies-ul li {
+    font-size: 90px;
+    font-family: "Six Caps", sans-serif;
+    margin: 100px 0px;
+}
+
+
+
+
