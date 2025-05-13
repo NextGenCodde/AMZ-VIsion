@@ -4119,48 +4119,6 @@
         });
     </script>
     <script src="app.js"></script>
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    const scrollThumb = document.getElementById("scroll-thumb");
-    const section = document.getElementById("scroll-section");
-
-    // Function to calculate the distance from the top to the section
-    function getHeightFromTop(element) {
-        const rect = element.getBoundingClientRect();
-        return rect.top + window.scrollY;
-    }
-
-    // Function to update the scroll thumb height dynamically
-    function updateScrollThumb() {
-        // Get the section's top position dynamically
-        const sectionTop = getHeightFromTop(section);
-        const sectionHeight = section.offsetHeight;
-        const scrollTop = window.scrollY;
-
-        // Check if the section is in the viewport
-        if (scrollTop + window.innerHeight >= sectionTop && scrollTop <= sectionTop + sectionHeight) {
-            // Calculate the progress within the section
-            const progress = (scrollTop - sectionTop + window.innerHeight) / (sectionHeight + window.innerHeight);
-            const progressPercent = Math.min(Math.max(progress * 100, 0), 100);
-
-            // Update the scroll thumb height
-            scrollThumb.style.height = progressPercent + "%";
-            console.log("Scroll progress:", progressPercent + "%");
-        } else if (scrollTop < sectionTop) {
-            // Reset when above the section
-            scrollThumb.style.height = "0%";
-        } else if (scrollTop > sectionTop + sectionHeight) {
-            // Fill completely when past the section
-            scrollThumb.style.height = "100%";
-        }
-    }
-
-    // Listen for scroll events on the window
-    window.addEventListener("scroll", updateScrollThumb);
-    updateScrollThumb(); // Initial call to set the thumb position
-});
-
-    </script>  -->
 </body>
 
 </html>

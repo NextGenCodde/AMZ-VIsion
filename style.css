@@ -128,10 +128,13 @@ dl dt {
     font-family: "Six Caps", sans-serif;
     margin: 200px 0px;
 }
-
+.scroll-section{
+    height: 100%;
+}
         /* Scroll Container */
         .scroll-container {
             position: relative;
+            height: 100%;
         }
 
         /* Custom Scroller */
@@ -140,8 +143,8 @@ dl dt {
             left: 0px;
             top: 0%;
             width: 4px;
-            height: 100%;
-            background-color: #c7c7c7;
+            height: 70%;
+            background-color: #0c0c0c;
             border-radius: 4px;
         }
 
