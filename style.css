@@ -30,7 +30,7 @@ body.smooth-scroll {
 
 .custom-btn {
     border: 2px solid white;
-    font-weight: 400;
+    font-weight: 200;
     padding: 13px 18px;
     transition: all 0.4s;
     background: transparent;
@@ -171,7 +171,7 @@ dl dt {
 }
 
 .classic-menu .flexnav li a {
-    font-weight: 400 !important;
+    font-weight: 300 !important;
 }
 
 dt.accordion-active .acc-button-icon i {
