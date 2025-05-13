@@ -2,6 +2,15 @@ body{
     overflow: scroll !important;
 }
 
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+      object-fit: cover;
+}
+
 body.smooth-scroll {
 		overflow:auto !important;
 	}
@@ -112,10 +121,21 @@ dl dt {
 
 
 
+.elementor-widget-n-accordion .e-n-accordion-item-title{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #dfd8dc !important;
+}
+
+
 .servies-list {
     width: 100%;
     text-align: center;
 
+}
+.e-n-accordion-item-title-text{
+    color: #6B6B6B !important;
 }
 
 .servies-ul {
@@ -166,7 +186,12 @@ dl dt {
 .hero_inner {
     margin-top: 80px;
 }
-
+    .accordion dt span {
+       font-family: 'inter' , sans-serif !important;
+       font-weight: 400 !important;
+       font-size: 15px !important;
+       color: #151515 !important;
+    }
 
 .hero-subtitle {
     opacity: 1;
@@ -234,4 +259,26 @@ dt.accordion-active .acc-button-icon i {
 
 .active:after{
     color: black;
+}
+
+
+.elementor-testimonial__text{
+   color: white;
+    font-style: normal;
+}
+
+.elementor-testimonial__name , .elementor-testimonial__title{
+    color:white;
+}
+
+
+.stars i {
+    color: white;
+    margin:  0px 5px;
+}
+
+
+.whychose{
+  font-family: "Six Caps", sans-serif !important;
+  font-size: 128px !important; 
 }
