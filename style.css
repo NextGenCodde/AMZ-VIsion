@@ -160,32 +160,23 @@ dl dt {
     height: 100%;
 }
 
-/* .behind-scroll {
-    background: #6B6B6B;
-    width: 4px;
-    height: 100%;
-      position: absolute;
-    left: 0px;
-    top: 0%;
-    height: 100%;
-} */
 
 /* Custom Scroller */
-.custom-scroller {
-    width: 4px;
+/* .custom-scroller { */
+    /* width: 4px;
     height: 70%;
     background-color: #0c0c0c;
     border-radius: 4px;
 }
 
 /* Scroll Thumb */
-.scroll-thumb {
+/* .scroll-thumb {
     width: 100%;
     height: 0%;
     background-color: #000;
     border-radius: 4px;
     transition: height 0.2s ease;
-}
+}  */
 
 /* Content Area */
 .content {
