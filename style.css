@@ -1,3 +1,10 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    
+    -webkit-tap-highlight-color: transparent;
+}
 video {
     position: absolute;
     top: 0;
