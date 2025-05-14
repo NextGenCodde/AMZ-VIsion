@@ -1,7 +1,6 @@
 <html lang="en-US"
     class=" js flexbox canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
     data-theme="light" style="color-scheme: light;" data-qb-installed="true">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,38 +18,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet" />
 
     <!-- ✅ Theme Styles -->
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/content.css?ver=6.8.1" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/showcase.css?ver=6.8.1" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/portfolio.css?ver=6.8.1" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/blog.css?ver=6.8.1" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/shortcodes.css?ver=6.8.1" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/assets.css?ver=6.8.1" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/shop.css?ver=6.8.1" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/style-wp.css?ver=6.8.1" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/page-builders.css?ver=6.8.1" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/style.css?ver=6.8.1" />
+ <link rel="stylesheet" href="CSS/content.css">
+    <link rel="stylesheet" href="CSS/showcase.css" />
+    <link rel="stylesheet" href="CSS/portfolio.css" />
+    <link rel="stylesheet" href="CSS/blog.css" />
+    <link rel="stylesheet" href="CSS/shortcode.css" />
+    <link rel="stylesheet" href="CSS/assets.css" />
+    <link rel="stylesheet" href="CSS/shop.css" />
+    <link rel="stylesheet" href="CSS/style-wp.css" />
+    <link rel="stylesheet" href="CSS/page-builders.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
 
     <!-- ✅ FontAwesome for icons -->
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/themes/montoya/css/all.min.css?ver=6.8.1" />
+    <link rel="stylesheet" href="CSS/all-min.css" />
 
     <!-- ✅ Elementor Core and Page Styles -->
     <link rel="stylesheet"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.28.4" />
+        href="elementor/css/frontend-min.css" />
     <link rel="stylesheet"
-        href="https://amzvision.de/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=3.28.4" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/uploads/elementor/css/post-2731.css" />
-    <link rel="stylesheet" href="https://amzvision.de/wp-content/uploads/elementor/css/post-3047.css" />
+        href="elementor/css/motion.css" />
+    <link rel="stylesheet" href="elementor/css/post_2731.css" />
+    <link rel="stylesheet" href="elementor/css/post_3076.css" />
 
     <!-- ✅ Swiper Carousel -->
     <link rel="stylesheet"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" />
+        href="elementor/css/swiper.min.css" />
 
     <!-- ✅ jQuery (needed for Elementor + Montoya effects) -->
-    <script src="https://amzvision.de/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-    <script src="https://amzvision.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+    <script src="jquery/jquery-min.js"></script>
+    <script src="jquery/jquery-migrate-min.js"></script>
 
     <!-- ✅ Emoji JS (keep to avoid WP core errors) -->
-    <script src="https://amzvision.de/wp-includes/js/wp-emoji-release.min.js?ver=6.8.1" defer></script>
+    <script src="JS/wp-emoji.min.js" defer></script>
 
     <!-- ✅ Favicon -->
     <link rel="icon" href="Content Images/white_logo.png" sizes="32x32" />
@@ -59,87 +58,85 @@
     <!-- ✅ Canonical -->
     <link rel="canonical" href="https://amzvision.de/" />
     <link rel="stylesheet" id="elementor-frontend-css"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.28.4" type="text/css"
+        href="elementor/css/frontend-min.css" type="text/css"
         media="all">
-    <link rel="stylesheet" id="elementor-post-3047-css"
-        href="https://amzvision.de/wp-content/uploads/elementor/css/post-3047.css?ver=1746904709" type="text/css"
-        media="all">
-    <link rel="stylesheet" id="font-awesome-5-all-css"
+    <!-- <link rel="stylesheet" id="font-awesome-5-all-css"
         href="https://amzvision.de/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.28.4"
-        type="text/css" media="all">
-    <link rel="stylesheet" id="font-awesome-4-shim-css"
+        type="text/css" media="all"> -->
+    <!-- <link rel="stylesheet" id="font-awesome-4-shim-css"
         href="https://amzvision.de/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.28.4"
-        type="text/css" media="all">
-    <link rel="stylesheet" id="e-motion-fx-css"
+        type="text/css" media="all"> -->
+    <!-- <link rel="stylesheet" id="e-motion-fx-css"
         href="https://amzvision.de/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=3.28.4"
-        type="text/css" media="all">
+        type="text/css" media="all"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Cedarville+Cursive&family=Dosis:wght@200..800&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mooli&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" id="widget-heading-css"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.28.4"
+        href="elementor/css/widget-heading.min.css"
         type="text/css" media="all">
     <link rel="stylesheet" id="widget-image-css"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.28.4"
+        href="elementor/css/widget-image.min.css"
         type="text/css" media="all">
     <link rel="stylesheet" id="widget-nested-accordion-css"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css?ver=3.28.4"
+        href="elementor/css/widget-nested-accordin.css"
         type="text/css" media="all">
-    <link rel="stylesheet" id="swiper-css"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <link rel="stylesheet" id="swiper-css"
         href="https://amzvision.de/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5"
         type="text/css" media="all">
     <link rel="stylesheet" id="e-swiper-css"
         href="https://amzvision.de/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.28.4"
-        type="text/css" media="all">
+        type="text/css" media="all"> -->
     <link rel="stylesheet" id="widget-testimonial-carousel-css"
-        href="https://amzvision.de/wp-content/plugins/elementor-pro/assets/css/widget-testimonial-carousel.min.css?ver=3.28.4"
+        href="elementor/css/testimonial-crusiol.css"
         type="text/css" media="all">
     <link rel="stylesheet" id="widget-carousel-module-base-css"
-        href="https://amzvision.de/wp-content/plugins/elementor-pro/assets/css/widget-carousel-module-base.min.css?ver=3.28.4"
+        href="elementor/css/widget-crusol.css"
         type="text/css" media="all">
     <link rel="stylesheet" id="widget-social-icons-css"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.28.4"
+        href="elementor/css/socials-icons.css"
         type="text/css" media="all">
     <link rel="stylesheet" id="e-apple-webkit-css"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.28.4"
+        href="elementor/css/apple-widget.css"
         type="text/css" media="all">
     <link rel="stylesheet" id="widget-icon-list-css"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.28.4"
+        href="elementor/css/widget-icon-list.css"
         type="text/css" media="all">
     <link rel="stylesheet" id="widget-divider-css"
-        href="https://amzvision.de/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.28.4"
+        href="elementor/css/widget-divider.css"
         type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-post-2731-css"
+    <!-- <link rel="stylesheet" id="elementor-post-2731-css"
         href="https://amzvision.de/wp-content/uploads/elementor/css/post-2731.css?ver=1746904710" type="text/css"
-        media="all">
-    <link rel="stylesheet" id="elementor-gf-local-roboto-css"
+        media="all"> -->
+    <!-- <link rel="stylesheet" id="elementor-gf-local-roboto-css"
         href="https://amzvision.de/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1746622404"
-        type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-gf-local-robotoslab-css"
+        type="text/css" media="all"> -->
+    <!-- <link rel="stylesheet" id="elementor-gf-local-robotoslab-css"
         href="https://amzvision.de/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1746622408"
-        type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-gf-local-inter-css"
+        type="text/css" media="all"> -->
+    <!-- <link rel="stylesheet" id="elementor-gf-local-inter-css"
         href="https://amzvision.de/wp-content/uploads/elementor/google-fonts/css/inter.css?ver=1746631936"
-        type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-gf-local-bebasneue-css"
+        type="text/css" media="all"> -->
+    <!-- <link rel="stylesheet" id="elementor-gf-local-bebasneue-css"
         href="https://amzvision.de/wp-content/uploads/elementor/google-fonts/css/bebasneue.css?ver=1746740366"
-        type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-gf-local-instrumentsans-css"
+        type="text/css" media="all"> -->
+    <!-- <link rel="stylesheet" id="elementor-gf-local-instrumentsans-css"
         href="https://amzvision.de/wp-content/uploads/elementor/google-fonts/css/instrumentsans.css?ver=1746633027"
-        type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-gf-local-sixcaps-css"
+        type="text/css" media="all"> -->
+    <!-- <link rel="stylesheet" id="elementor-gf-local-sixcaps-css"
         href="https://amzvision.de/wp-content/uploads/elementor/google-fonts/css/sixcaps.css?ver=1746628621"
-        type="text/css" media="all">
+        type="text/css" media="all"> -->
 
-    <script type="text/javascript" src="https://amzvision.de/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+    <script type="text/javascript" src="jquery/jquery-min.js"
         id="jquery-core-js"></script>
-    <script type="text/javascript" src="https://amzvision.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+    <script type="text/javascript" src="jquery/jquery-migrate-min.js"
         id="jquery-migrate-js"></script>
-    <script type="text/javascript"
+    <!-- <script type="text/javascript"
         src="https://amzvision.de/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.28.4"
-        id="font-awesome-4-shim-js"></script>
+        id="font-awesome-4-shim-js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
         integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -3417,6 +3414,32 @@
     <script type="text/javascript"
         src="https://amzvision.de/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.4"
         id="pro-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+    <div id="app" class="active" bis_skin_checked="1"><canvas width="768" height="532"
+            style="display: block; width: 768px; height: 532px;"></canvas></div>
+    <div id="origin-by-gptzero-app-shadow-host" bis_skin_checked="1"></div>
+    <div class="chakra-portal" bis_skin_checked="1">
+        <div role="region" aria-live="polite" aria-label="Notifications-top" id="chakra-toast-manager-top"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-top-left" id="chakra-toast-manager-top-left"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-top-right" id="chakra-toast-manager-top-right"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-bottom-left"
+            id="chakra-toast-manager-bottom-left"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-bottom" id="chakra-toast-manager-bottom"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-bottom-right"
+            id="chakra-toast-manager-bottom-right"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);"
+            bis_skin_checked="1"></div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
