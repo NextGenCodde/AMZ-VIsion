@@ -42,4 +42,30 @@ window.addEventListener("DOMContentLoaded", function () {
     console.log("Swiper initialized successfully.");
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const children = document.querySelectorAll(".scroll-section .child");
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Remove 'left-side-border-black' from all children and add 'left-side-border'
+                children.forEach(child => {
+                    child.classList.remove("left-side-border-black");
+                    child.classList.add("left-side-border");
+                });
+
+                // Add 'left-side-border-black' to the visible child and remove 'left-side-border'
+                entry.target.classList.add("left-side-border-black");
+                entry.target.classList.remove("left-side-border");
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.5
+    });
+
+    // Observe each child element
+    children.forEach((child) => {
+        observer.observe(child);
+    });
+});
