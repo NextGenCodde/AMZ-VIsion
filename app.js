@@ -233,13 +233,14 @@ document.addEventListener("DOMContentLoaded", function () {
   let menubtn = document.querySelector(".custom-btn");
   let whitelogo = document.querySelector(".white-logo");
   let blacklogo = document.querySelector(".black-logo");
+  let burgermenu = document.querySelectorAll("#menu-burger span");
   // Ensure header element is selected
-
+  
   // Track scroll position with the custom scrollbar
   scrollbar.addListener(({ offset }) => {
     // Select all sections with the same ID or class
     const sections = document.querySelectorAll("#section1");
-
+    
     // Flag to track if any section is in the viewport
     let sectionInView = false;
 
@@ -260,28 +261,50 @@ document.addEventListener("DOMContentLoaded", function () {
       whitelogo.style.display = "none";
       blacklogo.style.display = "block";
       // Light header background
-
+      burgermenu.forEach((ele) =>{
+        ele.style.background ="#000"
+      })
       menulist.forEach((ele) => {
         ele.style.color = "black";
         ele.style.fontWeight = "500";
-        mainmenu.style.marginLeft = "-70px";
-        menubtn.classList.add("blackistbtn");
       });
+      mainmenu.style.marginLeft = "-70px";
+      menubtn.classList.add("blackistbtn");
     } else {
       // Change to white logo and dark menu
       whitelogo.style.display = "block";
       blacklogo.style.display = "none";
+      mainmenu.style.marginLeft = "auto";
       // Dark header background
-
+      burgermenu.forEach((ele) =>{
+        ele.style.background ="#fff"
+      })
       menubtn.classList.remove("blackistbtn");
       menulist.forEach((ele) => {
         ele.style.color = "#fff";
-        mainmenu.style.margin = "0px";
+        mainmenu.style.margin = "auto";
       });
     }
   });
 });
+//menubar
+let menubar = document.querySelector("#burger-wrapper");
+let burgermenu = document.querySelectorAll("#menu-burger span");
+let menulist = document.querySelectorAll("#menu-main-menu li a");
+let mainmenu = document.querySelector("#menu-main-menu");
+menubar.addEventListener('click' , function(){
+  burgermenu.forEach((ele)=>{
+    ele.style.background = "#fff"
+  })
+console.log('menubar clcked');
 
+      menulist.forEach((ele) => {
+        ele.style.color = "white";
+      });
+  
+  mainmenu.style.margin = "auto"
+  
+})
 //work section scroll
 
 document.addEventListener("DOMContentLoaded", function () {

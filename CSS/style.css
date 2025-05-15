@@ -322,7 +322,7 @@
 	}
 	
 	li {
-		line-height: 20px;
+		
 		color:#444;
 		margin-bottom:25px;
 	}
@@ -2430,7 +2430,7 @@
 	}
 	
 	.dark-content-header #menu-burger span {
-		background-color:#000!important;
+		background-color:#000;
 	}
 	
 	.light-content-header #menu-burger span {

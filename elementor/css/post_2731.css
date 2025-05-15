@@ -1408,19 +1408,6 @@ body:not(.rtl) .elementor-2731 .elementor-element.elementor-element-59fc73f .ele
         --e-con-grid-template-columns: repeat(1, 1fr);
         --grid-auto-flow: row;
     }
-
-    .elementor-2731 .elementor-element.elementor-element-59f26e2 .elementor-heading-title {
-        font-size: 50px;
-    }
-
-    .elementor-2731 .elementor-element.elementor-element-7165f06 {
-        font-size: 18px;
-    }
-
-    .elementor-2731 .elementor-element.elementor-element-d29b7f1 .elementor-heading-title {
-        font-size: 60px;
-    }
-
     .elementor-2731 .elementor-element.elementor-element-53b9ea3 {
         --e-con-grid-template-columns: repeat(1, 1fr);
         --grid-auto-flow: row;
@@ -1441,9 +1428,7 @@ body:not(.rtl) .elementor-2731 .elementor-element.elementor-element-59fc73f .ele
         border-radius: 40px 40px 40px 40px;
     }
 
-    .elementor-2731 .elementor-element.elementor-element-0aa0465 .elementor-heading-title {
-        font-size: 58px;
-    }
+    
 
     .elementor-2731 .elementor-element.elementor-element-f0a0c25 {
         --e-con-grid-template-columns: repeat(1, 1fr);
@@ -1483,30 +1468,14 @@ body:not(.rtl) .elementor-2731 .elementor-element.elementor-element-59fc73f .ele
         --border-radius: 0px 0px 0px 0px;
     }
 
-    .elementor-2731 .elementor-element.elementor-element-cafa17b .elementor-heading-title {
-        font-size: 50px;
-    }
+   
 
     .elementor-2731 .elementor-element.elementor-element-afe82af {
         --e-con-grid-template-columns: repeat(1, 1fr);
         --grid-auto-flow: row;
     }
 
-    .elementor-2731 .elementor-element.elementor-element-830ad2c {
-        font-size: 18px;
-    }
-
-    .elementor-2731 .elementor-element.elementor-element-c9d07c6 {
-        font-size: 18px;
-    }
-
-    .elementor-2731 .elementor-element.elementor-element-7cf1a2b {
-        font-size: 18px;
-    }
-
-    .elementor-2731 .elementor-element.elementor-element-21526ae .elementor-heading-title {
-        font-size: 60px;
-    }
+  
 
     .elementor-2731 .elementor-element.elementor-element-5a07208 {
         --container-widget-width: 100%;
@@ -1515,9 +1484,7 @@ body:not(.rtl) .elementor-2731 .elementor-element.elementor-element-59fc73f .ele
         max-width: 100%;
     }
 
-    .elementor-2731 .elementor-element.elementor-element-5a07208 .elementor-heading-title {
-        font-size: 16px;
-    }
+  
 
     .elementor-2731 .elementor-element.elementor-element-26d075c {
         --flex-direction: column-reverse;
@@ -1532,9 +1499,6 @@ body:not(.rtl) .elementor-2731 .elementor-element.elementor-element-59fc73f .ele
         text-align: center;
     }
 
-    .elementor-2731 .elementor-element.elementor-element-837a9c9 .elementor-heading-title {
-        font-size: 16px;
-    }
 }
 
 /* Start custom CSS for container, class: .elementor-element-080a52e */

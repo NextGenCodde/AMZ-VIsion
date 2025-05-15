@@ -1,0 +1,261 @@
+@media only screen and (max-width: 2560px) {
+    .section-1 {
+        margin: auto !important;
+        width: 90% !important;
+    }
+
+    .content-section-1 {
+        gap: 40px !important;
+    }
+
+    .section-1-p {
+        width: 65% !important;
+    }
+
+    .section-1-main {
+        width: 90% !important;
+        margin: auto !important;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+    .section-1 {
+        margin: auto !important;
+        width: 100% !important;
+    }
+
+
+    .section-1-main {
+        width: 100% !important;
+        margin: auto !important;
+    }
+
+    .section-1-p {
+        width: 100% !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .bg-img2 a {
+        white-space: nowrap !important;
+    }
+
+    .contact-btn {
+        display: none !important;
+    }
+
+    .services-ul li {
+        line-height: 90px !important;
+    }
+}
+
+
+@media only screen and (max-width: 769px) {
+    .section-1-main {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .section-1-p {
+        width: 100% !important;
+    }
+
+    .content-section-1 {
+        width: 80% !important;
+    }
+
+
+    .work-container {
+        width: 61% !important;
+    }
+
+    .child {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .feature span {
+        font-size: 100px !important;
+    }
+
+    .work-para p {
+        width: 70%;
+    }
+
+    .work-scroll-2 {
+        padding-left: 20px !important;
+    }
+
+    .work-btn a {
+        width: 100% !important;
+    }
+
+    .why-chose-border {
+        border-right: none !important;
+        border-bottom: 1px solid !important;
+    }
+
+    .elementor-main-swiper {
+        width: 100% !important;
+    }
+
+    .frequently-h1 {
+        font-size: 100px !important;
+    }
+
+    .frequently-dl dl {
+        width: 80% !important;
+    }
+
+    .container {
+        flex-direction: column !important;
+    }
+
+    .container .left {
+        width: 100% !important;
+    }
+    .testimonial-head {
+        font-size: 70px;
+    }
+    .overlay-img .pin-spacer{
+        height: auto !important;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+    .hero-subtitle{
+        width: 100% !important;
+         margin:20px auto 0px !important;
+    }
+    .secrion-2-p p {
+        width: 60%;
+        margin: auto;
+        font-weight: 600 !important;
+        line-height: 27px !important;
+    }
+    .infinite-slider {
+        margin: 10px !important;
+    }
+
+    .content-section-1{
+        width: 100% !important; 
+        gap: 14px !important; 
+    }
+
+    .content-section-1 div h2 {
+        white-space: nowrap !important;
+        font-size: 44px !important;
+    }
+    .feature {
+        margin: 50px 0px 0px !important;
+    }
+    .services-ul li {
+height: 250px !important;
+    }
+    .services-ul li a {
+        font-size: 65px !important;
+    }
+    .work-container{
+        width: 100% !important;
+    }
+    .work-h1 {
+        white-space: nowrap !important;
+        font-size: 75px !important;
+    }
+    .work-para p{
+        width: 100%;
+}
+.whychose{
+    font-size: 90px !important;
+}
+
+.testminonial-head { 
+    flex-direction: column !important;
+    width: 50% !important;
+    margin: auto !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 75px !important;
+}
+.portfolio-header h1{
+        font-size: 100px !important;
+}
+.filter-buttons {
+        white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.frequently-para  {
+    width: 65% !important;
+    margin: 30px auto !important;
+    color: black !important;
+}
+.project-p{
+    margin-top: 20px !important;
+}
+.input-group {
+    flex-direction: column !important;
+}
+.input-group input {
+    width: 100% !important;
+}
+.left h1{
+    font-size: 65px !important;
+}
+}
+
+@media only screen and (max-width: 375px){
+    .left h1{
+        font-size: 65px;
+    }
+    .section1-head {
+        font-size: 39px !important;
+    }
+   
+
+}
+
+
+@media only screen and  (max-width: 320px){
+     .section-2-p p {
+        width: 70% !important;
+    }
+    .section-head{
+        white-space: wrap !important;
+    }
+    .feature{
+        white-space: nowrap !important;
+    }
+    .feature span{
+        font-size: 90px !important;
+    }
+    .work-h1{
+        font-size: 60px !important;
+    }
+    .testimonial-head{
+        font-size: 60px;
+    }
+    .portfolio-header h1{
+        font-size: 75px !important;
+    }
+    .portfolio-header p {
+        width: 100% !important;
+    }
+    .frequently-h1{
+        font-size: 75px !important;
+    }
+    .frequently-para{
+            width: 80% !important;
+    }
+
+    .left h1 {
+            white-space: nowrap !important;
+    font-size: 55px !important;
+    }
+}
