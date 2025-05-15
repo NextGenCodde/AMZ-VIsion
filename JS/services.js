@@ -13,7 +13,7 @@ x_mark.addEventListener("click", function () {
     let servicesmenu = document.querySelector(".servies-menu");
    setTimeout(() => {
      servicesmenu.classList.remove("show");
-   }, 350); // Remove the show class
+   }, 450); // Remove the show class
 
     let menu_li = document.querySelectorAll(".ul-bar li a");
     menu_li.forEach((ele) => {
