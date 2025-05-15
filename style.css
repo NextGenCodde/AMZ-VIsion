@@ -1,10 +1,12 @@
-*{
+* {
     -webkit-tap-highlight-color: transparent;
 }
-body{
-    
+
+body {
+
     -webkit-tap-highlight-color: transparent;
 }
+
 video {
     position: absolute;
     top: 0;
@@ -80,7 +82,7 @@ video {
 }
 
 .left {
-    width: 50% ;
+    width: 50%;
     flex: none !important;
 }
 
@@ -919,7 +921,7 @@ button:hover {
 
 .right {
     flex: 1 1 35%;
-align-self: center;
+    align-self: center;
 }
 
 .right img {

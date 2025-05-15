@@ -1,0 +1,112 @@
+.servies-menu {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%); /* Slide up */
+    transition: transform .7s ease, opacity 0.9s ease; /* Smooth transition */
+}
+
+/* Class to show the menu smoothly */
+.servies-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Slide down */
+}
+
+
+
+.ul-bar {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+
+.ul-bar li {
+    overflow: hidden;
+    color: #fff;
+    font-size: 90px;
+    font-family: "Six Caps", sans-serif !important;
+
+}
+
+.ul-bar li a {
+    display: inline-block;
+    transform: translateY(-200px);
+    text-decoration: none;
+    color: inherit;
+}
+
+.translate-remove{
+    transform: translateY(0px) !important;
+
+}
+
+.a-1 {
+    transition: all .3s ease;
+}
+
+
+.a-2 {
+
+    transition: all .5s ease;
+}
+
+.a-3 {
+    transition: all .7 s ease;
+}
+
+
+.menu-bar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+    padding: 10px;
+    cursor: pointer; /* Ensure cursor changes on hover */
+}
+
+.menu-bar i {
+    font-size: 30px;
+    color: white;
+    pointer-events: auto; /* Allow click on icon */
+    display: inline-block; /* Ensure visibility */
+    line-height: 1; /* Adjust spacing */
+}
+
+
+.cross-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.menu-bar span {
+    display: block;
+    margin: 5px 0px;
+    width: 20px !important;
+    height: 2px !important;
+    background: white;
+    transition: all .3s linear;
+}
+
+
+.span-1-rotate {
+    transform: rotate(50deg) translate(9px);
+}
+
+.span-2-rotate {
+    transform: rotate(-50deg) translateX(4px) translateY(4px);
+
+}
