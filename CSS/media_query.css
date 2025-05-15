@@ -120,7 +120,7 @@
         width: 100% !important;
     }
     .testimonial-head {
-        font-size: 70px;
+        font-size: 70px !important;
     }
     .overlay-img .pin-spacer{
         height: auto !important;
@@ -150,7 +150,7 @@
 
     .content-section-1 div h2 {
         white-space: nowrap !important;
-        font-size: 44px !important;
+        font-size: 41px !important;
     }
     .feature {
         margin: 50px 0px 0px !important;
@@ -189,6 +189,10 @@ height: 250px !important;
 .filter-buttons {
         white-space: nowrap;
     overflow-x: scroll;
+}
+
+.frequently-h1{
+    font-size: 75px !important;
 }
 
 .frequently-para  {
