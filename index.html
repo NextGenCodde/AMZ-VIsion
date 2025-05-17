@@ -16,7 +16,6 @@
     <meta name="generator" content="WordPress 6.8.1" />
     <meta name="generator"
         content="Elementor 3.28.4; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
-    <link rel="stylesheet" href="CSS/media_query.css">
     <!-- ✅ Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet" />
@@ -91,7 +90,7 @@
     <link rel="https://api.w.org/" href="https://amzvision.de/wp-json/" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="CSS/services.css">
-
+    <link rel="stylesheet" href="CSS/media_query.css">
 </head>
 
 <body
@@ -144,12 +143,26 @@
             <div class="menu-bar cross-service">
                 <i class="fa-solid fa-xmark"></i>
             </div>
-            <ul class="ul-bar">
-                <li><a href="#">Services</a></li>
-                <li><a class="a-1" href="#">3D Animations</a></li>
-                <li><a class="a-2" href="#">3D Rendering</a></li>
-                <li><a class="a-3" href="#">3D Modeling</a></li>
-            </ul>
+            <div class="services-list" style="width: 100vw; height: 100vh; overflow:auto ;">
+                <ul style="margin: 0px;" class="services-ul service-slide">
+                    <li style="margin-top: 30px;"><a href="">Services</a></li>
+                    <li class="li-1">
+                        <div class="bg-img1 bg-img"></div>
+                        <a href="#">Amazon
+                            Listing & EBC</a>
+                    </li>
+                    <li class="li-2">
+                        <div class="bg-img2 bg-img"></div>
+                        <a href="#">3D
+                            Rendering, Product Retouching</a>
+                    </li>
+                    <li class="li-3">
+                        <div class="bg-img3 bg-img"></div>
+                        <a href="#">3D
+                            Animation</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="cd-index cd-main-content" bis_skin_checked="1">
             <!-- Page Content -->
@@ -157,7 +170,7 @@
                 data-bgcolor="#0c0c0c" bis_skin_checked="1">
                 <!-- Move Services Menu Outside Header -->
                 <!-- Header -->
-                <header class="inherit-header classic-menu" data-menucolor="#0c0c0c">
+                <header id="dynamic-header" class="inherit-header classic-menu" data-menucolor="#0c0c0c">
                     <div id="header-container" style="opacity: 1;" bis_skin_checked="1">
 
                         <!-- Logo -->
@@ -185,7 +198,7 @@
                                                         bis_skin_checked="1"><span data-hover="Home">Home</span></div>
                                                 </a>
                                             </li>
-                                            <li id="menu-item-3042"
+                                            <li style="cursor: pointer;" id="menu-item-3042"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3042 link menu-timeline">
                                                 <a style="color: white;" data-type="" class="">
                                                     <div onclick=" showservicesmene()" class="before-span"
@@ -193,26 +206,7 @@
                                                         bis_skin_checked="1"><span data-hover="Services">Services</span>
                                                     </div>
                                                 </a>
-                                                <ul class="sub-menu">
-                                                    <li id="menu-item-3734"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3734 link">
-                                                        <a style="color: white;" href="" data-type="page-transition"
-                                                            class="ajax-link">3D
-                                                            Animation</a>
-                                                    </li>
-                                                    <li id="menu-item-3733"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3733 link">
-                                                        <a style="color: white;" href="" data-type="page-transition"
-                                                            class="ajax-link">3D
-                                                            Modeling</a>
-                                                    </li>
-                                                    <li id="menu-item-3732"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3732 link">
-                                                        <a style="color: white;" href="" data-type="page-transition"
-                                                            class="ajax-link">3D
-                                                            Rendering</a>
-                                                    </li>
-                                                </ul>
+
                                             </li>
                                             <li id="menu-item-3041"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3041 link menu-timeline">
@@ -256,7 +250,9 @@
                         </div>
 
 
-                        <button class="custom-btn contact-btn">Contact Us</button>
+                        <button class=" custom-btn contact-us">
+                            Contact us
+                        </button>
                         <!-- /Custom Button -->
                         <!--/Menu Burger -->
 
@@ -294,8 +290,10 @@
 
                                                 </span></div>
                                             <button style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
-                                                class="custom-btn">Grow your
-                                                Amazon Sales</button>
+                                                class="progress-button grow-scale-btn">
+                                                <div class="progress_div"></div>
+                                                <span class="button-area">Grow your Amazon Sales</span>
+                                            </button>
                                             <p
                                                 style="color: white; margin-top: 30px; font-weight: 300; font-size: 14px;">
                                                 Not sure where to start. <a style="text-decoration: underline;"
@@ -347,14 +345,8 @@
                                                             <div class="section-1 content-row-elementor elementor-element elementor-element-080a52e e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child elementor-motion-effects-parent"
                                                                 data-id="080a52e" data-element_type="container"
                                                                 bis_skin_checked="1">
-                                                                <div class="secrion-2-p  elementor-element elementor-element-1e6392b elementor-widget elementor-widget-heading elementor-motion-effects-element"
-                                                                    data-id="1e6392b" data-element_type="widget"
-                                                                    data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.1,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
-                                                                    data-widget_type="heading.default"
-                                                                    style="--translateY: 5px; --e-transform-transition-duration: 100ms; transform: translateY(var(--translateY));"
-                                                                    bis_skin_checked="1">
-                                                                    <p
-                                                                        class="elementor-heading-title elementor-size-default">
+                                                                <div>
+                                                                    <p class="top_brand_p">
                                                                         Top Brands Trust AMZ Vision For Their Growth</p>
                                                                 </div>
                                                                 <div class="elementor-element elementor-element-dc67401 elementor-widget elementor-widget-html"
@@ -469,32 +461,14 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="section-1-main content-row-elementor elementor-element elementor-element-69336dd e-grid e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-con e-child"
-                                                                data-id="69336dd" data-element_type="container"
-                                                                bis_skin_checked="1">
-                                                                <div class="content-section-1 content-row-elementor elementor-element elementor-element-3952ab1 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                                    data-id="3952ab1" data-element_type="container"
-                                                                    bis_skin_checked="1">
-                                                                    <div class="elementor-element elementor-element-59f26e2 elementor-widget elementor-widget-heading"
-                                                                        data-id="59f26e2" data-element_type="widget"
-                                                                        data-widget_type="heading.default"
-                                                                        bis_skin_checked="1">
-                                                                        <h2
-                                                                            class="section1-head elementor-heading-title elementor-size-default">
-                                                                            Double Your Amazon Sales</h2>
-                                                                    </div>
-                                                                    <div class="elementor-element elementor-element-7165f06 elementor-widget elementor-widget-text-editor"
-                                                                        data-id="7165f06" data-element_type="widget"
-                                                                        data-widget_type="text-editor.default"
-                                                                        bis_skin_checked="1">
-                                                                        <p>It Starts with Better Product Images &amp; 3D
+                                                            <div class="section_grow_scales">
+                                                                <div class="main_section_grow_scale">
+                                                                    <div class="left_side_section_grow">
+                                                                        <h1>Double Your Amazon Sales</h1>
+                                                                        <p>It Starts with Better Product Images & 3D
                                                                             Animations</p>
-                                                                    </div>
-                                                                    <div class="section-1-p elementor-element elementor-element-d5569ef elementor-widget elementor-widget-text-editor"
-                                                                        data-id="d5569ef" data-element_type="widget"
-                                                                        data-widget_type="text-editor.default"
-                                                                        bis_skin_checked="1">
-                                                                        <p> In today’s changing world of e-commerce
+                                                                        <p class="para_2"> In today’s
+                                                                            changing world of e-commerce
                                                                             visual quality of your amazon products tends
                                                                             to play an important role in driving the
                                                                             customer decision. With the help of 3D
@@ -507,34 +481,17 @@
                                                                             and conversions across various platforms
                                                                             like Amazon, your website, and social media
                                                                             as well. </p>
+                                                                        <button style="margin: 20px 0px 0px 0px; padding: 15px 20px; text-align: left;
+                                                                 align-self:flex-start"
+                                                                            class="progress-button grow-scale-btn">
+                                                                            <div class="progress_div"></div>
+                                                                            <span class="button-area">Grow your Amazon
+                                                                                Sales</span>
+                                                                        </button>
                                                                     </div>
-                                                                    <div class="elementor-element elementor-element-a3f32be elementor-align-left button-hover elementor-widget elementor-widget-button"
-                                                                        data-id="a3f32be" data-element_type="widget"
-                                                                        data-widget_type="button.default"
-                                                                        bis_skin_checked="1">
-                                                                        <a class="elementor-button elementor-button-link elementor-size-sm"
-                                                                            href="#" id="button-id">
-                                                                            <span
-                                                                                class="elementor-button-content-wrapper">
-                                                                                <span class="elementor-button-text">Grow
-                                                                                    your Amazon Sales</span>
-                                                                            </span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="content-row-elementor elementor-element elementor-element-2e02dde e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                                    data-id="2e02dde" data-element_type="container"
-                                                                    bis_skin_checked="1">
-                                                                    <div class="elementor-element elementor-element-51c761d elementor-widget elementor-widget-image"
-                                                                        data-id="51c761d" data-element_type="widget"
-                                                                        data-widget_type="image.default"
-                                                                        bis_skin_checked="1">
-                                                                        <img fetchpriority="high" decoding="async"
-                                                                            width="488" height="528"
-                                                                            src="Content Images/amazon-sales.png"
-                                                                            class="attachment-large size-large wp-image-3113"
-                                                                            alt="amazon-sales"
-                                                                            sizes="(max-width: 488px) 100vw, 488px">
+                                                                    <div class="right_side_section_grow">
+                                                                        <img src="Content Images/amazon-sales.png"
+                                                                            alt="">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -543,35 +500,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="section1" class="dark-section-wrapper" bis_skin_checked="1">
-                                            <div class="dark-section-container content-max-width" bis_skin_checked="1">
-                                                <div class="content-row-elementor elementor-element elementor-element-b0723c1 dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con-boxed e-con e-parent"
-                                                    data-id="b0723c1" data-element_type="container"
-                                                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"
-                                                    bis_skin_checked="1">
-                                                    <div class="e-con-inner" bis_skin_checked="1">
-                                                        <div class="content-row-elementor elementor-element elementor-element-86d398e e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                            data-id="86d398e" data-element_type="container"
-                                                            bis_skin_checked="1">
-                                                            <div class="content-row-elementor elementor-element elementor-element-ebcd079 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                                data-id="ebcd079" data-element_type="container"
-                                                                bis_skin_checked="1">
-                                                                <div class="elementor-element elementor-element-2cb0edb elementor-widget elementor-widget-html"
-                                                                    data-id="2cb0edb" data-element_type="widget"
-                                                                    data-widget_type="html.default"
-                                                                    bis_skin_checked="1">
-                                                                    <div style="margin: 70px 0px;"
-                                                                        class="hover-text feature" bis_skin_checked="1">
-                                                                        <span>F</span><span>E</span><span>A</span><span>T</span><span>U</span><span>R</span><span>E</span><span>D</span>
-                                                                        <span>W</span><span>O</span><span>R</span><span>K</span>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div id="section1" class="dark-section-wrapper Feature_work"
+                                            bis_skin_checked="1">
+                                            <h2>FEATURE WORK</h2>
                                         </div>
                                         <div id="section1" class=" dark-section-wrapper" bis_skin_checked="1">
                                             <div class="dark-section-container content-max-width" bis_skin_checked="1">
@@ -753,10 +684,9 @@
                                                             <div class="elementor-element elementor-element-95d80c5 elementor-widget elementor-widget-html"
                                                                 data-id="95d80c5" data-element_type="widget"
                                                                 data-widget_type="html.default" bis_skin_checked="1">
-                                                                <div class="hover-text services-head"
+                                                                <div class="dark-section-wrapper Feature_work services_lit_section"
                                                                     bis_skin_checked="1">
-                                                                    <span>O</span><span>U</span><span>R</span>
-                                                                    <span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>E</span><span>S</span>
+                                                                    <h2>OUR SERVICES</h2>
                                                                 </div>
                                                                 <p class="service-para"
                                                                     style="text-align:center; margin: 20px auto; width: 50%; font-weight: 400; color: white;">
@@ -807,9 +737,8 @@
                                                                     data-id="d29b7f1" data-element_type="widget"
                                                                     data-widget_type="heading.default"
                                                                     bis_skin_checked="1">
-                                                                    <h1
-                                                                        class="work-h1 elementor-heading-title elementor-size-default">
-                                                                        How it works</h1>
+                                                                    <h2 class="work-h1 ">
+                                                                        How it works</h2>
                                                                 </div>
                                                                 <div class="work-para elementor-element elementor-element-a6defd7 elementor-widget elementor-widget-text-editor"
                                                                     data-id="a6defd7" data-element_type="widget"
@@ -1889,190 +1818,100 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
 
                                                                 </div>
                                                             </div>
-                                                            <div class="work-btn elementor-element elementor-element-5fbe752 elementor-align-left button-hover elementor-widget elementor-widget-button"
-                                                                data-id="5fbe752" data-element_type="widget"
-                                                                data-widget_type="button.default" bis_skin_checked="1">
-                                                                <a class="elementor-button elementor-button-link elementor-size-sm"
-                                                                    href="#" id="button-id">
-                                                                    <span class="elementor-button-content-wrapper">
-                                                                        <span class="elementor-button-text">Grow your
-                                                                            Amazon Sales</span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
+                                                            <button style="margin: 20px 0px 0px 0px; padding: 15px 20px; text-align: left;
+                                                                 align-self:flex-start"
+                                                                class="progress-button grow-scale-btn">
+                                                                <div class="progress_div"></div>
+                                                                <span class="button-area">Grow your Amazon Sales</span>
+                                                            </button>
                                                             <div class="content-row-elementor elementor-element elementor-element-5d70662 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
                                                                 data-id="5d70662" data-element_type="container"
                                                                 bis_skin_checked="1">
-                                                                <div class="content-row-elementor elementor-element elementor-element-1952969 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
+                                                                <div class="content-row-elementor elementor-element elementor-element-1952969 e-con-full dark-section inherit-header-color full_elementor   row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
                                                                     data-id="1952969" data-element_type="container"
                                                                     bis_skin_checked="1">
                                                                     <div class="elementor-element elementor-element-0aa0465 elementor-widget elementor-widget-heading"
                                                                         data-id="0aa0465" data-element_type="widget"
                                                                         data-widget_type="heading.default"
                                                                         bis_skin_checked="1">
-                                                                        <h1
-                                                                            class=" whychose elementor-heading-title elementor-size-default">
-                                                                            WHY CHOOSE US</h1>
+                                                                        <h2 class=" whychose">
+                                                                            WHY CHOOSE US</h2>
                                                                     </div>
                                                                 </div>
-                                                                <div class="elementor-element elementor-element-e833bc7 elementor-align-center button-hover elementor-widget elementor-widget-button"
-                                                                    data-id="e833bc7" data-element_type="widget"
-                                                                    data-widget_type="button.default"
-                                                                    bis_skin_checked="1">
-                                                                    <a class="elementor-button elementor-button-link elementor-size-sm"
-                                                                        href="#" id="button-id">
-                                                                        <span class="elementor-button-content-wrapper">
-                                                                            <span class="elementor-button-text">Grow
-                                                                                your Amazon Sales</span>
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-                                                                <div style="padding: 100px 0px;"
-                                                                    class="content-row-elementor elementor-element elementor-element-f0a0c25 e-grid e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-con e-child"
-                                                                    data-id="f0a0c25" data-element_type="container"
-                                                                    bis_skin_checked="1">
-                                                                    <div style="padding: 20px;"
-                                                                        class="content-row-elementor elementor-element elementor-element-721c388 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                                        data-id="721c388" data-element_type="container"
-                                                                        bis_skin_checked="1">
-                                                                        <div class="elementor-element elementor-element-f28f8c2 elementor-widget elementor-widget-heading"
-                                                                            data-id="f28f8c2" data-element_type="widget"
-                                                                            data-widget_type="heading.default"
-                                                                            bis_skin_checked="1">
-                                                                            <h1 style="font-weight: 600;"
-                                                                                class="elementor-heading-title elementor-size-default">
-                                                                                Visualization</h1>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-ba1f7d2 elementor-widget elementor-widget-text-editor"
-                                                                            data-id="ba1f7d2" data-element_type="widget"
-                                                                            data-widget_type="text-editor.default"
-                                                                            bis_skin_checked="1">
-                                                                            <p
-                                                                                style="color: #000;font-weight: 600;  opacity: 0.7;">
-                                                                                Product images are an important factors
-                                                                                in the purchase decision in online
-                                                                                retail.</p>
-                                                                        </div>
+                                                                <button
+                                                                    style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
+                                                                    class="progress-button grow-scale-btn">
+                                                                    <div class="progress_div"></div>
+                                                                    <span class="button-area">Grow your Amazon
+                                                                        Sales</span>
+                                                                </button>
+                                                                <div style="padding-bottom: 65px;"
+                                                                    class=" chose_post_content">
+
+                                                                    <div
+                                                                        style="padding: 20px; border-right: 1px solid #00000033; border-bottom: 1px solid #00000033;">
+                                                                        <h2 class="chose_h" style="font-weight: 500;">
+                                                                            Visualization</h2>
+                                                                        <p class="chose_p"
+                                                                            style="color: #000;font-weight: 400;  opacity: 0.7;">
+                                                                            Product images are an important factors
+                                                                            in the purchase decision in online
+                                                                            retail.</p>
                                                                     </div>
-                                                                    <div style="padding: 20px;"
-                                                                        class="content-row-elementor elementor-element elementor-element-a8ff124 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                                        data-id="a8ff124" data-element_type="container"
-                                                                        bis_skin_checked="1">
-                                                                        <div class="elementor-element elementor-element-8a5f2f9 elementor-widget elementor-widget-heading"
-                                                                            data-id="8a5f2f9" data-element_type="widget"
-                                                                            data-widget_type="heading.default"
-                                                                            bis_skin_checked="1">
-                                                                            <h1 style="font-weight: 600;"
-                                                                                class="elementor-heading-title elementor-size-default">
-                                                                                Selling Psychologically </h1>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-92b31f6 elementor-widget elementor-widget-text-editor"
-                                                                            data-id="92b31f6" data-element_type="widget"
-                                                                            data-widget_type="text-editor.default"
-                                                                            bis_skin_checked="1">
-                                                                            <p
-                                                                                style="color: #000;font-weight: 600;  opacity: 0.7;">
-                                                                                3D images can evoke emotions, thereby
-                                                                                emphasizing added value, highlighting
-                                                                                benefits, create brands, and foster
-                                                                                identification.</p>
-                                                                        </div>
+                                                                    <div style="padding: 20px; border-right: 1px solid #00000033; border-bottom: 1px solid #00000033;">
+
+                                                                        <h2 class="chose_h" style="font-weight: 500;">
+                                                                            Selling Psychologically </h2>
+                                                                        <p class="chose_p"
+                                                                            style="color: #000;font-weight: 400;  opacity: 0.7;">
+                                                                            3D images can evoke emotions, thereby
+                                                                            emphasizing added value, highlighting
+                                                                            benefits, create brands, and foster
+                                                                            identification.</p>
                                                                     </div>
-                                                                    <div style="padding: 20px;"
-                                                                        class="content-row-elementor elementor-element elementor-element-a32975c e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                                        data-id="a32975c" data-element_type="container"
-                                                                        bis_skin_checked="1">
-                                                                        <div class="elementor-element elementor-element-6b22263 elementor-widget elementor-widget-heading"
-                                                                            data-id="6b22263" data-element_type="widget"
-                                                                            data-widget_type="heading.default"
-                                                                            bis_skin_checked="1">
-                                                                            <h1 style="font-weight: 600;"
-                                                                                class="elementor-heading-title elementor-size-default">
-                                                                                Data-based Optimization </h1>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-15a9e9b elementor-widget elementor-widget-text-editor"
-                                                                            data-id="15a9e9b" data-element_type="widget"
-                                                                            data-widget_type="text-editor.default"
-                                                                            bis_skin_checked="1">
-                                                                            <p
-                                                                                style="color: #000;font-weight: 600;  opacity: 0.7;">
-                                                                                Experience for different Amazon A/B
-                                                                                tests as a basis of continuous
-                                                                                performance optimization to outperform
-                                                                                your customers. .</p>
-                                                                        </div>
+                                                                    <div style="padding: 20px; border-bottom: 1px solid #00000033;"">
+
+                                                                        <h2 class="chose_h" style="font-weight: 500;">
+                                                                            Data-based Optimization </h2>
+                                                                        <p class="chose_p"
+                                                                            style="color: #000;font-weight: 400;  opacity: 0.7;">
+                                                                            Experience for different Amazon A/B
+                                                                            tests as a basis of continuous
+                                                                            performance optimization to outperform
+                                                                            your customers. .</p>
                                                                     </div>
-                                                                    <div style="padding: 20px;"
-                                                                        class="why-chose-border content-row-elementor elementor-element elementor-element-e9b4678 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                                        data-id="e9b4678" data-element_type="container"
-                                                                        bis_skin_checked="1">
-                                                                        <div class="elementor-element elementor-element-e08f1e6 elementor-widget elementor-widget-heading"
-                                                                            data-id="e08f1e6" data-element_type="widget"
-                                                                            data-widget_type="heading.default"
-                                                                            bis_skin_checked="1">
-                                                                            <h1 style="font-weight: 600;"
-                                                                                class="elementor-heading-title elementor-size-default">
-                                                                                Competitive Edge </h1>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-4709449 elementor-widget elementor-widget-text-editor"
-                                                                            data-id="4709449" data-element_type="widget"
-                                                                            data-widget_type="text-editor.default"
-                                                                            bis_skin_checked="1">
-                                                                            <p
-                                                                                style="color: #000; font-weight: 600;  opacity: 0.7;">
-                                                                                Only a few Amazon Sellers are using
-                                                                                highly optimized images, thus, if yours
-                                                                                is a source of thoughtful skillfully
-                                                                                optimized, photographed, and stunning 3D
-                                                                                images you will stand out. </p>
-                                                                        </div>
+                                                                    <div style="padding: 20px; border-right: 1px solid #00000033">
+                                                                        <h2 class="chose_h" style="font-weight: 500;">
+                                                                            Competitive Edge </h2>
+                                                                        <p class="chose_p"
+                                                                            style="color: #000; font-weight: 400;  opacity: 0.7;">
+                                                                            Only a few Amazon Sellers are using
+                                                                            highly optimized images, thus, if yours
+                                                                            is a source of thoughtful skillfully
+                                                                            optimized, photographed, and stunning 3D
+                                                                            images you will stand out. </p>
+
                                                                     </div>
-                                                                    <div style="padding: 20px;"
-                                                                        class="content-row-elementor elementor-element elementor-element-d2a798b e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                                        data-id="d2a798b" data-element_type="container"
-                                                                        bis_skin_checked="1">
-                                                                        <div class="elementor-element elementor-element-88f2a12 elementor-widget elementor-widget-heading"
-                                                                            data-id="88f2a12" data-element_type="widget"
-                                                                            data-widget_type="heading.default"
-                                                                            bis_skin_checked="1">
-                                                                            <h1 style="font-weight: 600;"
-                                                                                class="elementor-heading-title elementor-size-default">
-                                                                                Professional Quality Images</h1>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-5fe4ca0 elementor-widget elementor-widget-text-editor"
-                                                                            data-id="5fe4ca0" data-element_type="widget"
-                                                                            data-widget_type="text-editor.default"
-                                                                            bis_skin_checked="1">
-                                                                            <p
-                                                                                style="color: #000; font-weight: 600;  opacity: 0.7;">
-                                                                                We will create high-quality Amazon
-                                                                                Product Visuals that meet Amazon
-                                                                                guidelines, thus enhancing product
-                                                                                appeal</p>
-                                                                        </div>
+                                                                    <div style="padding: 20px; border-right: 1px solid #00000033">
+                                                                        <h2 class="chose_h" style="font-weight: 500;">
+                                                                            Professional Quality Images</h2>
+                                                                        <p class="chose_p"
+                                                                            style="color: #000; font-weight: 400;  opacity: 0.7;">
+                                                                            We will create high-quality Amazon
+                                                                            Product Visuals that meet Amazon
+                                                                            guidelines, thus enhancing product
+                                                                            appeal</p>
+
                                                                     </div>
-                                                                    <div style="padding: 20px;"
-                                                                        class="content-row-elementor elementor-element elementor-element-9ac683a e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                                                        data-id="9ac683a" data-element_type="container"
-                                                                        bis_skin_checked="1">
-                                                                        <div class="elementor-element elementor-element-6c43cbc elementor-widget elementor-widget-heading"
-                                                                            data-id="6c43cbc" data-element_type="widget"
-                                                                            data-widget_type="heading.default"
-                                                                            bis_skin_checked="1">
-                                                                            <h1 style="font-weight: 600;"
-                                                                                class="elementor-heading-title elementor-size-default">
-                                                                                Increased Sales and Conversions </h1>
-                                                                        </div>
-                                                                        <div class="elementor-element elementor-element-b2d7668 elementor-widget elementor-widget-text-editor"
-                                                                            data-id="b2d7668" data-element_type="widget"
-                                                                            data-widget_type="text-editor.default"
-                                                                            bis_skin_checked="1">
-                                                                            <p
-                                                                                style="color: #000; font-weight: 600; opacity: 0.7;">
-                                                                                Helps you increase click-through rate,
-                                                                                important for competitive markets like
-                                                                                Germany</p>
-                                                                        </div>
+                                                                    <div style="padding: 20px;">
+                                                                        <h2 class="chose_h" style="font-weight: 500;"
+                                                                            class="elementor-heading-title elementor-size-default">
+                                                                            Increased Sales and Conversions </h2>
+                                                                        <p class="chose_p"
+                                                                            style="color: #000; font-weight: 400; opacity: 0.7;">
+                                                                            Helps you increase click-through rate,
+                                                                            important for competitive markets like
+                                                                            Germany</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -2090,7 +1929,7 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
                                                         <div class="content-row-elementor elementor-element elementor-element-d228404 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
                                                             data-id="d228404" data-element_type="container"
                                                             bis_skin_checked="1">
-                                                            <div class="content-row-elementor elementor-element elementor-element-b76d50c e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
+                                                            <div class="testi-main content-row-elementor elementor-element elementor-element-b76d50c e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
                                                                 data-id="b76d50c" data-element_type="container"
                                                                 bis_skin_checked="1">
                                                                 <div style="display: flex; justify-content: space-between;"
@@ -2099,7 +1938,7 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
                                                                     data-widget_type="heading.default"
                                                                     bis_skin_checked="1">
                                                                     <h2
-                                                                        class="testimonial-head elementor-heading-title elementor-size-default">
+                                                                        class="testimonial-head ">
                                                                         Testimonials</h2>
                                                                     <div class="testimonial-arrows">
                                                                         <div class="swiper-button-prev ">
@@ -2476,7 +2315,7 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
                                                                                 data-element_type="widget"
                                                                                 data-widget_type="text-editor.default"
                                                                                 bis_skin_checked="1">
-                                                                                <p style="font-weight: 400;">Text goes
+                                                                                <p style="font-weight: 400 ;font-size: 20px;">Text goes
                                                                                     here</p>
                                                                             </div>
                                                                         </div>
@@ -2498,7 +2337,7 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
                                                                                 data-element_type="widget"
                                                                                 data-widget_type="text-editor.default"
                                                                                 bis_skin_checked="1">
-                                                                                <p style="font-weight: 400;">Text goes
+                                                                                <p style="font-weight: 400; font-size: 20px;">Text goes
                                                                                     here</p>
                                                                             </div>
                                                                         </div>
@@ -2520,7 +2359,7 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
                                                                                 data-element_type="widget"
                                                                                 data-widget_type="text-editor.default"
                                                                                 bis_skin_checked="1">
-                                                                                <p style="font-weight: 400; ">Text goes
+                                                                                <p style="font-weight: 400; font-size: 20px; ">Text goes
                                                                                     here</p>
                                                                             </div>
                                                                         </div>
@@ -2538,7 +2377,7 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
                                                     data-id="9bfb470" data-element_type="container"
                                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"
                                                     bis_skin_checked="1">
-                                                    <div style="padding: 80px 0px 0px 0px;" class="e-con-inner"
+                                                    <div style="padding: 80px 0px 0px 60px;" class="e-con-inner"
                                                         bis_skin_checked="1">
                                                         <div class="content-row-elementor elementor-element elementor-element-f4eb186 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
                                                             data-id="f4eb186" data-element_type="container"
@@ -3264,7 +3103,6 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
         <!--/Cd-main-content -->
     </main>
     <!--/Main -->
-
     <div class="cd-cover-layer" style="display: none;" bis_skin_checked="1"></div>
     <div id="magic-cursor" class="light-content" bis_skin_checked="1">
         <div id="ball"

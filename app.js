@@ -72,50 +72,40 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-///portfolio js
-
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".filter-btn");
   const items = document.querySelectorAll(".gallery-item");
   const loadMoreBtn = document.getElementById("loadMoreBtn");
-  const gallery = document.querySelector(".image-gallery");
+  const overlay = document.querySelector(".gallery-fade-overlay");
 
   // Function to filter and display items
   const filterItems = (category) => {
-    // First mark all items for hiding
     items.forEach((item) => {
-      if (!item.classList.contains("hidden")) {
+      const isHidden = item.classList.contains("hidden");
+      const matchesCategory = category === "all" || item.classList.contains(category);
+
+      // Hide all items initially
+      if (!matchesCategory || isHidden) {
         item.classList.add("hide");
         item.classList.remove("show");
+      } else {
+        // Remove hide class to prepare for transition
+        item.classList.remove("hide");
+        
+        // Trigger reflow for smooth transition
+        void item.offsetWidth; 
+        
+        // Use requestAnimationFrame to ensure smooth transition
+        requestAnimationFrame(() => {
+          item.classList.add("show");
+        });
       }
     });
 
-    // Short delay to allow hide animation to start
-    setTimeout(() => {
-      items.forEach((item) => {
-        // Check if item should be hidden by Load More
-        const isHidden = item.classList.contains("hidden");
-
-        // Apply filter
-        if (category === "all" || item.classList.contains(category)) {
-          if (!isHidden) {
-            item.classList.remove("hide");
-            setTimeout(() => {
-              item.classList.add("show");
-            }, 50);
-          }
-        } else {
-          item.classList.add("hide");
-          item.classList.remove("show");
-        }
-      });
-
-      // Check if we need to show the load more button
-      checkLoadMoreVisibility(category);
-    }, 300); // Give more time for the hide animation
+    checkLoadMoreVisibility(category);
   };
 
-  // Function to check if we need to show the load more button
+  // Check visibility of Load More button and overlay
   const checkLoadMoreVisibility = (category) => {
     const hasHiddenItems = Array.from(items).some(
       (item) =>
@@ -124,16 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     loadMoreBtn.style.display = hasHiddenItems ? "inline-block" : "none";
-
-    // Show overlay when there are hidden items
-    const overlay = document.querySelector(".gallery-fade-overlay");
-    if (hasHiddenItems) {
-      setTimeout(() => {
-        overlay.style.opacity = "1";
-      }, 300);
-    } else {
-      overlay.style.opacity = "0";
-    }
+    overlay.style.opacity = hasHiddenItems ? "1" : "0";
   };
 
   // Add click event to filter buttons
@@ -146,46 +127,34 @@ document.addEventListener("DOMContentLoaded", function () {
       // Get filter category
       const category = btn.getAttribute("data-filter");
 
-      // Apply filter
+      // Apply filter smoothly
       filterItems(category);
     });
   });
 
   // Load More functionality
   loadMoreBtn.addEventListener("click", () => {
-    // Get current active category
     const activeCategory = document
       .querySelector(".filter-btn.active")
       .getAttribute("data-filter");
 
-    // Hide the overlay when loading more images
-    document.querySelector(".gallery-fade-overlay").style.opacity = "0";
+    overlay.style.opacity = "0"; // Hide overlay while loading
 
-    // Remove hidden class from items matching the active category
     let hasNewItems = false;
 
     items.forEach((item) => {
-      if (
-        item.classList.contains("hidden") &&
-        (activeCategory === "all" || item.classList.contains(activeCategory))
-      ) {
-        item.classList.remove("hidden");
-        item.classList.add("hide");
-        hasNewItems = true;
+      const matchesCategory = activeCategory === "all" || item.classList.contains(activeCategory);
 
-        // Trigger show animation
-        setTimeout(() => {
-          item.classList.remove("hide");
-          item.classList.add("show");
-        }, 50);
+      if (item.classList.contains("hidden") && matchesCategory) {
+        item.classList.remove("hidden");
+        item.classList.add("show");
+        hasNewItems = true;
       }
     });
 
-    // Hide the button after loading all items
     if (!hasNewItems) {
       loadMoreBtn.style.display = "none";
     } else {
-      // Check if there are more items to load
       checkLoadMoreVisibility(activeCategory);
     }
   });
@@ -193,6 +162,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize with "all" filter
   filterItems("all");
 });
+
+
+
+
 
 const lazyloadRunObserver = () => {
   const lazyloadBackgrounds = document.querySelectorAll(
@@ -226,7 +199,7 @@ events.forEach((event) => {
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize the custom scrollbar
   const scrollbar = Scrollbar.init(document.querySelector("#content-scroll"));
-
+let header  = document.querySelector("header")
   // Elements to update
   let menulist = document.querySelectorAll("#menu-main-menu li a");
   let mainmenu = document.querySelector("#menu-main-menu");
@@ -260,6 +233,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Change to black logo and light menu
       whitelogo.style.display = "none";
       blacklogo.style.display = "block";
+      header.style.backdropFilter = "blur(4px)";
       // Light header background
       burgermenu.forEach((ele) =>{
         ele.style.background ="#000"
@@ -275,6 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
       whitelogo.style.display = "block";
       blacklogo.style.display = "none";
       mainmenu.style.marginLeft = "auto";
+      header.style.backdropFilter = "blur(0px)";
       // Dark header background
       burgermenu.forEach((ele) =>{
         ele.style.background ="#fff"

@@ -11,8 +11,9 @@
     z-index: 100000;
     opacity: 0;
     visibility: hidden;
+    overflow: hidden;
     transform: translateY(-100%); /* Slide up */
-    transition: transform .7s ease, opacity 0.9s ease; /* Smooth transition */
+    transition: all .7s ease, opacity 0.9s ease; /* Smooth transition */
 }
 
 /* Class to show the menu smoothly */
@@ -34,7 +35,7 @@
 .ul-bar li {
     overflow: hidden;
     color: #fff;
-    font-size: 90px;
+    font-size: 128px;
     font-family: "Six Caps", sans-serif !important;
 
 }
