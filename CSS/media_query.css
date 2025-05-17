@@ -40,6 +40,7 @@
         font-size: 30px;
     } */
 
+
 }
 
 
@@ -74,6 +75,30 @@
 
     .services-ul li {
         line-height: 90px !important;
+    }
+
+    .contact-us {
+        display: none;
+    }
+
+    .main_section_grow_scale{
+        flex-direction: column;
+    }
+    .left_side_section_grow{
+        width: 100%;
+    }
+    .right_side_section_grow{
+        width: 100%;
+    }
+
+    .li-2 a{
+            line-height: 105px;
+    }
+    .section_grow_scales{
+        padding: 60px 0px;
+    }
+    .left_side_section_grow h1{
+        font-size: 70px;
     }
 }
 

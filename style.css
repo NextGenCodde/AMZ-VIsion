@@ -1191,15 +1191,44 @@ button:hover {
     opacity: 0.9 !important;
 }
 
-
 .chose_post_content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 65px;
+    gap: 10px;
+    justify-content: center;
 }
 
-.chose_post_content div {
-    width: 32%;
-    height: 222px;
+.chose_post_content > div {
+    padding: 20px;
+    border: 1px solid #00000033;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    flex: 1 1 30%; /* Responsive width */
+    min-width: 280px;
+    box-sizing: border-box;
+}
+
+.chose_h {
+    font-weight: 500;
+}
+
+.chose_p {
+    color: #000;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chose_post_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chose_post_content > div {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        border-right: none;
+    }
 }
