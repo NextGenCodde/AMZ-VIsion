@@ -986,16 +986,7 @@ side_3 {
 }
 
 /* Style scrollbar (only applies to smooth-scrollbar's thumb) */
-.scrollbar-track-y {
-  background: white !important; /* Track background */
-  width: 8px !important;
-  right: 0;
-}
 
-.scrollbar-thumb-y {
-  background-color: grey !important; /* Thumb color */
-  border-radius: 4px;
-}
 
 #header-container {
   transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
