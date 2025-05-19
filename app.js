@@ -1,4 +1,7 @@
-window.addEventListener("DOMContentLoaded", function () {
+////////////////////////////////////////////
+ 
+ 
+ window.addEventListener("DOMContentLoaded", function () {
   const leftArrow = document.querySelector(".swiper-button-prev");
   const rightArrow = document.querySelector(".swiper-button-next");
 
@@ -199,7 +202,7 @@ events.forEach((event) => {
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize the custom scrollbar
   const scrollbar = Scrollbar.init(document.querySelector("#content-scroll"));
-let header  = document.querySelector("header")
+let header  = document.querySelector("#header-container")
   // Elements to update
   let menulist = document.querySelectorAll("#menu-main-menu li a");
   let mainmenu = document.querySelector("#menu-main-menu");
@@ -249,7 +252,7 @@ let header  = document.querySelector("header")
       whitelogo.style.display = "block";
       blacklogo.style.display = "none";
       mainmenu.style.marginLeft = "auto";
-      header.style.backdropFilter = "blur(0px)";
+      header.style.backdropFilter = "blur(px)";
       // Dark header background
       burgermenu.forEach((ele) =>{
         ele.style.background ="#fff"
@@ -300,4 +303,72 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   sections.forEach((section) => observer.observe(section));
+});
+
+
+
+
+
+
+//ajax
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Smooth AJAX Page Transition with Delay
+    function pageTransition() {
+        // Attach click event to AJAX links
+        document.querySelectorAll("a.ajax-link").forEach(function (link) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const url = link.getAttribute("href");
+
+                // Add a loading animation
+                document.body.classList.add("loading");
+
+                // Smooth fade-out effect
+                document.querySelector("#clapat-page-content").classList.add("fade-out");
+
+                // Add a slight delay before moving to the next page
+                setTimeout(() => {
+                    // Perform AJAX request to load the new page content
+                    fetch(url)
+                        .then((response) => response.text())
+                        .then((data) => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(data, "text/html");
+
+                            // Extract new content
+                            const newContent = doc.querySelector("#clapat-page-content");
+                            const contentContainer = document.querySelector("#clapat-page-content");
+
+                            if (newContent && contentContainer) {
+                                contentContainer.innerHTML = newContent.innerHTML;
+
+                                // Remove fade-out and show new content smoothly
+                                document.querySelector("#clapat-page-content").classList.remove("fade-out");
+                                document.body.classList.remove("loading");
+
+                                // Update the browser's history
+                                history.pushState(null, null, url);
+
+                                // Reinitialize the AJAX links for new content
+                                pageTransition();
+                            }
+                        })
+                        .catch(() => {
+                            // If error, load the page normally
+                            window.location.href = url;
+                        });
+                }, 1500); // Delay before loading the next page (adjust as needed)
+            });
+        });
+    }
+
+    // Run page transition function
+    pageTransition();
+
+    // Handle back/forward navigation
+    window.addEventListener("popstate", function () {
+        location.reload();
+    });
 });

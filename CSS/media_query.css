@@ -17,7 +17,7 @@
         margin: auto !important;
     }
 
-    /* .left_side_section_grow h1 {
+    .left_side_section_grow h1 {
         font-size: 223px;
     }
 
@@ -29,16 +29,21 @@
     }
 
     .para_2{
-        font-size: 26px;
+            margin: 10px;
+    font-size: 27px;
     }
 
     .left_side_section_grow button{
-            padding: 24px 42px;
+            padding: 24px 42px !important;
     }
 
     .top_brand_p{
         font-size: 30px;
-    } */
+    }
+
+    .left_side_section_grow button span{
+            font-size: 19px;
+    }
 
 
 }
@@ -60,7 +65,28 @@
     .section-1-p {
         width: 100% !important;
     }
+      .left_side_section_grow h1{
+        white-space: nowrap;
+        font-size: 120px;
+      }
 
+      .left_side_section_grow p {
+            font-size: 27px;
+    margin: 45px 0px;
+    line-height: normal;
+      }
+.para_2{
+    margin: 0px;
+    line-height: normal;
+    font-size: 17px;
+}
+
+.left_side_section_grow button {
+    padding: 15px 20px !important;
+}
+.top_brand_p{
+    font-size: 16px !important;
+}
 }
 
 
@@ -88,7 +114,8 @@
         width: 100%;
     }
     .right_side_section_grow{
-        width: 100%;
+        width: 50%;
+        margin:auto;
     }
 
     .li-2 a{
@@ -97,8 +124,14 @@
     .section_grow_scales{
         padding: 60px 0px;
     }
+
+    .left_side_section_grow p {
+        font-size: 26px;
+    margin: 35px 0px;
+    width: 63%;
+    }
     .left_side_section_grow h1{
-        font-size: 70px;
+        font-size: 90px;
     }
 }
 
@@ -133,6 +166,7 @@
 
     .work-para p {
         width: 70%;
+        margin: 20px;
     }
 
     .work-scroll-2 {
@@ -233,7 +267,9 @@
     .whychose {
         font-size: 90px !important;
     }
-
+.Feature_work h2{
+    font-size: 80px;
+}
     .testminonial-head {
         flex-direction: column !important;
         width: 50% !important;
@@ -276,6 +312,9 @@
 
     .left h1 {
         font-size: 65px !important;
+    }
+    .testimonial-head  {
+        margin-bottom: 30px;
     }
 }
 

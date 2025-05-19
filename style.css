@@ -2,6 +2,18 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+body.loading {
+    cursor: progress;
+}
+
+#clapat-page-content.fade-out {
+    background: #0c0c0c;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1002;
+}
+
 body {
 
     -webkit-tap-highlight-color: transparent;
@@ -279,7 +291,10 @@ dt.accordion-active .acc-button-icon i {
 .active:after {
     color: black;
 }
-
+/* .servies-menu{
+    position: relative !important;
+    z-index: 1001 !important;
+} */
 
 .elementor-testimonial__text {
     color: white;
@@ -917,13 +932,19 @@ form {
 }
 
 .label-area label {
-    width: 50%;
     color: white;
     font-weight: 400;
 }
+.name_label{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
 
+.name_label label{
+    margin: 10px 0px; 
+}
 .input-group input {
-    width: 50%;
     padding: 15px 20px;
     border: 1px solid #444;
     background: #121212;
@@ -1195,16 +1216,11 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 65px;
-    gap: 10px;
     justify-content: center;
 }
 
 .chose_post_content > div {
     padding: 20px;
-    border: 1px solid #00000033;
-    border-top: none;
-    border-left: none;
-    border-right: none;
     flex: 1 1 30%; /* Responsive width */
     min-width: 280px;
     box-sizing: border-box;
