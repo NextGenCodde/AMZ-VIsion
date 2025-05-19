@@ -26,21 +26,6 @@ menubar.addEventListener("click", function () {
   }, 300);
 });
 
-let services_menubar = document.querySelector(".services-menubar");
-let sub_menu = document.querySelector(".sub-menu");
-
-services_menubar.addEventListener("mouseenter", function () {
-  setTimeout(() => {
-    sub_menu.style.display = "block";
-  }, 200);
-});
-
-services_menubar.addEventListener("mouseleave", function () {
-  setTimeout(() => {
-    sub_menu.style.display = "none";
-  }, 200);
-});
-
 function cross_menu() {
   let mobile_menu = document.querySelector(".menu-main-menu-container");
   let button_wrap = document.querySelector(".button-wrap ");

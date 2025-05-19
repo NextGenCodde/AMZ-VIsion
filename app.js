@@ -372,3 +372,41 @@ document.addEventListener("DOMContentLoaded", function () {
         location.reload();
     });
 });
+
+
+
+//barba.js 
+
+
+barba.init({
+  transitions: [{
+    name: 'fade-transition',
+
+    async leave(data) {
+      // Old page fade out
+      await gsap.to(data.current.container, {
+        opacity: 0,
+        y: -50,
+        duration: 1,
+        ease: "power2.out"
+      });
+    },
+
+    async enter(data) {
+      // New page prepare
+      gsap.set(data.next.container, {
+        opacity: 0,
+        y: 50
+      });
+
+      // New page fade in
+      await gsap.to(data.next.container, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        delay: 1.3
+      });
+    }
+  }]
+});
