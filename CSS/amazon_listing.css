@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+::-webkit-scrollbar-track{
+    background: #000;
+}
 #hero {
     padding: 60px 0px 100px;
     background-image: url("./Amazon Content/Hero_img.png");
