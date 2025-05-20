@@ -627,15 +627,19 @@
     }
 
     .section_3 .head h2 {
-        font-size: 50px !important;
+        width: 100% !important;
+        font-size: 47px !important;
     }
+    .hero-title div span{
+        margin: 0px 0px;
+}
 
     .data_content h4 {
         margin: 10px 0px !important;
     }
 
     .section_4 {
-        padding: 30px;
+        padding: 30px !important;
     }
 
     .head_part .content h2 {
@@ -643,29 +647,32 @@
     }
 
     .head_part .content p {
-        font-size: 16px;
-        opacity: 80%;
-        width: 100%;
+        font-size: 16px !important;
+        opacity: 80% !important;
+        width: 100% !important;
     }
 
     .bg_box_img {
-        display: none;
+        display: none !important;
     }
 
     .product_describing {
-        padding: 100px 30px;
+        padding: 100px 30px !important;
     }
 
     .rendering-section {
-        padding: 0px 30px;
+        padding: 0px 30px !important;
     }
 
     .content_left_side .content h2 {
-        font-size: 48px !important;
+        font-size: 40px !important;
     }
 
     .content_left_side .content .para_in_content {
         font-size: 24px !important;
+    }
+    .product_describing .head h2{
+        font-size: 50px;
     }
 
     .data_content_section {

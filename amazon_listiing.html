@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="en-US" data-theme="light" style="color-scheme: light;" data-qb-installed="true">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Amazon Product Photography and Amazon Agency | AMZ Vision </title>
@@ -14,7 +14,6 @@
     <meta name="generator" content="WordPress 6.8.1" />
     <meta name="generator"
         content="Elementor 3.28.4; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
-
     <!-- ✅ Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet" />
@@ -27,9 +26,8 @@
     <link rel="stylesheet" href="CSS/assets.css" />
     <link rel="stylesheet" href="CSS/shop.css" />
     <link rel="stylesheet" href="CSS/style-wp.css" />
-    <link rel="stylesheet" href="CSS/page-builders.css">
+    <link rel="stylesheet" href="CSS/page-builders.css" />
     <link rel="stylesheet" href="CSS/style.css" />
-
 
     <!-- ✅ FontAwesome for icons -->
     <link rel="stylesheet" href="CSS/all-min.css" />
@@ -44,8 +42,8 @@
     <link rel="stylesheet" href="elementor/css/swiper.min.css" />
 
     <!-- ✅ jQuery (needed for Elementor + Montoya effects) -->
-    <!-- <script src="jquery/jquery-min.js"></script> -->
-    <!-- <script src="jquery/jquery-migrate-min.js"></script> -->
+    <script src="jquery/jquery-min.js"></script>
+    <script src="jquery/jquery-migrate-min.js"></script>
 
     <!-- ✅ Emoji JS (keep to avoid WP core errors) -->
     <script src="JS/wp-emoji.min.js" defer></script>
@@ -82,7 +80,7 @@
         media="all">
     <link rel="stylesheet" id="widget-divider-css" href="elementor/css/widget-divider.css" type="text/css" media="all">
     <!-- <script type="text/javascript" src="jquery/jquery-min.js" id="jquery-core-js"></script> -->
-    <!-- <script type="text/javascript" src="jquery/jquery-migrate-min.js" id="jquery-migrate-js"></script> -->
+    <script type="text/javascript" src="jquery/jquery-migrate-min.js" id="jquery-migrate-js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
         integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -91,12 +89,52 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="CSS/services.css">
     <link rel="stylesheet" href="CSS/amazon_listing.css">
-
     <link rel="stylesheet" href="CSS/media_query.css">
 </head>
 
-<body data-barba="wrapper">
-    <div class="whole_page_data barba-container" data-barba="container" data-barba-namespace="about">
+<body>
+    <main class="barba-container" data-barba="container" data-barba-namespace="home"
+        style="background-color: rgb(12, 12, 12);">
+        <!-- Preloader -->
+        <div class="preloader-wrap" data-centerline="Loading">
+            <div class="outer">
+                <div class="inner">
+                    <div class="trackbar">
+                        <div class="preloader-intro"></div>
+                        <div class="loadbar"></div>
+                        <div class="percentage-wrapper">
+                            <div class="percentage" id="precent"></div>
+                        </div>
+                    </div>
+
+                    <div class="percentage-intro">Please wait, content is loading</div>
+                </div>
+            </div>
+        </div>
+        <!--/Preloader -->
+
+        <!--Cd-main-content -->
+        <div class="preloader-wrap" data-centerline="Loading" bis_skin_checked="1"
+            style="opacity: 0; translate: none; rotate: none; scale: none; transform: translate(0%, -101%); visibility: hidden;">
+            <div class="outer" bis_skin_checked="1">
+                <div class="inner" bis_skin_checked="1">
+                    <div class="trackbar" bis_skin_checked="1" style="clip-path: inset(0%);">
+                        <div class="preloader-intro" bis_skin_checked="1"></div>
+                        <div class="loadbar" style="width: 100%;" bis_skin_checked="1"></div>
+                        <div class="percentage-wrapper" bis_skin_checked="1"
+                            style="translate: none; rotate: none; scale: none; transform: translate(534.703px, 0px);">
+                            <div class="percentage" id="precent" bis_skin_checked="1"
+                                style="translate: none; rotate: none; scale: none; transform: translate(0px, -100px); opacity: 0;">
+                                100</div>
+                        </div>
+                    </div>
+
+                    <div class="percentage-intro" bis_skin_checked="1" style="opacity: 0;">Please wait, content
+                        is
+                        loading</div>
+                </div>
+            </div>
+        </div>
         <div class="servies-menu">
             <div class="menu-bar cross-service">
                 <i class="fa-solid fa-xmark"></i>
@@ -106,12 +144,12 @@
                     <li style="margin-top: 30px;"><a href="">Services</a></li>
                     <li class="li-1">
                         <div class="bg-img1 bg-img"></div>
-                        <a href="amazon_listiing.html" data-type="page-transition" class="ajax-link">Amazon
+                        <a href="amazon_listiing.html">Amazon
                             Listing & EBC</a>
                     </li>
                     <li class="li-2">
                         <div class="bg-img2 bg-img"></div>
-                        <a href="#" data-type="page-transition" class="ajax-link">3D
+                        <a href="#">3D
                             Rendering, Product Retouching</a>
                     </li>
                     <li class="li-3">
@@ -122,6 +160,8 @@
                 </ul>
             </div>
         </div>
+
+
         <header class="inherit-header classic-menu" data-menucolor="#0c0c0c">
             <div id="header-container" style="opacity: 1;" bis_skin_checked="1">
 
@@ -205,750 +245,768 @@
         </header>
         <!-- header  -->
         <!-- //Amazon Listing Hero Section  -->
-        <main>
-            <div id="content-scroll">
-                <div class="hero-section" id="hero" bis_skin_checked="1">
-                    <div id="hero-styles" bis_skin_checked="1">
-                        <div id="hero-caption"
-                            class="height-title content-full-width text-align-center parallax-scroll-caption"
-                            style=" translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"
+        <div id="content-scroll">
+            <div class="hero-section" id="hero" bis_skin_checked="1">
+                <div id="hero-styles" bis_skin_checked="1">
+                    <div id="hero-caption"
+                        class="height-title content-full-width text-align-center parallax-scroll-caption"
+                        style=" translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"
+                        bis_skin_checked="1">
+                        <div class="inner hero_inner" bis_skin_checked="1">
+                            <div class="hero-blur-oval"></div>
+                            <div class="stretch-up">
+                                <h1 style="color: white;" class="hero-title caption-timeline primary-font-title">
+                                    Drive Sales with Optimized Amazon Listings
+                                </h1>
+                            </div>
+                            <div class="hero-subtitle caption-timeline" bis_skin_checked="1" style=" color: white;">
+                                <span
+                                    style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                                    We create keyword-optimized listings and eye-catching EBC designs that
+                                    convert
+                                    visitors
+                                    into
+                                    buyers
+
+                                </span>
+                            </div>
+                            <button style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
+                                class="progress-button grow-scale-btn hero_btn">
+                                <div class="progress_div"></div>
+                                <span class="button-area">Grow your Amazon Sales</span>
+                            </button>
+                            <p
+                                style="color: white; margin-top: 30px; font-weight: 300; font-size: 14px;  z-index: 1000; position: relative;">
+                                Not sure where to start. <a style="text-decoration: underline; color: white;"
+                                    href="">Get a
+                                    FREE
+                                    audit</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="section_2 track-section">
+                <div id="section1" class="light-section-wrapper white-section" bis_skin_checked="1">
+                    <div class="light-section-container content-max-width" bis_skin_checked="1">
+                        <div class="content-row-elementor elementor-element elementor-element-f8e7233 light-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con-boxed e-con e-parent e-lazyloaded"
+                            data-id="f8e7233" data-element_type="container"
+                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"
                             bis_skin_checked="1">
-                            <div class="inner hero_inner" bis_skin_checked="1">
-                                <div class="hero-blur-oval"></div>
-                                <div class="stretch-up">
-                                    <h1 style="color: white;" class="hero-title caption-timeline primary-font-title">
-                                        Drive Sales with Optimized Amazon Listings
-                                    </h1>
+                            <div style="max-width: 100%;" class="e-con-inner" bis_skin_checked="1">
+                                <div class="content-row-elementor elementor-element elementor-element-b140653 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
+                                    data-id="b140653" data-element_type="container" bis_skin_checked="1">
+                                    <div class="section-1 content-row-elementor elementor-element elementor-element-080a52e e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child elementor-motion-effects-parent"
+                                        data-id="080a52e" data-element_type="container" bis_skin_checked="1">
+                                        <div class="secrion-2-p  elementor-element elementor-element-1e6392b elementor-widget elementor-widget-heading elementor-motion-effects-element"
+                                            data-id="1e6392b" data-element_type="widget"
+                                            data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.1,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+                                            data-widget_type="heading.default"
+                                            style="--translateY: 5px; --e-transform-transition-duration: 100ms; transform: translateY(var(--translateY));"
+                                            bis_skin_checked="1">
+                                            <p class="elementor-heading-title elementor-size-default">
+                                                Top Brands Trust AMZ Vision For Their Growth</p>
+                                        </div>
+                                        <div class="infinite-slider-parent elementor-element elementor-element-dc67401 elementor-widget elementor-widget-html"
+                                            data-id="dc67401" data-element_type="widget" data-widget_type="html.default"
+                                            bis_skin_checked="1">
+                                            <div class="infinite-slider" bis_skin_checked="1">
+                                                <div class="slider-track  left-to-right" bis_skin_checked="1">
+                                                    <img decoding="async" src="Content Images/slide-img1.png">
+                                                    <img decoding="async" src="Content Images/slide-img2.png">
+                                                    <img decoding="async" src="Content Images/slide-img3.png">
+                                                    <img decoding="async" src="Content Images/slide-img4.png">
+                                                    <img decoding="async" src="Content Images/slide-img5.png">
+                                                    <!-- Repeat again to create seamless loop -->
+
+                                                    <img decoding="async" src="Content Images/slide-img1.png">
+                                                    <img decoding="async" src="Content Images/slide-img2.png">
+                                                    <img decoding="async" src="Content Images/slide-img3.png">
+                                                    <img decoding="async" src="Content Images/slide-img4.png">
+                                                    <img decoding="async" src="Content Images/slide-img5.png">
+                                                    <img decoding="async" src="Content Images/slide-img1.png">
+                                                    <img decoding="async" src="Content Images/slide-img2.png">
+                                                    <img decoding="async" src="Content Images/slide-img3.png">
+                                                    <img decoding="async" src="Content Images/slide-img4.png">
+                                                    <img decoding="async" src="Content Images/slide-img5.png">
+
+
+
+                                                    <img decoding="async" src="Content Images/slide-img1.png">
+                                                    <img decoding="async" src="Content Images/slide-img2.png">
+                                                    <img decoding="async" src="Content Images/slide-img3.png">
+                                                    <img decoding="async" src="Content Images/slide-img4.png">
+                                                    <img decoding="async" src="Content Images/slide-img5.png">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-bbe929b elementor-widget elementor-widget-html"
+                                            data-id="bbe929b" data-element_type="widget" data-widget_type="html.default"
+                                            bis_skin_checked="1">
+                                            <div class="infinite-slider" bis_skin_checked="1">
+                                                <div class="slider-track right-to-left" bis_skin_checked="1">
+
+                                                    <img decoding="async" src="Content Images/slide-img1.png">
+                                                    <img decoding="async" src="Content Images/slide-img2.png">
+                                                    <img decoding="async" src="Content Images/slide-img3.png">
+                                                    <img decoding="async" src="Content Images/slide-img4.png">
+                                                    <img decoding="async" src="Content Images/slide-img5.png">
+                                                    <img decoding="async" src="Content Images/slide-img1.png">
+                                                    <img decoding="async" src="Content Images/slide-img2.png">
+
+                                                    <!-- Repeat again to create seamless loop -->
+
+                                                    <img decoding="async" src="Content Images/slide-img1.png">
+                                                    <img decoding="async" src="Content Images/slide-img2.png">
+                                                    <img decoding="async" src="Content Images/slide-img3.png">
+                                                    <img decoding="async" src="Content Images/slide-img4.png">
+                                                    <img decoding="async" src="Content Images/slide-img5.png">
+                                                    <img decoding="async" src="Content Images/slide-img1.png">
+                                                    <img decoding="async" src="Content Images/slide-img2.png">
+                                                    <img decoding="async" src="Content Images/slide-img3.png">
+
+                                                    <img decoding="async" src="Content Images/slide-img1.png">
+                                                    <img decoding="async" src="Content Images/slide-img2.png">
+                                                    <img decoding="async" src="Content Images/slide-img3.png">
+                                                    <img decoding="async" src="Content Images/slide-img4.png">
+                                                    <img decoding="async" src="Content Images/slide-img5.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-
-                                <div class="hero-subtitle caption-timeline" bis_skin_checked="1" style=" color: white;">
-                                    <span
-                                        style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-                                        We create keyword-optimized listings and eye-catching EBC designs that convert
-                                        visitors
-                                        into
-                                        buyers
-
-                                    </span>
-                                </div>
-                                <button style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
-                                    class="progress-button grow-scale-btn hero_btn">
-                                    <div class="progress_div"></div>
-                                    <span class="button-area">Grow your Amazon Sales</span>
-                                </button>
-                                <p
-                                    style="color: white; margin-top: 30px; font-weight: 300; font-size: 14px;  z-index: 1000; position: relative;">
-                                    Not sure where to start. <a style="text-decoration: underline; color: white;"
-                                        href="">Get a
-                                        FREE
-                                        audit</a>
-                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <section class="section_2 track-section">
-                    <div id="section1" class="light-section-wrapper white-section" bis_skin_checked="1">
-                        <div class="light-section-container content-max-width" bis_skin_checked="1">
-                            <div class="content-row-elementor elementor-element elementor-element-f8e7233 light-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con-boxed e-con e-parent e-lazyloaded"
-                                data-id="f8e7233" data-element_type="container"
-                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"
+            </section>
+            <section class="track-section">
+                <div class="section-1-main content-row-elementor elementor-element elementor-element-69336dd e-grid e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-con e-child"
+                    data-id="69336dd" data-element_type="container" bis_skin_checked="1">
+                    <div class="content-section-1" data-id="3952ab1" data-element_type="container" bis_skin_checked="1">
+                        <div class="content_in">
+                            <div class="section2_content elementor-element elementor-element-59f26e2 elementor-widget elementor-widget-heading"
+                                data-id="59f26e2" data-element_type="widget" data-widget_type="heading.default"
                                 bis_skin_checked="1">
-                                <div style="max-width: 100%;" class="e-con-inner" bis_skin_checked="1">
-                                    <div class="content-row-elementor elementor-element elementor-element-b140653 e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                        data-id="b140653" data-element_type="container" bis_skin_checked="1">
-                                        <div class="section-1 content-row-elementor elementor-element elementor-element-080a52e e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child elementor-motion-effects-parent"
-                                            data-id="080a52e" data-element_type="container" bis_skin_checked="1">
-                                            <div class="secrion-2-p  elementor-element elementor-element-1e6392b elementor-widget elementor-widget-heading elementor-motion-effects-element"
-                                                data-id="1e6392b" data-element_type="widget"
-                                                data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.1,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
-                                                data-widget_type="heading.default"
-                                                style="--translateY: 5px; --e-transform-transition-duration: 100ms; transform: translateY(var(--translateY));"
-                                                bis_skin_checked="1">
-                                                <p class="elementor-heading-title elementor-size-default">
-                                                    Top Brands Trust AMZ Vision For Their Growth</p>
-                                            </div>
-                                            <div class="infinite-slider-parent elementor-element elementor-element-dc67401 elementor-widget elementor-widget-html"
-                                                data-id="dc67401" data-element_type="widget"
-                                                data-widget_type="html.default" bis_skin_checked="1">
-                                                <div class="infinite-slider" bis_skin_checked="1">
-                                                    <div class="slider-track  left-to-right" bis_skin_checked="1">
-                                                        <img decoding="async" src="Content Images/slide-img1.png">
-                                                        <img decoding="async" src="Content Images/slide-img2.png">
-                                                        <img decoding="async" src="Content Images/slide-img3.png">
-                                                        <img decoding="async" src="Content Images/slide-img4.png">
-                                                        <img decoding="async" src="Content Images/slide-img5.png">
-                                                        <!-- Repeat again to create seamless loop -->
-
-                                                        <img decoding="async" src="Content Images/slide-img1.png">
-                                                        <img decoding="async" src="Content Images/slide-img2.png">
-                                                        <img decoding="async" src="Content Images/slide-img3.png">
-                                                        <img decoding="async" src="Content Images/slide-img4.png">
-                                                        <img decoding="async" src="Content Images/slide-img5.png">
-                                                        <img decoding="async" src="Content Images/slide-img1.png">
-                                                        <img decoding="async" src="Content Images/slide-img2.png">
-                                                        <img decoding="async" src="Content Images/slide-img3.png">
-                                                        <img decoding="async" src="Content Images/slide-img4.png">
-                                                        <img decoding="async" src="Content Images/slide-img5.png">
-
-
-
-                                                        <img decoding="async" src="Content Images/slide-img1.png">
-                                                        <img decoding="async" src="Content Images/slide-img2.png">
-                                                        <img decoding="async" src="Content Images/slide-img3.png">
-                                                        <img decoding="async" src="Content Images/slide-img4.png">
-                                                        <img decoding="async" src="Content Images/slide-img5.png">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-element elementor-element-bbe929b elementor-widget elementor-widget-html"
-                                                data-id="bbe929b" data-element_type="widget"
-                                                data-widget_type="html.default" bis_skin_checked="1">
-                                                <div class="infinite-slider" bis_skin_checked="1">
-                                                    <div class="slider-track right-to-left" bis_skin_checked="1">
-
-                                                        <img decoding="async" src="Content Images/slide-img1.png">
-                                                        <img decoding="async" src="Content Images/slide-img2.png">
-                                                        <img decoding="async" src="Content Images/slide-img3.png">
-                                                        <img decoding="async" src="Content Images/slide-img4.png">
-                                                        <img decoding="async" src="Content Images/slide-img5.png">
-                                                        <img decoding="async" src="Content Images/slide-img1.png">
-                                                        <img decoding="async" src="Content Images/slide-img2.png">
-
-                                                        <!-- Repeat again to create seamless loop -->
-
-                                                        <img decoding="async" src="Content Images/slide-img1.png">
-                                                        <img decoding="async" src="Content Images/slide-img2.png">
-                                                        <img decoding="async" src="Content Images/slide-img3.png">
-                                                        <img decoding="async" src="Content Images/slide-img4.png">
-                                                        <img decoding="async" src="Content Images/slide-img5.png">
-                                                        <img decoding="async" src="Content Images/slide-img1.png">
-                                                        <img decoding="async" src="Content Images/slide-img2.png">
-                                                        <img decoding="async" src="Content Images/slide-img3.png">
-
-                                                        <img decoding="async" src="Content Images/slide-img1.png">
-                                                        <img decoding="async" src="Content Images/slide-img2.png">
-                                                        <img decoding="async" src="Content Images/slide-img3.png">
-                                                        <img decoding="async" src="Content Images/slide-img4.png">
-                                                        <img decoding="async" src="Content Images/slide-img5.png">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="track-section">
-                    <div class="section-1-main content-row-elementor elementor-element elementor-element-69336dd e-grid e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-con e-child"
-                        data-id="69336dd" data-element_type="container" bis_skin_checked="1">
-                        <div class="content-section-1" data-id="3952ab1" data-element_type="container"
-                            bis_skin_checked="1">
-                            <div class="content_in">
-                                <div class="section2_content elementor-element elementor-element-59f26e2 elementor-widget elementor-widget-heading"
-                                    data-id="59f26e2" data-element_type="widget" data-widget_type="heading.default"
-                                    bis_skin_checked="1">
-                                    <h2 class="section1-head ">
-                                        THE ADVANTAGES OF <span style="color: #a5a5a5;">
-                                            GOOD AMAZON PRODUCT PHOTOS AT A GLANCE
-                                        </span></h2>
-                                </div>
-
-                                <div class="point_section_2">
-                                    <ul class="point_section_2_ul">
-                                        <li>Sets your product apart from the competition</li>
-                                        <li>Represents your brand</li>
-                                        <li>Attracts attention</li>
-                                        <li>Stimulates conversions</li>
-                                    </ul>
-                                </div>
-                                <button style="padding: 13px 20px;" class="progress-button grow-scale-btn hero_btn progress_btn_1">
-                                    <div class="progress_div"></div>
-                                    <span class="button-area">Grow your Amazon Sales</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="content-row-elementor section_2_main " data-id="2e02dde"
-                            data-element_type="container" bis_skin_checked="1">
-                            <div class="section_img_2 img_section_1  elementor-element elementor-element-51c761d elementor-widget elementor-widget-image"
-                                data-id="51c761d" data-element_type="widget" data-widget_type="image.default"
-                                bis_skin_checked="1">
-                                <div class="img_container">
-                                    <img fetchpriority="high" decoding="async" width="488" height="528"
-                                        src="CSS/Amazon Content/image (4).png"
-                                        class="attachment-large size-large wp-image-3113" alt="amazon-sales">
-                                </div>
-                                <div class="img_container">
-                                    <img src="CSS/Amazon Content/image (5).png" alt="">
-                                </div>
+                                <h2 class="section1-head ">
+                                    THE ADVANTAGES<span style="color: #a5a5a5;"> OF 
+                                        GOOD AMAZON PRODUCT PHOTOS AT A GLANCE
+                                    </span></h2>
                             </div>
 
-                            <div class="section_img_2 img_section_2 elementor-element elementor-element-51c761d elementor-widget elementor-widget-image"
-                                data-id="51c761d" data-element_type="widget" data-widget_type="image.default"
-                                bis_skin_checked="1">
-                                <div class="img_container">
-                                    <img fetchpriority="high" decoding="async" width="488" height="528"
-                                        src="CSS/Amazon Content/image (6).png"
-                                        class="attachment-large size-large wp-image-3113" alt="amazon-sales">
-                                </div>
-                                <div class="img_container">
-                                    <img src="CSS/Amazon Content/image (7).png" alt="">
-                                </div>
+                            <div class="point_section_2">
+                                <ul class="point_section_2_ul">
+                                    <li>Sets your product apart from the competition</li>
+                                    <li>Represents your brand</li>
+                                    <li>Attracts attention</li>
+                                    <li>Stimulates conversions</li>
+                                </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="show_casse_black_side dark-bg">
-                        <div class="div_1">
-                            <div class="div_content">
-                                <h4>400+</h4>
-                                <p>Text goes here</p>
-                            </div>
-                        </div>
-                        <div class="div_1">
-                            <div class="div_content">
-                                <h4>$1.2+ Billion </h4>
-                                <p>Text goes here</p>
-                            </div>
-                        </div>
-                        <div class="div_1">
-                            <div class="div_content">
-                                <h4>50+</h4>
-                                <p>Text goes here</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="section_3 track-section">
-                    <div class="head">
-                        <h2 class="section1-head ">
-                            What’s Included in
-                            Our <span style="color: #a5a5a5;">Amazon Listing Services?
-                            </span></h2>
-                    </div>
-                    <div class="main_section_3">
-                        <div class="left">
-                            <div class="left_content">
-                                <div class="services_data_list">
-                                    <div class="data_list_1">
-                                        <div class="img">
-                                            <img src="Icons/rocket.png" alt="">
-                                        </div>
-                                        <div class="data_content">
-                                            <h4>Listing Copywriting (SEO-Optimized)</h4>
-                                            <p>Our agency is characterized by high-quality 3D visualizations for
-                                                products.
-                                                Experienced CG artists bring creativity and precision to every project.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="data_list_1">
-                                        <div class="img">
-                                            <img src="Icons/search.png" alt="">
-                                        </div>
-                                        <div class="data_content">
-                                            <h4>Keyword Research & Competitor Analysis</h4>
-                                            <p>We are an in-house agency. This means that we can handle every step of
-                                                the
-                                                process
-                                                in-house to ensure a seamless and efficient implementation of your 3D
-                                                rendeings.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="data_list_1">
-                                        <div class="img">
-                                            <img src="Icons/notepad.png" alt="">
-                                        </div>
-                                        <div class="data_content">
-                                            <h4>Enhanced Brand Content (EBC / A+ Content)</h4>
-                                            <p>We guarantee a high level of detail and authenticity in every project to
-                                                ensure
-                                                your
-                                                vision comes to life.</p>
-                                        </div>
-                                    </div>
-                                    <div class="data_list_1">
-                                        <div class="img">
-                                            <img src="Icons/grow.png" alt="">
-                                        </div>
-                                        <div class="data_content">
-                                            <h4>Optimization & Revisions</h4>
-                                            <p>We guarantee a high level of detail and authenticity in every project to
-                                                ensure
-                                                your
-                                                vision comes to life.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="img_container_right">
-                                <img src="CSS/Amazon Content/8127c3f6310b18c5f48c59e4c9d081129a3400c6.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section_4 track-section">
-                    <div class="head_part">
-                        <div class="content">
-                            <h2>
-                                REASONS FOR OUR DESIGNS
-                            </h2>
-                            <p>Now that you've realized how important a good Lorem ipsum dolor sit amet consectetur.
-                                Commodo
-                                vitae
-                                tellus ridiculus tellus mauris dui. Ma</p>
-                            <button style="padding: 13px 20px;" class="progress-button grow-scale-btn hero_btn">
+                            <button style="padding: 13px 20px;"
+                                class="progress-button grow-scale-btn hero_btn progress_btn_1">
                                 <div class="progress_div"></div>
                                 <span class="button-area">Grow your Amazon Sales</span>
                             </button>
                         </div>
                     </div>
-                    <section class="boxes_content_section track-section">
-                        <div class="bg_box_img">
-                            <img src="CSS/Amazon Content/design.png" alt="">
+                    <div class="content-row-elementor section_2_main " data-id="2e02dde" data-element_type="container"
+                        bis_skin_checked="1">
+                        <div class="section_img_2 img_section_1  elementor-element elementor-element-51c761d elementor-widget elementor-widget-image"
+                            data-id="51c761d" data-element_type="widget" data-widget_type="image.default"
+                            bis_skin_checked="1">
+                            <div class="img_container">
+                                <img fetchpriority="high" decoding="async" width="488" height="528"
+                                    src="CSS/Amazon Content/image (4).png"
+                                    class="attachment-large size-large wp-image-3113" alt="amazon-sales">
+                            </div>
+                            <div class="img_container">
+                                <img src="CSS/Amazon Content/image (5).png" alt="">
+                            </div>
                         </div>
-                        <div class="boxes_content">
-                            <div class="main_boxes_content main_boxes_content-1 ">
-                                <div class="box_1_content box_1">
-                                    <div class="img">
-                                        <img src="Icons/shield.png" alt="">
-                                    </div>
-                                    <div class="box_1_text_area">
-                                        <h2>Protection against competition</h2>
-                                        <p>Through ambition, experience and state-of-the-art technology, we create
-                                            outstanding product
-                                            photos.Through ambition, experience and state-of-the-art technology, </p>
-                                    </div>
-                                </div>
-                                <div class="box_1_content box_2">
-                                    <div class="img">
-                                        <img src="Icons/shield.png" alt="">
-                                    </div>
-                                    <div class="box_1_text_area">
-                                        <h2>Compliance with the Guidelines</h2>
-                                        <p>Through ambition, experience and state-of-the-art technology, we create
-                                            outstanding product
-                                            photos.Through ambition, experience and state-of-the-art technology, </p>
-                                    </div>
-                                </div>
 
-                                <div class="box_1_content box_3">
+                        <div class="section_img_2 img_section_2 elementor-element elementor-element-51c761d elementor-widget elementor-widget-image"
+                            data-id="51c761d" data-element_type="widget" data-widget_type="image.default"
+                            bis_skin_checked="1">
+                            <div class="img_container">
+                                <img fetchpriority="high" decoding="async" width="488" height="528"
+                                    src="CSS/Amazon Content/image (6).png"
+                                    class="attachment-large size-large wp-image-3113" alt="amazon-sales">
+                            </div>
+                            <div class="img_container">
+                                <img src="CSS/Amazon Content/image (7).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="show_casse_black_side dark-bg">
+                    <div class="div_1">
+                        <div class="div_content">
+                            <h4>400+</h4>
+                            <p>Text goes here</p>
+                        </div>
+                    </div>
+                    <div class="div_1">
+                        <div class="div_content">
+                            <h4>$1.2+ Billion </h4>
+                            <p>Text goes here</p>
+                        </div>
+                    </div>
+                    <div class="div_1">
+                        <div class="div_content">
+                            <h4>50+</h4>
+                            <p>Text goes here</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_3 track-section">
+                <div class="head">
+                    <h2 class="section1-head ">
+                        What’s Included in
+                        Our <span style="color: #a5a5a5;">Amazon Listing Services?
+                        </span></h2>
+                </div>
+                <div class="main_section_3">
+                    <div class="left">
+                        <div class="left_content">
+                            <div class="services_data_list">
+                                <div class="data_list_1">
                                     <div class="img">
-                                        <img src="Icons/shield.png" alt="">
+                                        <img src="Icons/rocket.png" alt="">
                                     </div>
-                                    <div class="box_1_text_area">
-                                        <h2>Quality
-                                        </h2>
-                                        <p>Through ambition, experience and state-of-the-art technology, we create
-                                            outstanding product
-                                            photos.Through ambition, experience and state-of-the-art technology, </p>
+                                    <div class="data_content">
+                                        <h4>Listing Copywriting (SEO-Optimized)</h4>
+                                        <p>Our agency is characterized by high-quality 3D visualizations for
+                                            products.
+                                            Experienced CG artists bring creativity and precision to every
+                                            project.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="box_1_content box_4">
+                                <div class="data_list_1">
                                     <div class="img">
-                                        <img src="Icons/shield.png" alt="">
+                                        <img src="Icons/search.png" alt="">
                                     </div>
-                                    <div class="box_1_text_area">
-                                        <h2>Expericence</h2>
-                                        <p>Through ambition, experience and state-of-the-art technology, we create
-                                            outstanding product
-                                            photos.Through ambition, experience and state-of-the-art technology, </p>
+                                    <div class="data_content">
+                                        <h4>Keyword Research & Competitor Analysis</h4>
+                                        <p>We are an in-house agency. This means that we can handle every step
+                                            of
+                                            the
+                                            process
+                                            in-house to ensure a seamless and efficient implementation of your
+                                            3D
+                                            rendeings.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="data_list_1">
+                                    <div class="img">
+                                        <img src="Icons/notepad.png" alt="">
+                                    </div>
+                                    <div class="data_content">
+                                        <h4>Enhanced Brand Content (EBC / A+ Content)</h4>
+                                        <p>We guarantee a high level of detail and authenticity in every project
+                                            to
+                                            ensure
+                                            your
+                                            vision comes to life.</p>
+                                    </div>
+                                </div>
+                                <div class="data_list_1">
+                                    <div class="img">
+                                        <img src="Icons/grow.png" alt="">
+                                    </div>
+                                    <div class="data_content">
+                                        <h4>Optimization & Revisions</h4>
+                                        <p>We guarantee a high level of detail and authenticity in every project
+                                            to
+                                            ensure
+                                            your
+                                            vision comes to life.</p>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                    </section>
+                    </div>
+                    <div class="right">
+                        <div class="img_container_right">
+                            <img src="CSS/Amazon Content/8127c3f6310b18c5f48c59e4c9d081129a3400c6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section_4 track-section">
+                <div class="head_part">
+                    <div class="content">
+                        <h2>
+                            REASONS FOR OUR DESIGNS
+                        </h2>
+                        <p>Now that you've realized how important a good Lorem ipsum dolor sit amet consectetur.
+                            Commodo
+                            vitae
+                            tellus ridiculus tellus mauris dui. Ma</p>
+                        <button style="padding: 13px 20px;" class="progress-button grow-scale-btn hero_btn">
+                            <div class="progress_div"></div>
+                            <span class="button-area">Grow your Amazon Sales</span>
+                        </button>
+                    </div>
+                </div>
+                <section class="boxes_content_section track-section">
+                    <div class="bg_box_img">
+                        <img src="CSS/Amazon Content/design.png" alt="">
+                    </div>
+                    <div class="boxes_content">
+                        <div class="main_boxes_content main_boxes_content-1 ">
+                            <div class="box_1_content box_1">
+                                <div class="img">
+                                    <img src="Icons/shield.png" alt="">
+                                </div>
+                                <div class="box_1_text_area">
+                                    <h2>Protection against competition</h2>
+                                    <p>Through ambition, experience and state-of-the-art technology, we create
+                                        outstanding product
+                                        photos.Through ambition, experience and state-of-the-art technology,
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box_1_content box_2">
+                                <div class="img">
+                                    <img src="Icons/shield.png" alt="">
+                                </div>
+                                <div class="box_1_text_area">
+                                    <h2>Compliance with the Guidelines</h2>
+                                    <p>Through ambition, experience and state-of-the-art technology, we create
+                                        outstanding product
+                                        photos.Through ambition, experience and state-of-the-art technology,
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="box_1_content box_3">
+                                <div class="img">
+                                    <img src="Icons/shield.png" alt="">
+                                </div>
+                                <div class="box_1_text_area">
+                                    <h2>Quality
+                                    </h2>
+                                    <p>Through ambition, experience and state-of-the-art technology, we create
+                                        outstanding product
+                                        photos.Through ambition, experience and state-of-the-art technology,
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box_1_content box_4">
+                                <div class="img">
+                                    <img src="Icons/shield.png" alt="">
+                                </div>
+                                <div class="box_1_text_area">
+                                    <h2>Expericence</h2>
+                                    <p>Through ambition, experience and state-of-the-art technology, we create
+                                        outstanding product
+                                        photos.Through ambition, experience and state-of-the-art technology,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </section>
-                <section class="product_describing track-section">
-                    <div class="head">
-                        <h2>100+ Products</h2>
-                        <p>Products with the visual conversion method optomized</p>
+            </section>
+            <section class="product_describing track-section">
+                <div class="head">
+                    <h2>100+ Products</h2>
+                    <p>Products with the visual conversion method optomized</p>
+                    <button style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
+                        class="progress-button grow-scale-btn hero_btn">
+                        <div class="progress_div"></div>
+                        <span class="button-area">Grow your Amazon Sales</span>
+                    </button>
+                </div>
+                <div class="product_showing_section">
+                    <hr>
+                    <div class="grids_main_area_section">
+                        <div class="grids_sections_left_side">
+                            <div class="up_content">
+                                <h2>FeinschMecker</h2>
+                                <p>Through ambition, experience and state-of-the-art technology, we create
+                                    outstanding
+                                    product
+                                    photos.Through ambition, experience and state-of-the-art technology, </p>
+                            </div>
+                            <div class="img_jambar">
+                                <img src="CSS/Amazon Content/jambara.png" alt="">
+                            </div>
+                        </div>
+                        <div class="grids_sections_right_side">
+                            <div class="grid-container">
+                                <div class="grid-item tall">1</div>
+                                <div class="grid-item tall">2</div>
+                                <div class="grid-item short">3</div>
+                                <div class="grid-item short">4</div>
+                                <div class="grid-item short">5</div>
+                                <div class="grid-item short">6</div>
+                                <div class="grid-item short">7</div>
+                                <div class="grid-item short">8</div>
+                            </div>
+                        </div>
+                        <div class="single-column-grid">
+                            <div class="grid-item first">Row 1</div>
+                            <div class="grid-item">Row 2</div>
+                            <div class="grid-item">Row 3</div>
+                            <div class="grid-item">Row 4</div>
+                            <div class="grid-item">Row 5</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product_showing_section">
+                    <hr>
+                    <div class="grids_main_area_section">
+                        <div class="grids_sections_left_side">
+                            <div class="up_content">
+                                <h2>FeinschMecker</h2>
+                                <p>Through ambition, experience and state-of-the-art technology, we create
+                                    outstanding
+                                    product
+                                    photos.Through ambition, experience and state-of-the-art technology, </p>
+                            </div>
+                            <div class="img_jambar">
+                                <img src="CSS/Amazon Content/jambara.png" alt="">
+                            </div>
+                        </div>
+                        <div class="grids_sections_right_side">
+                            <div class="grid-container">
+                                <div class="grid-item tall">1</div>
+                                <div class="grid-item tall">2</div>
+                                <div class="grid-item short">3</div>
+                                <div class="grid-item short">4</div>
+                                <div class="grid-item short">5</div>
+                                <div class="grid-item short">6</div>
+                                <div class="grid-item short">7</div>
+                                <div class="grid-item short">8</div>
+                            </div>
+                        </div>
+                        <div class="single-column-grid">
+                            <div class="grid-item first">Row 1</div>
+                            <div class="grid-item">Row 2</div>
+                            <div class="grid-item">Row 3</div>
+                            <div class="grid-item">Row 4</div>
+                            <div class="grid-item">Row 5</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product_showing_section">
+                    <hr>
+                    <div class="grids_main_area_section">
+                        <div class="grids_sections_left_side">
+                            <div class="up_content">
+                                <h2>FeinschMecker</h2>
+                                <p>Through ambition, experience and state-of-the-art technology, we create
+                                    outstanding
+                                    product
+                                    photos.Through ambition, experience and state-of-the-art technology, </p>
+                            </div>
+                            <div class="img_jambar">
+                                <img src="CSS/Amazon Content/jambara.png" alt="">
+                            </div>
+                        </div>
+                        <div class="grids_sections_right_side">
+                            <div class="grid-container">
+                                <div class="grid-item tall">1</div>
+                                <div class="grid-item tall">2</div>
+                                <div class="grid-item short">3</div>
+                                <div class="grid-item short">4</div>
+                                <div class="grid-item short">5</div>
+                                <div class="grid-item short">6</div>
+                                <div class="grid-item short">7</div>
+                                <div class="grid-item short">8</div>
+                            </div>
+                        </div>
+                        <div class="single-column-grid">
+                            <div class="grid-item first">Row 1</div>
+                            <div class="grid-item">Row 2</div>
+                            <div class="grid-item">Row 3</div>
+                            <div class="grid-item">Row 4</div>
+                            <div class="grid-item">Row 5</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product_showing_section">
+                    <hr>
+                    <div class="grids_main_area_section">
+                        <div class="grids_sections_left_side">
+                            <div class="up_content">
+                                <h2>FeinschMecker</h2>
+                                <p>Through ambition, experience and state-of-the-art technology, we create
+                                    outstanding
+                                    product
+                                    photos.Through ambition, experience and state-of-the-art technology, </p>
+                            </div>
+                            <div class="img_jambar">
+                                <img src="CSS/Amazon Content/jambara.png" alt="">
+                            </div>
+                        </div>
+                        <div class="grids_sections_right_side">
+                            <div class="grid-container">
+                                <div class="grid-item tall">1</div>
+                                <div class="grid-item tall">2</div>
+                                <div class="grid-item short">3</div>
+                                <div class="grid-item short">4</div>
+                                <div class="grid-item short">5</div>
+                                <div class="grid-item short">6</div>
+                                <div class="grid-item short">7</div>
+                                <div class="grid-item short">8</div>
+                            </div>
+                        </div>
+                        <div class="single-column-grid">
+                            <div class="grid-item first">Row 1</div>
+                            <div class="grid-item">Row 2</div>
+                            <div class="grid-item">Row 3</div>
+                            <div class="grid-item">Row 4</div>
+                            <div class="grid-item">Row 5</div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <section class="rendering-section track-section">
+            <div class="repeating_div">
+                <div class="content_left_side">
+                    <div class="content">
+                        <h2>
+                            HIGH QUALITY THROUGH 3D RENDERING
+                        </h2>
+                        <p>An easy way to present your own product optimally and at the same time set yourself
+                            apart
+                            from
+                            the
+                            competition is to rely on 3D rendering technology.
+                            A 360 degree photo of the product is created. This works by taking a large number of
+                            photos
+                            from
+                            different angles and stitching them together on the computer. <br>
+                            This way you get a truly unique photo that ideally showcases your product.</p>
                         <button style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
                             class="progress-button grow-scale-btn hero_btn">
                             <div class="progress_div"></div>
                             <span class="button-area">Grow your Amazon Sales</span>
                         </button>
                     </div>
-                    <div class="product_showing_section">
-                        <hr>
-                        <div class="grids_main_area_section">
-                            <div class="grids_sections_left_side">
-                                <div class="up_content">
-                                    <h2>FeinschMecker</h2>
-                                    <p>Through ambition, experience and state-of-the-art technology, we create
-                                        outstanding
-                                        product
-                                        photos.Through ambition, experience and state-of-the-art technology, </p>
-                                </div>
-                                <div class="img_jambar">
-                                    <img src="CSS/Amazon Content/jambara.png" alt="">
-                                </div>
-                            </div>
-                            <div class="grids_sections_right_side">
-                                <div class="grid-container">
-                                    <div class="grid-item tall">1</div>
-                                    <div class="grid-item tall">2</div>
-                                    <div class="grid-item short">3</div>
-                                    <div class="grid-item short">4</div>
-                                    <div class="grid-item short">5</div>
-                                    <div class="grid-item short">6</div>
-                                    <div class="grid-item short">7</div>
-                                    <div class="grid-item short">8</div>
-                                </div>
-                            </div>
-                            <div class="single-column-grid">
-                                <div class="grid-item first">Row 1</div>
-                                <div class="grid-item">Row 2</div>
-                                <div class="grid-item">Row 3</div>
-                                <div class="grid-item">Row 4</div>
-                                <div class="grid-item">Row 5</div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="product_showing_section">
-                        <hr>
-                        <div class="grids_main_area_section">
-                            <div class="grids_sections_left_side">
-                                <div class="up_content">
-                                    <h2>FeinschMecker</h2>
-                                    <p>Through ambition, experience and state-of-the-art technology, we create
-                                        outstanding
-                                        product
-                                        photos.Through ambition, experience and state-of-the-art technology, </p>
-                                </div>
-                                <div class="img_jambar">
-                                    <img src="CSS/Amazon Content/jambara.png" alt="">
-                                </div>
-                            </div>
-                            <div class="grids_sections_right_side">
-                                <div class="grid-container">
-                                    <div class="grid-item tall">1</div>
-                                    <div class="grid-item tall">2</div>
-                                    <div class="grid-item short">3</div>
-                                    <div class="grid-item short">4</div>
-                                    <div class="grid-item short">5</div>
-                                    <div class="grid-item short">6</div>
-                                    <div class="grid-item short">7</div>
-                                    <div class="grid-item short">8</div>
-                                </div>
-                            </div>
-                            <div class="single-column-grid">
-                                <div class="grid-item first">Row 1</div>
-                                <div class="grid-item">Row 2</div>
-                                <div class="grid-item">Row 3</div>
-                                <div class="grid-item">Row 4</div>
-                                <div class="grid-item">Row 5</div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="product_showing_section">
-                        <hr>
-                        <div class="grids_main_area_section">
-                            <div class="grids_sections_left_side">
-                                <div class="up_content">
-                                    <h2>FeinschMecker</h2>
-                                    <p>Through ambition, experience and state-of-the-art technology, we create
-                                        outstanding
-                                        product
-                                        photos.Through ambition, experience and state-of-the-art technology, </p>
-                                </div>
-                                <div class="img_jambar">
-                                    <img src="CSS/Amazon Content/jambara.png" alt="">
-                                </div>
-                            </div>
-                            <div class="grids_sections_right_side">
-                                <div class="grid-container">
-                                    <div class="grid-item tall">1</div>
-                                    <div class="grid-item tall">2</div>
-                                    <div class="grid-item short">3</div>
-                                    <div class="grid-item short">4</div>
-                                    <div class="grid-item short">5</div>
-                                    <div class="grid-item short">6</div>
-                                    <div class="grid-item short">7</div>
-                                    <div class="grid-item short">8</div>
-                                </div>
-                            </div>
-                            <div class="single-column-grid">
-                                <div class="grid-item first">Row 1</div>
-                                <div class="grid-item">Row 2</div>
-                                <div class="grid-item">Row 3</div>
-                                <div class="grid-item">Row 4</div>
-                                <div class="grid-item">Row 5</div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="product_showing_section">
-                        <hr>
-                        <div class="grids_main_area_section">
-                            <div class="grids_sections_left_side">
-                                <div class="up_content">
-                                    <h2>FeinschMecker</h2>
-                                    <p>Through ambition, experience and state-of-the-art technology, we create
-                                        outstanding
-                                        product
-                                        photos.Through ambition, experience and state-of-the-art technology, </p>
-                                </div>
-                                <div class="img_jambar">
-                                    <img src="CSS/Amazon Content/jambara.png" alt="">
-                                </div>
-                            </div>
-                            <div class="grids_sections_right_side">
-                                <div class="grid-container">
-                                    <div class="grid-item tall">1</div>
-                                    <div class="grid-item tall">2</div>
-                                    <div class="grid-item short">3</div>
-                                    <div class="grid-item short">4</div>
-                                    <div class="grid-item short">5</div>
-                                    <div class="grid-item short">6</div>
-                                    <div class="grid-item short">7</div>
-                                    <div class="grid-item short">8</div>
-                                </div>
-                            </div>
-                            <div class="single-column-grid">
-                                <div class="grid-item first">Row 1</div>
-                                <div class="grid-item">Row 2</div>
-                                <div class="grid-item">Row 3</div>
-                                <div class="grid-item">Row 4</div>
-                                <div class="grid-item">Row 5</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <!-- <div class="scrollbar-track scrollbar-track-x" style="display: none;" bis_skin_checked="1">
-            <div class="scrollbar-thumb scrollbar-thumb-x" bis_skin_checked="1"
-                style="width: 768px; transform: translate3d(0px, 0px, 0px);"></div>
-        </div>
-        <div class="scrollbar-track scrollbar-track-y" style="display: block;" bis_skin_checked="1">
-            <div class="scrollbar-thumb scrollbar-thumb-y" style="height: 20px; transform: translate3d(0px, 0px, 0px);"
-                bis_skin_checked="1"></div>
-        </div> -->
+                </div>
+                <div class="content_right_side">
+                    <img src="CSS/Amazon Content/rendering_section.png" alt="">
+                </div>
             </div>
-            <section class="rendering-section track-section">
-                <div class="repeating_div">
-                    <div class="content_left_side">
-                        <div class="content">
-                            <h2>
-                                HIGH QUALITY THROUGH 3D RENDERING
-                            </h2>
-                            <p>An easy way to present your own product optimally and at the same time set yourself apart
-                                from
-                                the
-                                competition is to rely on 3D rendering technology.
-                                A 360 degree photo of the product is created. This works by taking a large number of
-                                photos
-                                from
-                                different angles and stitching them together on the computer. <br>
-                                This way you get a truly unique photo that ideally showcases your product.</p>
-                            <button style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
-                                class="progress-button grow-scale-btn hero_btn">
-                                <div class="progress_div"></div>
-                                <span class="button-area">Grow your Amazon Sales</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="content_right_side">
-                        <img src="CSS/Amazon Content/rendering_section.png" alt="">
-                    </div>
-                </div>
 
-                <div class="repeating_div repeating_div_2">
-                    <div class="content_right_side">
-                        <img src="CSS/Amazon Content/rendering_section_img2.png" alt="">
-                    </div>
-                    <div class="content_left_side">
-                        <div class="content">
-                            <h2>
-                                QUALITY <span style="color: #a5a5a5 ;"> AT WHAT PRICE?</span>
-                            </h2>
-                            <p class="para_in_content">
-                                This is what Product Photos For Amazon Cost
-                            </p>
-                            <p>The first investment in a good product photographer pays off many times over and can help
-                                you
-                                catapult your product to a new level. Finally swim with the big fish and let us help you
-                                make it
-                                happen! We would like to support you in your success with our expertise and our years of
-                                experience!</p>
-                            <button style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
-                                class="progress-button grow-scale-btn hero_btn">
-                                <div class="progress_div"></div>
-                                <span class="button-area">Grow your Amazon Sales</span>
-                            </button>
-                        </div>
-                    </div>
+            <div class="repeating_div repeating_div_2">
+                <div class="content_right_side">
+                    <img src="CSS/Amazon Content/rendering_section_img2.png" alt="">
                 </div>
-            </section>
-            <section class="data_content_section track-section">
-                <div class="head ">
-                    <h2>PRODUCT IMAGES FOR <span style="color: #a5a5a5;">AMAZON & E-COMMERCE</span></h2>
-                    <p>The Difference Between Product Photographers & Amazon Photo Design</p>
-                </div>
-                <div class="data_content_main">
-                    <div class="para_content">
-                        <p>A product photo is not the same as a product photo, which is also ideal for Amazon. Whether
+                <div class="content_left_side">
+                    <div class="content">
+                        <h2>
+                            QUALITY <span style="color: #a5a5a5 ;"> AT WHAT PRICE?</span>
+                        </h2>
+                        <p class="para_in_content">
+                            This is what Product Photos For Amazon Cost
+                        </p>
+                        <p>The first investment in a good product photographer pays off many times over and can
+                            help
                             you
-                            have
-                            your
-                            own online store, need a photo for a catalog, or trade on Amazon, the differences between
-                            these product
-                            images are significant. For this reason, it is important to know the differences between a
-                            classic
-                            product photographer and Amazon photo design</p>
-                        <p> The product photo is the figurehead of your product and should therefore inspire
-                            immediately! It
-                            is
-                            a
-                            decisive factor that determines success or failure. Many Amazon retailers are therefore
-                            faced
-                            with
-                            the
-                            question of investing in a product photographer. We would like to explain to you here what
-                            differences
-                            there are between product photographers and Amazon photo design!</p>
-                        <p> Differences Between Product Photographers and Amazon Photo Design!</p>
-                    </div>
-                    <div class="img_area">
-                        <img src="CSS/Amazon Content/product_diffrence_img.png" alt="">
+                            catapult your product to a new level. Finally swim with the big fish and let us help
+                            you
+                            make it
+                            happen! We would like to support you in your success with our expertise and our
+                            years of
+                            experience!</p>
+                        <button style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
+                            class="progress-button grow-scale-btn hero_btn">
+                            <div class="progress_div"></div>
+                            <span class="button-area">Grow your Amazon Sales</span>
+                        </button>
                     </div>
                 </div>
-            </section>
-            <section class="blog_content_post track-section dark-bg">
-                <div class="main_content_head">
-                    <h2>Amazon's specifications for <span style="color: #a5a5a5;">product images in the online
-                            shop</span>
-                    </h2>
-                    <p>An Amazon photo must meet specific specifications in size and shape so that the product can also
-                        be
-                        ideally presented in the shop. In view of this, it is important to focus on product photography
-                        with
-                        a
-                        focus on Amazon photo design, because the product photographer should be familiar with the
-                        Amazon
-                        Style
-                        Guidelines.</p>
-                </div>
-            </section>
-            <div class="main_img_area track-section">
             </div>
-            <section class="last_content_area_listing track-section">
-                <div class="main_last_section_content">
-                    <div class="first_div_content">
-                        <div class="img">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="content_left_side_last">
-                            <h2>Set product photography apart from the competition with Amazon</h2>
-                            <p>The right product photography can help you set yourself apart from your competition.
-                                Instead
-                                of
-                                losing your customers to the competition with boring or low-quality product photos, you
-                                can
-                                stand out. In order to know exactly how to best stage a product so that it shines on
-                                Amazon,
-                                you
-                                need a photographer who knows exactly how Amazon FBA works.</p>
-                        </div>
+        </section>
+        <section class="data_content_section track-section">
+            <div class="head ">
+                <h2>PRODUCT IMAGES FOR <span style="color: #a5a5a5;">AMAZON & E-COMMERCE</span></h2>
+                <p>The Difference Between Product Photographers & Amazon Photo Design</p>
+            </div>
+            <div class="data_content_main">
+                <div class="para_content">
+                    <p>A product photo is not the same as a product photo, which is also ideal for Amazon.
+                        Whether
+                        you
+                        have
+                        your
+                        own online store, need a photo for a catalog, or trade on Amazon, the differences
+                        between
+                        these product
+                        images are significant. For this reason, it is important to know the differences between
+                        a
+                        classic
+                        product photographer and Amazon photo design</p>
+                    <p> The product photo is the figurehead of your product and should therefore inspire
+                        immediately! It
+                        is
+                        a
+                        decisive factor that determines success or failure. Many Amazon retailers are therefore
+                        faced
+                        with
+                        the
+                        question of investing in a product photographer. We would like to explain to you here
+                        what
+                        differences
+                        there are between product photographers and Amazon photo design!</p>
+                    <p> Differences Between Product Photographers and Amazon Photo Design!</p>
+                </div>
+                <div class="img_area">
+                    <img src="CSS/Amazon Content/product_diffrence_img.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="blog_content_post track-section dark-bg">
+            <div class="main_content_head">
+                <h2>Amazon's specifications for <span style="color: #a5a5a5;">product images in the online
+                        shop</span>
+                </h2>
+                <p>An Amazon photo must meet specific specifications in size and shape so that the product can
+                    also
+                    be
+                    ideally presented in the shop. In view of this, it is important to focus on product
+                    photography
+                    with
+                    a
+                    focus on Amazon photo design, because the product photographer should be familiar with the
+                    Amazon
+                    Style
+                    Guidelines.</p>
+            </div>
+        </section>
+        <div class="main_img_area track-section">
+        </div>
+        <section class="last_content_area_listing track-section">
+            <div class="main_last_section_content">
+                <div class="first_div_content">
+                    <div class="img">
+                        <div class="circle"></div>
                     </div>
-                    <div class="first_div_content">
-                        <div class="img">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="content_left_side_last">
-                            <h2>Optimal product photography with USPs</h2>
-                            <p>An important difference between classic product photography and selling on Amazon are the
-                                USPs,
-                                more precisely the representation in the photos of what your product can actually do and
-                                what
-                                special features it has. Such images Amazon are a must and should not be missing, so a
-                                photographer with the right expertise is needed.</p>
-                        </div>
-                    </div>
-                    <div class="first_div_content" style="margin-bottom: 0px">
-                        <div class="img">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="content_left_side_last">
-                            <h2>Appeals to emotions</h2>
-                            <p>An important difference between classic product photography and selling on Amazon are the
-                                USPs,
-                                more precisely the representation in the photos of what your product can actually do and
-                                what
-                                special features it has. Such images Amazon are a must and should not be missing, so a
-                                photographer with the right expertise is needed.</p>
-                        </div>
+                    <div class="content_left_side_last">
+                        <h2>Set product photography apart from the competition with Amazon</h2>
+                        <p>The right product photography can help you set yourself apart from your competition.
+                            Instead
+                            of
+                            losing your customers to the competition with boring or low-quality product photos,
+                            you
+                            can
+                            stand out. In order to know exactly how to best stage a product so that it shines on
+                            Amazon,
+                            you
+                            need a photographer who knows exactly how Amazon FBA works.</p>
                     </div>
                 </div>
-            </section>
-            <section class="project_section dark-bg track-section">
-                <div class="dark-section-wrapper" bis_skin_checked="1">
-                    <div style="max-width: 100%;" class="dark-section-container content-max-width" bis_skin_checked="1">
-                        <div
-                            class="content-row-elementor elementor-element elementor-element-63ab6c1 dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con-boxed e-con e-parent">
-                            <div class="e-con-inner" bis_skin_checked="1">
-                                <div class="content-row-elementor elementor-element elementor-element-6444bfc e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
-                                    data-id="6444bfc" data-element_type="container" bis_skin_checked="1">
-                                    <div class="elementor-element elementor-element-95555f5 elementor-widget elementor-widget-html"
-                                        bis_skin_checked="1">
-                                        <div class="container" bis_skin_checked="1">
-                                            <div class="left" bis_skin_checked="1">
-                                                <h2>
-                                                    Let’s Optimize Your <span style="color: #a5a5a5;">Amazon
-                                                        Storefront</span>
-                                                </h2>
-                                                <p class="project-p">From keyword-rich titles to scroll-stopping EBC
-                                                    designs, we
-                                                    help your brand stand out in search, win the click, and convert at
-                                                    scale.
-                                                </p>
-                                                <form>
-                                                    <div class="input-group" bis_skin_checked="1">
-                                                        <div class="name_label">
-                                                            <label style="color: white;" for="name">Full Name</label>
-                                                            <input type="text" placeholder="Enter name" required="">
-                                                        </div>
-                                                        <div class="name_label">
-                                                            <label style="color: white;" for="email"> Email</label>
-                                                            <input type="email" placeholder="Enter email" required="">
-                                                        </div>
+                <div class="first_div_content">
+                    <div class="img">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="content_left_side_last">
+                        <h2>Optimal product photography with USPs</h2>
+                        <p>An important difference between classic product photography and selling on Amazon are
+                            the
+                            USPs,
+                            more precisely the representation in the photos of what your product can actually do
+                            and
+                            what
+                            special features it has. Such images Amazon are a must and should not be missing, so
+                            a
+                            photographer with the right expertise is needed.</p>
+                    </div>
+                </div>
+                <div class="first_div_content" style="margin-bottom: 0px">
+                    <div class="img">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="content_left_side_last">
+                        <h2>Appeals to emotions</h2>
+                        <p>An important difference between classic product photography and selling on Amazon are
+                            the
+                            USPs,
+                            more precisely the representation in the photos of what your product can actually do
+                            and
+                            what
+                            special features it has. Such images Amazon are a must and should not be missing, so
+                            a
+                            photographer with the right expertise is needed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project_section dark-bg track-section">
+            <div class="dark-section-wrapper" bis_skin_checked="1">
+                <div style="max-width: 100%;" class="dark-section-container content-max-width" bis_skin_checked="1">
+                    <div
+                        class="content-row-elementor elementor-element elementor-element-63ab6c1 dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con-boxed e-con e-parent">
+                        <div class="e-con-inner" bis_skin_checked="1">
+                            <div class="content-row-elementor elementor-element elementor-element-6444bfc e-con-full dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-flex e-con e-child"
+                                data-id="6444bfc" data-element_type="container" bis_skin_checked="1">
+                                <div class="elementor-element elementor-element-95555f5 elementor-widget elementor-widget-html"
+                                    bis_skin_checked="1">
+                                    <div class="container" bis_skin_checked="1">
+                                        <div class="left" bis_skin_checked="1">
+                                            <h2>
+                                                Let’s Optimize Your <span style="color: #a5a5a5;">Amazon
+                                                    Storefront</span>
+                                            </h2>
+                                            <p class="project-p">From keyword-rich titles to scroll-stopping EBC
+                                                designs, we
+                                                help your brand stand out in search, win the click, and convert
+                                                at
+                                                scale.
+                                            </p>
+                                            <form>
+                                                <div class="input-group" bis_skin_checked="1">
+                                                    <div class="name_label">
+                                                        <label style="color: white;" for="name">Full
+                                                            Name</label>
+                                                        <input type="text" placeholder="Enter name" required="">
                                                     </div>
-                                                    <label style="   color: white;
+                                                    <div class="name_label">
+                                                        <label style="color: white;" for="email"> Email</label>
+                                                        <input type="email" placeholder="Enter email" required="">
+                                                    </div>
+                                                </div>
+                                                <label style="   color: white;
                                                                         font-weight: 400; margin-left: 5px;"
-                                                        for="Services"> Services</label>
-                                                    <select style="color: white;">
-                                                        <option value="" disabled="" selected="">Select service you are
-                                                            interested in</option>
-                                                        <option value="web">Web Development
-                                                        </option>
-                                                        <option value="app">App Development
-                                                        </option>
-                                                        <option value="design">UI/UX Design
-                                                        </option>
-                                                    </select>
-                                                    <textarea placeholder="Tell us about your project"
-                                                        rows="5"></textarea>
-                                                    <button class="project-btn" type="submit">Send Message</button>
-                                                </form>
-                                            </div>
-                                            <div class="right project-right" bis_skin_checked="1">
-                                                <img src="Content Images/Form_img.png" alt="3D Cubes">
-                                            </div>
+                                                    for="Services"> Services</label>
+                                                <select style="color: white;">
+                                                    <option value="" disabled="" selected="">Select service you
+                                                        are
+                                                        interested in</option>
+                                                    <option value="web">Web Development
+                                                    </option>
+                                                    <option value="app">App Development
+                                                    </option>
+                                                    <option value="design">UI/UX Design
+                                                    </option>
+                                                </select>
+                                                <textarea placeholder="Tell us about your project" rows="5"></textarea>
+                                                <button class="project-btn" type="submit">Send Message</button>
+                                            </form>
+                                        </div>
+                                        <div class="right project-right" bis_skin_checked="1">
+                                            <img src="Content Images/Form_img.png" alt="3D Cubes">
                                         </div>
                                     </div>
                                 </div>
@@ -956,68 +1014,208 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-
-
-        <!-- //Amazon Listing Hero Section  -->
-
-
-        <!-- Footer --->
-        <footer>
-            <div class="footer_main_content">
-                <div class="logo_side_div side_1">
-                    <div class="content_logo_side">
-                        <img src="Content Images/logo black.png" alt="">
-                        <p>Our high-converting Amazon visuals and Enhanced Brand Content (EBC) are designed to drive
-                            clicks
-                            and
-                            purchases. We create images that turn browsers into buyers.</p>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com" target="_blank" class="icon linkedin">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://www.facebook.com" target="_blank" class="icon facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.instagram.com" target="_blank" class="icon instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="logo_side_div side_2">
-                    <ul>
-                        <b>Quick links</b>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Portfolio</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-                <div class="logo_side_div side_3">
-                    <ul>
-                        <b>Services</b>
-                        <li>Amazon Listiing & EBC</li>
-                        <li>3d Rendering & Product Retouching</li>
-                        <li>3d Animation</li>
-                    </ul>
-                </div>
-
             </div>
-            <div class="lower_footer">
-                <hr>
-                <div class="last">
-                    <p>Copyright Amz Vision ©2025 by All Rights Reserved</p>
-                    <div class="spans">
-                        <span>Terms & Conditions</span>
-                        <span>Privacy</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+
+    <!-- //Amazon Listing Hero Section  -->
+
+
     <!-- Footer --->
+    <footer>
+        <div class="footer_main_content">
+            <div class="logo_side_div side_1">
+                <div class="content_logo_side">
+                    <img src="Content Images/logo black.png" alt="">
+                    <p>Our high-converting Amazon visuals and Enhanced Brand Content (EBC) are designed to drive
+                        clicks
+                        and
+                        purchases. We create images that turn browsers into buyers.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com" target="_blank" class="icon linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="logo_side_div side_2">
+                <ul>
+                    <b>Quick links</b>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Portfolio</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="logo_side_div side_3">
+                <ul>
+                    <b>Services</b>
+                    <li>Amazon Listiing & EBC</li>
+                    <li>3d Rendering & Product Retouching</li>
+                    <li>3d Animation</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="lower_footer">
+            <hr>
+            <div class="last">
+                <p>Copyright Amz Vision ©2025 by All Rights Reserved</p>
+                <div class="spans">
+                    <span>Terms & Conditions</span>
+                    <span>Privacy</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer --->
+
+    </main>
+    <!-- <script src="app.js"></script> -->
+    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/montoya\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+    <script type="text/javascript" src="https://amzvision.de/wp-includes/js/comment-reply.min.js?ver=6.8.1"
+        id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+    <script type="text/javascript" src="https://amzvision.de/wp-content/themes/montoya/core/js/modernizr.js?ver=6.8.1"
+        id="modernizr-js"></script>
+    <!-- <script src="path/to/jquery.min.js"></script> -->
+    <!-- <script src="path/to/jquery.flexNav.min.js"></script> -->
+
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/themes/montoya/core/js/jquery.flexnav.min.js?ver=6.8.1"
+        id="jquery-flexnav-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/themes/montoya/core/js/jquery.waitforimages.js?ver=6.8.1"
+        id="jquery-waitforimages-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/themes/montoya/core/js/jquery.justifiedGallery.js?ver=6.8.1"
+        id="jquery-justifiedgallery-js"></script>
+    <script type="text/javascript" src="https://amzvision.de/wp-includes/js/imagesloaded.min.js?ver=5.0.0"
+        id="imagesloaded-js"></script>
+    <script type="text/javascript" src="https://amzvision.de/wp-content/themes/montoya/core/js/three.min.js?ver=6.8.1"
+        id="three-js"></script>
+    <script type="text/javascript" src="https://amzvision.de/wp-content/themes/montoya/core/js/clapatwebgl.js?ver=6.8.1"
+        id="clapatwebgl-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/themes/montoya/core/js/clapatslider.min.js?ver=6.8.1"
+        id="clapatslider-js"></script>
+    <!-- <script type="text/javascript" src="https://amzvision.de/wp-content/themes/montoya/core/js/gsap.min.js?ver=6.8.1"
+        id="gsap-js"></script> -->
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/themes/montoya/core/js/scrolltrigger.min.js?ver=6.8.1"
+        id="scroll-trigger-js"></script>
+    <script type="text/javascript" src="https://amzvision.de/wp-content/themes/montoya/core/js/flip.min.js?ver=6.8.1"
+        id="gsap-flip-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/themes/montoya/core/js/jssocials.min.js?ver=6.8.1"
+        id="js-socials-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/themes/montoya/core/js/gridtofullscreen.min.js?ver=6.8.1"
+        id="grid-to-fullscreen-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/themes/montoya/core/js/smooth-scrollbar.min.js?ver=6.8.1"
+        id="smooth-scrollbar-js"></script>
+    <script type="text/javascript" id="montoya-common-js-extra">
+        /* <![CDATA[ */
+        var ClapatThemeOptions = { "share_social_network_list": "facebook,twitter,pinterest" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://amzvision.de/wp-content/themes/montoya/core/js/common.js?ver=6.8.1"
+        id="montoya-common-js"></script>
+    <script type="text/javascript" id="montoya-contact-js-extra">
+        /* <![CDATA[ */
+        var ClapatMapOptions = { "map_marker_image": "https:\/\/amzvision.de\/wp-content\/uploads\/2025\/05\/AMZ-01-logo.png", "map_address": "775 New York Ave, Brooklyn, Kings, New York 11203", "map_zoom": "16", "marker_title": "montoya", "marker_text": "Here we are. Come to drink a coffee!", "map_type": "satellite", "map_api_key": "" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://amzvision.de/wp-content/themes/montoya/core/js/contact.js?ver=6.8.1"
+        id="montoya-contact-js"></script>
+    <script type="text/javascript" id="montoya-scripts-js-extra">
+        /* <![CDATA[ */
+        var ClapatMontoyaThemeOptions = { "enable_preloader": "1" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://amzvision.de/wp-content/themes/montoya/js/scripts.js?ver=6.8.1"
+        id="montoya-scripts-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5"
+        id="swiper-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.4"
+        id="elementor-pro-webpack-runtime-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.4"
+        id="elementor-webpack-runtime-js"></script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.4"
+        id="elementor-frontend-modules-js"></script>
+    <script type="text/javascript" src="https://amzvision.de/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
+        id="wp-hooks-js"></script>
+    <script type="text/javascript" src="https://amzvision.de/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+        id="wp-i18n-js"></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+        /* <![CDATA[ */
+        wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+        /* ]]> */
+    </script>
+    <script type="text/javascript" id="elementor-pro-frontend-js-before">
+        /* <![CDATA[ */
+        var ElementorProFrontendConfig = {
+            "ajaxurl": "https:\/\/amzvision.de\/wp-admin\/admin-ajax.php", "nonce": "b2960e3477", "urls": { "assets": "https:\/\/amzvision.de\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/amzvision.de\/wp-json\/" }, "settings": { "lazy_load_background_images": true }, "popup": { "hasPopUps": false }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" }, "x-twitter": { "title": "X" }, "threads": { "title": "Threads" } },
+            "facebook_sdk": { "lang": "en_US", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/amzvision.de\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="JS/frontend.min.js" id="elementor-pro-frontend-js"></script>
+    <script type="text/javascript" src="https://amzvision.de/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
+        id="jquery-ui-core-js"></script>
+    <script type="text/javascript" id="elementor-frontend-js-before">
+        /* <![CDATA[ */
+        var elementorFrontendConfig = {
+            "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": {
+                "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } },
+                "hasCustomBreakpoints": false
+            }, "version": "3.28.4", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "container": true, "e_optimized_markup": true, "e_local_google_fonts": true, "theme_builder_v2": true, "nested-elements": true, "editor_v2": true, "e_element_cache": true, "home_screen": true, "launchpad-checklist": true }, "urls": { "assets": "https:\/\/amzvision.de\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/amzvision.de\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/amzvision.de\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "e51be8dbfc" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 2731, "title": "lime-parrot-965334.hostingersite.com", "excerpt": "", "featuredImage": false }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.4"
+        id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+    <script type="text/javascript"
+        src="https://amzvision.de/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.4"
+        id="pro-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+    <div id="app" class="active" bis_skin_checked="1"><canvas width="768" height="532"
+            style="display: block; width: 768px; height: 532px;"></canvas></div>
+    <div id="origin-by-gptzero-app-shadow-host" bis_skin_checked="1"></div>
+    <div class="chakra-portal" bis_skin_checked="1">
+        <div role="region" aria-live="polite" aria-label="Notifications-top" id="chakra-toast-manager-top"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-top-left" id="chakra-toast-manager-top-left"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-top-right" id="chakra-toast-manager-top-right"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-bottom-left"
+            id="chakra-toast-manager-bottom-left"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-bottom" id="chakra-toast-manager-bottom"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"
+            bis_skin_checked="1"></div>
+        <div role="region" aria-live="polite" aria-label="Notifications-bottom-right"
+            id="chakra-toast-manager-bottom-right"
+            style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);"
+            bis_skin_checked="1"></div>
     </div>
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/@barba/core@2.10.3/dist/barba.umd.js"></script>

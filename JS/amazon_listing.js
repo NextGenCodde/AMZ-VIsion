@@ -115,7 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
         burgermenu.forEach((ele) => (ele.style.background = "#000"));
         menulist.forEach((ele) => {
           ele.style.color = "black";
-          ele.style.fontWeight = "500";
         });
       }
     },
