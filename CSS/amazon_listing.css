@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background: #000;
 }
+
 #hero {
     padding: 60px 0px 100px;
     background-image: url("./Amazon Content/Hero_img.png");
@@ -438,7 +440,7 @@
     z-index: 0;
 }
 
-/* 
+
 .boxes_content {
     display: flex;
     width: 75%;
@@ -537,7 +539,7 @@
 .main_boxes_content {
     display: flex;
     flex-direction: column;
-} */
+}
 
 
 .product_describing {
@@ -981,25 +983,27 @@ side_3 {
 .last .spans span {
     margin: 0px 5px;
 }
+
 /* Enable full height scrolling */
 #content-scroll {
-  overflow: hidden; /* hidden because Smooth Scrollbar will take over */
-  position: relative;
+    overflow: hidden;
+    /* hidden because Smooth Scrollbar will take over */
+    position: relative;
 }
 
 /* Style scrollbar (only applies to smooth-scrollbar's thumb) */
 
 
 #header-container {
-  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
 }
 
-.blackside{
+.blackside {
     border-color: white;
     color: white;
 }
 
 
-.blackside:hover{
+.blackside:hover {
     color: #000;
 }

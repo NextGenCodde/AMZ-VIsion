@@ -15,7 +15,7 @@
     <meta name="generator" content="WordPress 6.8.1" />
     <meta name="generator"
         content="Elementor 3.28.4; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
-    <link rel="stylesheet" href="CSS/media_query.css">
+
     <!-- ✅ Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet" />
@@ -92,6 +92,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="CSS/services.css">
     <link rel="stylesheet" href="CSS/amazon_listing.css">
+
+    <link rel="stylesheet" href="CSS/media_query.css">
 </head>
 
 <body data-barba="wrapper">
@@ -210,7 +212,7 @@
                     <div id="hero-styles" bis_skin_checked="1">
                         <div id="hero-caption"
                             class="height-title content-full-width text-align-center parallax-scroll-caption"
-                            style="height: 532px; translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"
+                            style=" translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"
                             bis_skin_checked="1">
                             <div class="inner hero_inner" bis_skin_checked="1">
                                 <div class="hero-blur-oval"></div>
@@ -270,7 +272,7 @@
                                                 <p class="elementor-heading-title elementor-size-default">
                                                     Top Brands Trust AMZ Vision For Their Growth</p>
                                             </div>
-                                            <div class="elementor-element elementor-element-dc67401 elementor-widget elementor-widget-html"
+                                            <div class="infinite-slider-parent elementor-element elementor-element-dc67401 elementor-widget elementor-widget-html"
                                                 data-id="dc67401" data-element_type="widget"
                                                 data-widget_type="html.default" bis_skin_checked="1">
                                                 <div class="infinite-slider" bis_skin_checked="1">
@@ -369,17 +371,10 @@
                                         <li>Stimulates conversions</li>
                                     </ul>
                                 </div>
-                                <div class="elementor-element elementor-element-a3f32be elementor-align-left button-hover elementor-widget elementor-widget-button"
-                                    data-id="a3f32be" data-element_type="widget" data-widget_type="button.default"
-                                    bis_skin_checked="1">
-                                    <a class="btn_section_2 elementor-button elementor-button-link elementor-size-sm"
-                                        href="#" id="button-id">
-                                        <span class="elementor-button-content-wrapper">
-                                            <span class="elementor-button-text">Grow
-                                                your Amazon Sales</span>
-                                        </span>
-                                    </a>
-                                </div>
+                                <button style="padding: 13px 20px;" class="progress-button grow-scale-btn hero_btn progress_btn_1">
+                                    <div class="progress_div"></div>
+                                    <span class="button-area">Grow your Amazon Sales</span>
+                                </button>
                             </div>
                         </div>
                         <div class="content-row-elementor section_2_main " data-id="2e02dde"
@@ -435,8 +430,8 @@
                 <section class="section_3 track-section">
                     <div class="head">
                         <h2 class="section1-head ">
-                            What’s Included in <span style="color: #a5a5a5;">
-                                Our Amazon <br>Listing Services?
+                            What’s Included in
+                            Our <span style="color: #a5a5a5;">Amazon Listing Services?
                             </span></h2>
                     </div>
                     <div class="main_section_3">
@@ -524,54 +519,57 @@
                         <div class="bg_box_img">
                             <img src="CSS/Amazon Content/design.png" alt="">
                         </div>
-                        <!-- <div class="boxes_content">
-            <div class="main_boxes_content main_boxes_content-1 ">
-                <div class="box_1_content box_1">
-                    <div class="img">
-                        <img src="Icons/shield.png" alt="">
-                    </div>
-                    <div class="box_1_text_area">
-                        <h2>Protection against competition</h2>
-                        <p>Through ambition, experience and state-of-the-art technology, we create outstanding product
-                            photos.Through ambition, experience and state-of-the-art technology, </p>
-                    </div>
-                </div>
-                <div class="box_1_content box_2">
-                    <div class="img">
-                        <img src="Icons/shield.png" alt="">
-                    </div>
-                    <div class="box_1_text_area">
-                        <h2>Compliance with the Guidelines</h2>
-                        <p>Through ambition, experience and state-of-the-art technology, we create outstanding product
-                            photos.Through ambition, experience and state-of-the-art technology, </p>
-                    </div>
-                </div>
-            </div>
+                        <div class="boxes_content">
+                            <div class="main_boxes_content main_boxes_content-1 ">
+                                <div class="box_1_content box_1">
+                                    <div class="img">
+                                        <img src="Icons/shield.png" alt="">
+                                    </div>
+                                    <div class="box_1_text_area">
+                                        <h2>Protection against competition</h2>
+                                        <p>Through ambition, experience and state-of-the-art technology, we create
+                                            outstanding product
+                                            photos.Through ambition, experience and state-of-the-art technology, </p>
+                                    </div>
+                                </div>
+                                <div class="box_1_content box_2">
+                                    <div class="img">
+                                        <img src="Icons/shield.png" alt="">
+                                    </div>
+                                    <div class="box_1_text_area">
+                                        <h2>Compliance with the Guidelines</h2>
+                                        <p>Through ambition, experience and state-of-the-art technology, we create
+                                            outstanding product
+                                            photos.Through ambition, experience and state-of-the-art technology, </p>
+                                    </div>
+                                </div>
 
-        <div class="main_boxes_content main_boxes_content-2 "> 
-                <div class="box_1_content box_3">
-                    <div class="img">
-                        <img src="Icons/shield.png" alt="">
-                    </div>
-                    <div class="box_1_text_area">
-                        <h2>Quality
-                        </h2>
-                        <p>Through ambition, experience and state-of-the-art technology, we create outstanding product
-                            photos.Through ambition, experience and state-of-the-art technology, </p>
-                    </div>
-                </div>
-                <div class="box_1_content box_4">
-                    <div class="img">
-                        <img src="Icons/shield.png" alt="">
-                    </div>
-                    <div class="box_1_text_area">
-                        <h2>Expericence</h2>
-                        <p>Through ambition, experience and state-of-the-art technology, we create outstanding product
-                            photos.Through ambition, experience and state-of-the-art technology, </p>
-                    </div>
-                </div>
-            </div> 
-        </div> -->
+                                <div class="box_1_content box_3">
+                                    <div class="img">
+                                        <img src="Icons/shield.png" alt="">
+                                    </div>
+                                    <div class="box_1_text_area">
+                                        <h2>Quality
+                                        </h2>
+                                        <p>Through ambition, experience and state-of-the-art technology, we create
+                                            outstanding product
+                                            photos.Through ambition, experience and state-of-the-art technology, </p>
+                                    </div>
+                                </div>
+                                <div class="box_1_content box_4">
+                                    <div class="img">
+                                        <img src="Icons/shield.png" alt="">
+                                    </div>
+                                    <div class="box_1_text_area">
+                                        <h2>Expericence</h2>
+                                        <p>Through ambition, experience and state-of-the-art technology, we create
+                                            outstanding product
+                                            photos.Through ambition, experience and state-of-the-art technology, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </section>
                 </section>
                 <section class="product_describing track-section">
@@ -771,7 +769,7 @@
                     </div>
                 </div>
 
-                <div class="repeating_div">
+                <div class="repeating_div repeating_div_2">
                     <div class="content_right_side">
                         <img src="CSS/Amazon Content/rendering_section_img2.png" alt="">
                     </div>
@@ -834,7 +832,7 @@
             </section>
             <section class="blog_content_post track-section dark-bg">
                 <div class="main_content_head">
-                    <h2>Amazon's specifications for <span style="color: #a5a5a5;">product <br> images in the online
+                    <h2>Amazon's specifications for <span style="color: #a5a5a5;">product images in the online
                             shop</span>
                     </h2>
                     <p>An Amazon photo must meet specific specifications in size and shape so that the product can also
