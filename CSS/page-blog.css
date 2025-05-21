@@ -376,3 +376,9 @@ side_3 {
     border: 2px solid white !important;
 }
 
+     /* Media query */
+
+     
+@media only screen and (max-width: 1024px) {
+
+}
