@@ -1,0 +1,67 @@
+#hero {
+    background-image: url('./blog%20content/hero_section.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    /* overflow: auto !important; */
+    height: 100vh;
+}
+
+.stretch-up h1 {
+    font-family: 'six caps', sans-serif;
+    font-size: 140px !important;
+    line-height: normal !important;
+}
+
+.contact-btn {
+    border-color: black;
+    color: black;
+}
+
+.hero_inner {
+    position: relative;
+    margin: 0px !important;
+}
+
+ img {
+    position: absolute;
+    max-width: 100%;
+    /* Optional: prevents overflow */
+    height: auto;
+    z-index: 1;
+    /* temp debug */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.the_content{
+    position: relative;
+    z-index: 9;
+}
+
+.stretch-up,
+.hero-subtitle {
+    position: relative;
+    z-index: 99;
+    margin: 0 !important;
+}
+
+/* .stretch-up h1 div {
+    overflow: auto;
+}
+
+.stretch-up h1 div span{
+    font-size: 128px;
+} */
+.hero_inner_amazon {
+    position: relative;
+    overflow: hidden;
+    /* hide any part of blur going outside */
+}
+
+.stretch-up h1 div span {
+    margin: 0px -5px;
+}
