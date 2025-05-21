@@ -25,6 +25,7 @@
 
 #hero-caption {
     height: 100vh !important;
+    margin-top: 100px !important;
     padding-bottom: 0px !important;
     padding-top: 0px !important;
 }
@@ -50,6 +51,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     white-space: wrap;
+    row-gap:  15px !important;
 }
 
 
