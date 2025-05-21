@@ -10,7 +10,7 @@
 
 .stretch-up h1 {
     font-family: 'six caps', sans-serif;
-    font-size: 140px !important;
+    /* font-size: 140px !important; */
     line-height: normal !important;
 }
 
@@ -40,6 +40,7 @@
 .the_content{
     position: relative;
     z-index: 9;
+    overflow: auto;
 }
 
 .stretch-up,
@@ -51,11 +52,11 @@
 
 /* .stretch-up h1 div {
     overflow: auto;
-}
+} */
 
 .stretch-up h1 div span{
-    font-size: 128px;
-} */
+    font-size: 138px;
+} 
 .hero_inner_amazon {
     position: relative;
     overflow: hidden;
