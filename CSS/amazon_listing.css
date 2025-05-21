@@ -1037,15 +1037,6 @@ side_3 {
     transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
 }
 
-.blackside {
-    border-color: white;
-    color: white;
-}
-
-
-.blackside:hover {
-    color: #000;
-}
 
 .right_project_side_area{
         position: relative;

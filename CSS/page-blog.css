@@ -1,5 +1,5 @@
 #hero {
-    background-image: url('./blog%20content/hero_section.png');
+    background-image: url('./blog content/hero_section.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -378,7 +378,7 @@ side_3 {
 
      /* Media query */
 
-     
+
 @media only screen and (max-width: 1024px) {
 
 }
