@@ -10,7 +10,8 @@
 
 .stretch-up h1 {
     font-family: 'six caps', sans-serif;
-    /* font-size: 140px !important; */
+    overflow: visible;
+    font-size: 140px !important;
     line-height: normal !important;
 }
 
@@ -40,7 +41,6 @@
 .the_content{
     position: relative;
     z-index: 9;
-    overflow: auto;
 }
 
 .stretch-up,

@@ -445,12 +445,13 @@
     position: relative;
 }
 
-.hero-title div span {
+h1 div span {
     margin: 0px -4px;
+    text-transform: uppercase;
 }
 
 .hero-blur-oval {
-    background-image: url('./Amazon%20Content/Blury%20bg.png');
+    background-image: url('./Amazon Content/blury bg.png');
     background-position: center;
     background-size: cover;
     position: absolute;
