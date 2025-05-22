@@ -60,10 +60,30 @@
     .grid-container {
         justify-content: end;
     }
+
     .boxes_content {
         display: none !important;
     }
+
+    /* Contact  */
+    .contact_box_area {
+        height: auto !important;
+    }
+
+    .contact_box_side_left {
+        height: 690px !important;
+    }
+
+    .main_img_side img {
+        object-fit: contain !important;
+    }
+
+    .days div {
+        padding: 30px;
+    }
 }
+
+
 
 
 
@@ -121,6 +141,19 @@
     .section-1-main {
         padding: 60px 100px;
     }
+
+    .contact_box_area {
+        height: 590px !important;
+    }
+
+    .contact_box_side_left {
+        height: 100% !important;
+    }
+
+    .days div {
+        padding: 15px;
+    }
+
 }
 
 
@@ -128,6 +161,11 @@
 @media only screen and (max-width: 1024px) {
     .bg-img2 a {
         white-space: nowrap !important;
+    }
+
+
+    .hero_inner h1 {
+        width: 100% !important;
     }
 
     .contact-btn {
@@ -175,11 +213,16 @@
 
     /* amazon_listing */
     .content-section-1 {
-        padding: 0px 60px;
+        padding: 0px 0px 0px 60px;
     }
 
     .section-1-main .img_container {
         width: 225px;
+        height: auto;
+    }
+
+    .section_2_main {
+        gap: 30px;
     }
 
     .main_section_3 .right {
@@ -198,6 +241,35 @@
         width: 412px;
     }
 
+    .main_contact .head {
+        width: auto !important;
+    }
+
+    .contact_box_area {
+        flex-direction: column !important;
+        height: auto !important;
+    }
+
+    .contact_box_area .main_content_box {
+        width: 100% !important;
+    }
+
+    .contact_box_side_left {
+        width: 505px !important;
+    }
+
+    .main_img_side {
+        width: auto !important;
+        margin: auto !important;
+    }
+
+    .contact_project_area .left {
+        width: 75% !important;
+    }
+
+    section {
+        padding: 100px 60px !important;
+    }
 }
 
 
@@ -207,8 +279,20 @@
         flex-direction: column !important;
     }
 
+    .hero_inner h1 {
+        width: 80%;
+    }
+
+    h1 div span {
+        margin: 0px -2px;
+    }
+
     .section-1-p {
         width: 100% !important;
+    }
+
+    .data_content_section .head p {
+        width: 100%;
     }
 
     .content-section-1 {
@@ -402,6 +486,7 @@
 
     .repeating_div_2 {
         flex-direction: column-reverse !important;
+        align-items: flex-start;
     }
 
     .container .left h2 {
@@ -475,8 +560,21 @@
         padding-bottom: 0px !important;
     }
 
+    #hero-caption {
+        margin: 0px !important;
+    }
+
     #hero-styles {
         margin-bottom: 0px !important;
+    }
+
+    .data_content h4 {
+        font-size: 22px;
+        line-height: 100%;
+    }
+
+    .right_project_side_area {
+        width: 300px;
     }
 
     .hero-subtitle {
@@ -593,6 +691,7 @@
 
     .stretch-up h1 {
         font-size: 92px !important;
+        width: 100% !important;
     }
 
     .infinite-slider-parent {
@@ -614,8 +713,9 @@
     }
 
     .section_img_2 .img_container {
-      width: 176px !important;
+        width: 176px !important;
         height: 170px !important;
+        margin-top: -1px;
     }
 
     .div_1 {
@@ -630,9 +730,10 @@
         width: 100% !important;
         font-size: 47px !important;
     }
-    .hero-title div span{
+
+    .hero-title div span {
         margin: 0px 0px;
-}
+    }
 
     .data_content h4 {
         margin: 10px 0px !important;
@@ -671,7 +772,8 @@
     .content_left_side .content .para_in_content {
         font-size: 24px !important;
     }
-    .product_describing .head h2{
+
+    .product_describing .head h2 {
         font-size: 50px;
     }
 
@@ -732,7 +834,24 @@
         text-align: center !important;
     }
 
- 
+    section {
+        padding: 100px 30px !important;
+    }
+
+    .contact_box_area .main_content_box {
+        flex-direction: column !important;
+    }
+
+    .contact_box_side_left {
+        width: 100% !important;
+    }
+
+    .contact_box_side_right {
+        width: 100% !important;
+    }
+    .main_contact .head p{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -837,5 +956,9 @@
     .left h1 {
         white-space: nowrap !important;
         font-size: 55px !important;
+    }
+
+    section {
+        padding: 100px 10px;
     }
 }
