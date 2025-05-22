@@ -61,7 +61,6 @@
     border: 1px solid #1A1A1A1A;
     border-radius: 8px !important;
     box-shadow: 0px 1px 8px 0px #00000014 !important;
-    overflow: hidden !important;
 
 }
 
@@ -259,33 +258,51 @@ calendar {
 
 
 /* time zone */
-
-
-.time_zondelabel {
-    display: block !important;
-    margin-bottom: 5px !important;
-    font-weight: 700 !important;
-    font-size: 16px !important;
+.custom-timezone-dropdown {
+    display: flex;
+  align-items: center;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  width: fit-content;
+  background-color: white;
+  gap: 6px;
 }
 
-#timezone-select {
-    width: fit-content !important;
-    padding: 8px !important;
-    font-size: 14px !important;
-    margin-top: 5px !important;
-    height: auto !important;
-    border: none !important;
-    margin: 0px 0px 0px 0px !important;
-    background: inherit !important;
-    color: black !important;
-    border-radius: 0px;
-    display: inline-block !important;
+.custom-timezone-dropdown .selected {
+  white-space: nowrap;
 }
 
-#timezone-select option {
-    display: inline-block !important;
-    width: fit-content !important;
-    color: black !important;
+.custom-timezone-dropdown .arrow {
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.custom-timezone-dropdown .timezone-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  z-index: 10;
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.custom-timezone-dropdown .timezone-list li {
+  padding: 8px 10px;
+  margin: 0px !important;
+  cursor: pointer;
+}
+
+.custom-timezone-dropdown .timezone-list li:hover {
+  background-color: #f0f0f0;
 }
 
 .contact_showing_page_btn {
@@ -374,4 +391,8 @@ calendar {
 
 }
 
+
+
+
+/* testing  */
 

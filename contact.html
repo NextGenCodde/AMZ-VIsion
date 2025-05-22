@@ -245,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="custom-btn contact-btn contact_btn_page ">Contact Us</button>
+                <a href="contact.html"> <button class="custom-btn contact-btn contact_btn_page ">Contact Us</button></a>
                 <!-- /Custom Button -->
                 <!--/Menu Burger -->
             </div>
@@ -304,9 +304,13 @@
                                 </div>
                                 <div class="days" id="days"></div>
                             </div>
-                            <label class="time_zondelabel" for="timezone-select">Time zone</label>
-                            <i class="ri-earth-fill"></i><select id="timezone-select"></select>
-
+                            <label class="time_zondelabel">Time zone</label>
+                            <div class="custom-timezone-dropdown" id="timezone-dropdown">
+                                <i class="ri-earth-fill"></i>
+                                <div class="selected" id="selected-timezone">Select Time Zone</div>
+                                <div class="arrow">▾</div>
+                                <ul class="timezone-list" id="timezone-list"></ul>
+                            </div>
                         </div>
 
                         <div class="buton_cale">
@@ -409,17 +413,17 @@
             <div class="logo_side_div side_2">
                 <ul>
                     <b>Quick links</b>
-                    <li>Home</li>
+                    <li><a href="index.html">Home</a></li>
                     <li>About Us</li>
-                    <li>Blog</li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li>Portfolio</li>
-                    <li>Contact Us</li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="logo_side_div side_3">
                 <ul>
                     <b>Services</b>
-                    <li>Amazon Listiing & EBC</li>
+                    <li><a href="amazon_listiing.html">Amazon Listiing & EBC</a></li>
                     <li>3d Rendering & Product Retouching</li>
                     <li>3d Animation</li>
                 </ul>
@@ -437,6 +441,19 @@
             </div>
         </div>
     </footer>
+    <script>
+        let point = document.createElement("div");
+        point.setAttribute("class", "point");
+        document.body.append(point);
+        point.style.display = "none";
+        window.addEventListener("mousemove", function (e) {
+            let x_axis = e.clientX;
+            let y_axis = e.clientY;
+            point.style.display = "block";
+            point.style.top = `${y_axis + 10}px`;
+            point.style.left = `${x_axis + 10}px`;
+        });
+    </script>
     <script src="JS/contact.js"></script>
     <script src="JS/blog.js"></script>
     <script type="speculationrules">

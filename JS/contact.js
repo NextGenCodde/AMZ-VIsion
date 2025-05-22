@@ -66,10 +66,10 @@ next_prev.forEach((button) => {
   });
 });
 
-//tume zone
-const timezoneSelect = document.getElementById("timezone-select");
+const dropdown = document.getElementById("timezone-dropdown");
+const selected = document.getElementById("selected-timezone");
+const timezoneList = document.getElementById("timezone-list");
 
-// Example list of time zones (you can expand this!)
 const timezones = [
   "UTC",
   "Europe/London",
@@ -80,7 +80,6 @@ const timezones = [
   "America/Los_Angeles",
 ];
 
-// Format time in each timezone
 function getCurrentTimeInZone(timeZone) {
   const date = new Date();
   return new Intl.DateTimeFormat("en-US", {
@@ -91,37 +90,38 @@ function getCurrentTimeInZone(timeZone) {
   }).format(date);
 }
 
-// Populate dropdown with time + zone
-function populateTimeZones() {
-  timezoneSelect.innerHTML = "";
+dropdown.addEventListener("click", () => {
+  const isVisible = timezoneList.style.display === "block";
+  timezoneList.style.display = isVisible ? "none" : "block";
+});
+
+document.addEventListener("click", (e) => {
+  if (!dropdown.contains(e.target)) {
+    timezoneList.style.display = "none";
+  }
+});
+function populateCustomTimezones() {
+  timezoneList.innerHTML = "";
   timezones.forEach((zone) => {
     const time = getCurrentTimeInZone(zone);
-    const option = document.createElement("option");
-    option.value = zone;
-    option.textContent = `${zone.replace("_", " ")} (${time})`;
-    timezoneSelect.appendChild(option);
+    const li = document.createElement("li");
+    li.textContent = `${zone.replace("_", " ")} (${time})`;
+    li.addEventListener("click", (e) => {
+      e.stopPropagation(); // ✅ Fix to prevent dropdown from reopening
+      selected.textContent = `${zone.replace("_", " ")} (${time})`;
+      timezoneList.style.display = "none";
+    });
+    timezoneList.appendChild(li);
   });
 }
 
-// Run initially and optionally refresh every minute
-populateTimeZones();
-setInterval(populateTimeZones, 60000); // Update every minute
+populateCustomTimezones();
+setInterval(populateCustomTimezones, 60000); // update every minute
+// Update every minute
 
 //header
 
 // menu-main-menu-container
-
-let point = document.createElement("div");
-point.setAttribute("class", "point");
-document.body.append(point);
-point.style.display = "none";
-window.addEventListener("mousemove", function (e) {
-  let x_axis = e.clientX;
-  let y_axis = e.clientY;
-  point.style.display = "block";
-  point.style.top = `${y_axis + 10}px`;
-  point.style.left = `${x_axis + 10}px`;
-});
 
 //header color changing
 
