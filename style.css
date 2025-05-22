@@ -1208,3 +1208,14 @@ button:hover {
         border-right: none;
     }
 }
+
+
+.padding_top_the_side {
+    padding-left: 80px !important; 
+}
+
+.padding_portfolio{
+    padding-left: 80px !important; 
+    padding-right: 80px !important; 
+
+}

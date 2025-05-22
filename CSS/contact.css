@@ -348,7 +348,7 @@ calendar {
     border: 2px solid grey;
     border-radius: 50%;
     z-index: 99;
-    transition: all .4s linear;
+    transition: all .3s linear;
 }
 
 .blackside {

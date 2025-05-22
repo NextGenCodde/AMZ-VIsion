@@ -19,6 +19,7 @@
 
     .left_side_section_grow h1 {
         font-size: 223px;
+        line-height: 100%;
     }
 
     .left_side_section_grow p {
@@ -87,7 +88,7 @@
 
 
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1600px) {
     .section-1 {
         margin: auto !important;
         width: 100% !important;
