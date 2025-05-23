@@ -17,6 +17,8 @@
     <!-- ✅ Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" id="widget-testimonial-carousel-css" href="elementor/css/testimonial-crusiol.css"
+        type="text/css" media="all">
     <!-- ✅ Theme Styles -->
     <link rel="stylesheet" href="CSS/content.css">
     <link rel="stylesheet" href="CSS/showcase.css" />
@@ -69,8 +71,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
         integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" id="widget-testimonial-carousel-css" href="elementor/css/testimonial-crusiol.css"
-        type="text/css" media="all">
+
     <link rel="stylesheet" id="widget-carousel-module-base-css" href="elementor/css/widget-crusol.css" type="text/css"
         media="all">
     <link rel="stylesheet" id="widget-social-icons-css" href="elementor/css/socials-icons.css" type="text/css"
@@ -88,12 +89,9 @@
     <link rel="https://api.w.org/" href="https://amzvision.de/wp-json/" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="CSS/services.css">
-    <link rel="stylesheet" href="CSS/contact.css">
-    <link rel="stylesheet" href="CSS/page-blog.css">
+    <link rel="stylesheet" href="CSS/amazon_listing.css">
+    <link rel="stylesheet" href="CSS/about.css">
     <link rel="stylesheet" href="CSS/media_query.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -132,7 +130,9 @@
                                 100</div>
                         </div>
                     </div>
-                    <div class="percentage-intro" bis_skin_checked="1" style="opacity: 0;">Please wait, content is
+
+                    <div class="percentage-intro" bis_skin_checked="1" style="opacity: 0;">Please wait, content
+                        is
                         loading</div>
                 </div>
             </div>
@@ -163,14 +163,16 @@
             </div>
         </div>
 
+
         <header class="inherit-header classic-menu" data-menucolor="#0c0c0c">
             <div id="header-container" style="opacity: 1;" bis_skin_checked="1">
 
                 <!-- Logo -->
                 <div id="logo" class="hide-ball" bis_skin_checked="1">
                     <a class="ajax-link" data-type="page-transition" href="https://amzvision.de">
-                        <img style="opacity:1;" class="black-logo" src="Content Images/logo black.png" alt="Logo Black">
-                        <img style="opacity:1; display: none;" class="white-logo" src="Content Images/white_logo.png"
+                        <img style="opacity:1; display: none;" class="black-logo" src="Content Images/logo black.png"
+                            alt="Logo Black">
+                        <img style="opacity:1; " class="white-logo" src="Content Images/white_logo.png"
                             alt="Logo White">
                     </a>
                 </div>
@@ -239,247 +241,144 @@
                         </div>
                     </div>
                 </div>
-                <a style="color: inherit;" href="contact.html"> <button
-                        class="custom-btn contact-btn blog_contact_btn">Contact Us</button></a>
+                <button class="custom-btn contact-btn">Contact Us</button>
                 <!-- /Custom Button -->
                 <!--/Menu Burger -->
             </div>
         </header>
-
-        <div class="hero-section" id="hero" bis_skin_checked="1">
-            <img src="CSS/blog content/hero_blog_blur_img.png" alt="">
-            <div id="hero-styles" bis_skin_checked="1">
-                <div id="hero-caption" class="height-title content-full-width text-align-center parallax-scroll-caption"
-                    style=" translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"
-                    bis_skin_checked="1">
-                    <div class="inner hero_inner " bis_skin_checked="1">
-                        <div class="the_content">
+        <!-- header  -->
+        <!-- //Amazon Listing Hero Section  -->
+        <div id="content-scroll">
+            <div class="hero-section" id="hero" bis_skin_checked="1">
+                <div id="hero-styles" bis_skin_checked="1">
+                    <div id="hero-caption" class="height-title content-full-width text-align-center"
+                        style=" translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"
+                        bis_skin_checked="1">
+                        <div class="inner hero_inner hero_inner_amazon" bis_skin_checked="1">
+                            <p class="inner_para_head">About Us</p>
                             <div class="stretch-up">
-                                <h1 style="color: white;" class="hero-title caption-timeline">
-                                    RESOURCES AND INSIGHTS
+                                <h1 style="color: white;" class="hero-title caption-timeline primary-font-title">
+                                    We Bring Your Amazon Products to Life
                                 </h1>
                             </div>
                             <div class="hero-subtitle caption-timeline" bis_skin_checked="1" style=" color: white;">
                                 <span
                                     style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-                                    The latest industry news, interviews, technologies, and resources.
+                                    From eye-catching 3D renders to high-converting listings, we craft visuals that make
+                                    your brand impossible to scroll past.
                                 </span>
                             </div>
+                            <button style="margin: 20px 0px 0px 0px; padding: 15px 20px;"
+                                class="progress-button grow-scale-btn hero_btn">
+                                <div class="progress_div"></div>
+                                <span class="button-area">View Our Work</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="wraping_section">
-            <section>
-                <div class="blog_posts">
-                    <div class="posts">
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img1.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Design</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img2.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img3.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img4.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img5.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img6.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img7.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img8.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img9.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1 hidden-post">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img3.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1 hidden-post">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img3.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="SIngle_blog_post.html">
-                            <div class="post-1 hidden-post">
-                                <div class="post-img">
-                                    <img src="CSS/blog content/blog_img3.png" alt="">
-                                </div>
-                                <div class="span">
-                                    <span>Category Name</span>
-
-                                </div>
-                                <div class="post-content">
-                                    <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </div> <div class="post-1 hidden-post">
-                            <div class="post-img">
-                                <img src="CSS/blog content/blog_img3.png" alt="">
-                            </div>
-                            <div class="span">
-                                <span>Category Name</span>
-
-                            </div>
-                            <div class="post-content">
-                                <p>4 simple tips - immediately higher Amazon conversion rate</p>
-                                <i class="ri-arrow-right-up-line"></i>
-                            </div>
+        <div class="dark-bg">
+            <section class="section_3 track-section ">
+                <div class="head">
+                    <p class="head_para">Who we Are</p>
+                    <h2 class="section1-head ">
+                        Built for Brands That Want to Stand
+                        <span style="color: #a5a5a5;"> Out on Amazon Body</span>
+                    </h2>
+                    <p class="head_after_para">At AMZ Vision, we specialize in turning product ideas into immersive
+                        visual
+                        experiences. We’re a
+                        creative team of 3D artists, Amazon strategists, and visual storytellers dedicated to helping
+                        e-commerce brands boost their presence on Amazon. Our mission? To transform static listings into
+                        scroll-stopping assets that convert.
+                    </p>
+                    <p class="head_after_para"> Whether you're launching a new product or optimizing an existing one, we
+                        bring the visual firepower
+                        needed to succeed.</p>
+                </div>
+                <div class="show_casing_images">
+                    <div class="case_img_1">
+                        <img src="CSS/about_content/about_2_section_img.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="our_core_services">
+                <div class="main_core_services">
+                    <div class="head">
+                        <p>Who We Our</p>
+                        <h3>Our Core Services</h3>
+                    </div>
+                    <div class="img_core_data_section">
+                        <div class="img_area_1">
+                            <img src="CSS/about_content/Frame img_1.png" alt="">
                         </div>
-                        </a>
+                        <div class="img_area_1">
+                            <img src="CSS/about_content/Frame img_2.png" alt="">
+                        </div>
+                        <div class="img_area_1">
+                            <img src="CSS/about_content/Frame img_3.png" alt="">
+                        </div>
                     </div>
-
-                    <div class="load-more-container">
-                        <button id="loadMoreBtn" class="progress-button grow-scale-btn ">
-                            <div class="progress_div"></div>
-                            <span class="button-area">Load More Blogs</span>
-                        </button>
+                </div>
+            </section>
+            <section class="chose_brand ">
+                <div class="chose_content">
+                    <div class="left">
+                        <h2>
+                            Why Brands Choose <span style="color: #a5a5a5;">AMZ Vision
+                            </span> </h2>
                     </div>
-
+                    <div class="right">
+                        <div class="img_1">
+                            <img src="CSS/about_content/chose_img_1.png" alt="">
+                        </div>
+                        <div class="img_1">
+                            <img src="CSS/about_content/chose_img_1.png" alt="">
+                        </div>
+                        <div class="img_1">
+                            <img src="CSS/about_content/chose_img_1.png" alt="">
+                        </div>
+                        <div class="img_1">
+                            <img src="CSS/about_content/chose_img_1.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
-        <div class="wrapping_section_2">
-            <section class="airbud dark-bg">
+        <div class="owner_details">
+            <div class="main_owner_details">
+                <div class="head">
+                    <h2>
+                        Creative Minds <span style="color: #a5a5a5;">Behind the Magic</span>
+                    </h2>
+                    <p>From motion artists to brand stylists, our team brings a perfect blend of creativity and strategy
+                        to every project.</p>
+                </div>
+                <div class="imges_showcasing">
+                    <div class="img_sec_1">
+                        <img src="CSS/about_content/person_img.png" alt="">
+                        <div class="headline">
+                            <h5>Qaiser Rehan</h5>
+                        </div>
+                    </div>
+                    <div class="img_sec_1">
+                        <img src="CSS/about_content/person_img2.png" alt="">
+                        <div class="headline">
+                            <h5>Rizwan</h5>
+                        </div>
+                    </div>
+                    <div class="img_sec_1">
+                        <img src="CSS/about_content/person_img_3.png" alt="">
+                        <div class="headline">
+                            <h5>Nouman Khan</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapping_section_2 about_page_wrap dark-bg">
+            <section class="airbud">
                 <div class="airbud_container">
                     <div class="left_side_Airbud">
                         <img src="CSS/blog content/airbuds.png" alt="">
@@ -488,7 +387,7 @@
                         <div class="content_Area">
                             <h2>Ready to Make Your Product Stand Out?</h2>
                             <p>Let’s elevate your Amazon presence with stunning visuals and expert design strategy.</p>
-                            <button class="progress-button grow-scale-btn consultant_btn ">
+                            <button class="progress-button grow-scale-btn">
                                 <div class="progress_div"></div>
                                 <span class="button-area">Book a Free Consultation</span>
                             </button>
@@ -497,7 +396,13 @@
                 </div>
             </section>
         </div>
+        <!-- Placeholder in your HTML -->
     </main>
+
+
+
+
+    <!-- Footer --->
     <footer>
         <div class="footer_main_content">
             <div class="logo_side_div side_1">
@@ -551,20 +456,24 @@
             </div>
         </div>
     </footer>
-    <script>
-        let point = document.createElement("div");
-        point.setAttribute("class", "point");
-        document.body.append(point);
-        point.style.display = "none";
-        window.addEventListener("mousemove", function (e) {
-            let x_axis = e.clientX;
-            let y_axis = e.clientY;
-            point.style.display = "block";
-            point.style.top = `${y_axis + 10}px`;
-            point.style.left = `${x_axis + 10}px`;
-        });
-    </script>
-    <script src="JS/blog.js"></script>
+    <!-- Footer --->
+
+    <!-- <div class="cd-cover-layer" style="display: none;" bis_skin_checked="1"></div>
+    <div id="magic-cursor" class="light-content" bis_skin_checked="1">
+        <div id="ball"
+            style="translate: none; rotate: none; scale: none; border-width: 4px; transform: translate(-50%, -50%) translate3d(762px, 131px, 0px) scale(0.5, 0.5); background-color: rgba(153, 153, 153, 0); border-color: rgb(153, 153, 153); opacity: 1;"
+            bis_skin_checked="1">
+            <div id="ball-drag-x" bis_skin_checked="1"></div>
+            <div id="ball-drag-y" bis_skin_checked="1"></div>
+            <div id="ball-loader" bis_skin_checked="1" style="left: 0px; top: 0px; border-width: 4px;"></div>
+        </div>
+    </div>
+    <div id="clone-image" bis_skin_checked="1">
+        <div class="hero-translate" bis_skin_checked="1"></div>
+    </div>
+    <div id="rotate-device" bis_skin_checked="1"></div> -->
+    <script src="JS/about.js"></script>
+    <!-- <script src="app.js"></script> -->
     <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/montoya\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>

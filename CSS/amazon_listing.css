@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+main {
+    padding: 0px;
+}
 ::-webkit-scrollbar-track {
     background: #000;
 }
@@ -17,9 +20,7 @@
     background-position: center;
 }
 
-main{
-    padding: 0px 20px;
-}
+
 
 .menu-main-menu-container {
     transition: all .4s;
