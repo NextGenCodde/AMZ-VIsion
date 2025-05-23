@@ -281,7 +281,7 @@ console.log('menubar clcked');
       });
   
   mainmenu.style.margin = "auto"
-  
+
 })
 //work section scroll
 

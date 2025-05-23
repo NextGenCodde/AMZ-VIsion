@@ -47,7 +47,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: #475467;
+    color: #475467 !important;
 
 }
 
@@ -155,4 +155,12 @@
     color: #000000;
     line-height: 100%;
     margin: 30px 0px 20px !important;
+}
+
+
+
+@media screen and (min-width: 1500px) {
+    section {
+        padding: 120px 70px;
+    }
 }

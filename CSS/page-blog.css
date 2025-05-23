@@ -105,7 +105,6 @@ section {
     padding: 13px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    border-radius: 8px;
 }
 
 .post-1:hover {
@@ -116,7 +115,6 @@ section {
 .post-img {
     width: 100%;
     height: 65%;
-    border-radius: 6px;
     overflow: hidden;
 }
 

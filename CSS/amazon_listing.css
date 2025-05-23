@@ -17,6 +17,9 @@
     background-position: center;
 }
 
+main{
+    padding: 0px 20px;
+}
 
 .menu-main-menu-container {
     transition: all .4s;
@@ -1048,4 +1051,19 @@ side_3 {
 .section2_content .section1-head{
     width: 100% !important;
     line-height: 100% !important;
+}
+
+
+
+
+
+
+.blackside {
+    border-color: white;
+    color: white;
+}
+
+
+.blackside:hover {
+    color: #000;
 }
