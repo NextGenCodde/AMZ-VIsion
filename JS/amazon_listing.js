@@ -1,3 +1,34 @@
+let point = document.createElement("div");
+point.className = "point";
+document.body.appendChild(point);
+
+let mouseX = 0;
+let mouseY = 0;
+let currentX = 0;
+let currentY = 0;
+
+window.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX + 10;
+    mouseY = e.clientY + 10;
+    point.style.display = "block";
+});
+
+// Animate with SMOOTH trail
+function animatePointer() {
+    const speed = 0.1; // 👈 this controls SMOOTHNESS
+
+    currentX += (mouseX - currentX) * speed;
+    currentY += (mouseY - currentY) * speed;
+
+    point.style.transform = `translate(${currentX}px, ${currentY}px)`;
+
+    requestAnimationFrame(animatePointer);
+}
+
+animatePointer();
+
+
+
 // let mobile_menu = document.querySelector(".menu-main-menu-container")
 let main_menu = document.querySelectorAll(".before-span");
 let lies = document.querySelectorAll(".before-span span");
@@ -67,17 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(heroSection);
 });
 
-let point = document.createElement("div");
-point.setAttribute("class", "point");
-document.body.append(point);
-point.style.display = "none";
-window.addEventListener("mousemove", function (e) {
-  let x_axis = e.clientX;
-  let y_axis = e.clientY;
-  point.style.display = "block";
-  point.style.top = `${y_axis + 10}px`;
-  point.style.left = `${x_axis + 10}px`;
-});
 
 document.addEventListener("DOMContentLoaded", function () {
   const whitelogo = document.querySelector(".white-logo");

@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize with "all" filter
   filterItems("all");
 });
-
+    
 
 
 

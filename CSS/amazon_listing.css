@@ -85,18 +85,18 @@ main {
     margin: 30px auto;
 }
 
-
-/* cursor */
-
 .point {
     position: fixed;
+    top: 0;
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid grey;
+    border: 2px solid rgb(153, 153, 153);
     border-radius: 50%;
-    z-index: 99;
-    transition: all .4s linear;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(0, 0);
+    transition: none; /* DO NOT USE transition here */
 }
 
 
