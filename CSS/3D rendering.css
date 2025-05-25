@@ -335,3 +335,94 @@
 .main_img_area {
     background-image: url('./3d rednering content/banner_sideimg.png');
 }
+
+
+.banner_last {
+    padding: 80px;
+    background: white;
+}
+
+.banner_last .head {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+
+}
+
+
+.banner_last .head h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+
+}
+
+
+.banner_last .head p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+    opacity: 80%;
+    margin: 50px 0px 60px;
+}
+
+
+.show_case_last {
+    display: flex;
+    width: 100%;
+    margin:0px auto 0px; 
+    gap: 30px;
+
+}
+
+.show_case_last .side_area_1 {
+    width: 32%;
+    background: #F3F4F6;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left_circle_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_circle_area .circle {
+    background: white;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    border: none;
+}
+
+.right_content_area h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.right_content_area p {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #000000;
+    opacity: 70%;
+}

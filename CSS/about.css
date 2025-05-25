@@ -38,7 +38,7 @@ main {
 
 .progress-button {
     border: 1px solid white;
-    background: white;
+    background: transparent;
 }
 
 .progress-button .progress_div {
@@ -226,31 +226,33 @@ main {
     line-height: 100%;
     margin-top: 30px;
 }
-.img_sec_1{
+
+.img_sec_1 {
     width: 32%;
     height: 460px;
 }
 
-.img_sec_1 img{
+.img_sec_1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 
-.about_page_wrap .airbud{
+.about_page_wrap .airbud {
     background: #F3F4F6;
 }
-.about_page_wrap .left_side_content_airbud .content_Area h2{
+
+.about_page_wrap .left_side_content_airbud .content_Area h2 {
     color: #000;
 }
 
-.about_page_wrap .left_side_content_airbud .content_Area p{
+.about_page_wrap .left_side_content_airbud .content_Area p {
     opacity: 90%;
     color: #000;
 }
 
-.about_page_wrap .left_side_content_airbud .content_Area .progress-button{
+.about_page_wrap .left_side_content_airbud .content_Area .progress-button {
     border: 1px solid black;
     padding: 15px initial;
 }
@@ -311,4 +313,106 @@ main {
     .left_side_content_airbud {
         width: 100%;
     }
+}
+
+
+.white-BG:hover {
+    background: transparent;
+
+}
+
+.dark-section-wrapper {
+    padding: 80px initial;
+    background: white;
+}
+
+.testimonial-head {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #010101;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #DEDEDE;
+    color: black;
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: #000;
+    color: white;
+}
+
+.swiper-button-next i,
+.swiper-button-prev i {
+    color: black;
+
+}
+
+.swiper-slide {
+    width: 33% !important;
+    border: 1px solid black;
+}
+
+.elementor-testimonial__content i {
+    color: black;
+}
+
+.elementor-testimonial__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px !important;
+    letter-spacing: 0%;
+    color: black;
+}
+
+
+.elementor-testimonial__cite span {
+
+    color: black;
+}
+
+.swiper-wrapper {
+    height: auto;
+}
+
+
+.margin_side {
+    margin: 0;
+    width: 100%;
+}
+
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: black;
+}
+
+
+.swiper-button-prev:hover ::after,
+.swiper-button-next:hover ::after {
+    color: white;
+}
+
+.testminonial-head {
+    margin: 0px;
+}
+
+
+.testimonial-area {
+    background: white;
+    padding: 80px;
+}
+
+.active{
+    background-color: black;
+    color: white;
 }
