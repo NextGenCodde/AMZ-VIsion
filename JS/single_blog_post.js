@@ -49,3 +49,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   darkSections.forEach((section) => observer.observe(section));
 });
+
+
+
+let point = document.createElement("div");
+point.className = "point";
+document.body.appendChild(point);
+
+let mouseX = 0;
+let mouseY = 0;
+let currentX = 0;
+let currentY = 0;
+
+window.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX + 10;
+    mouseY = e.clientY + 10;
+    point.style.display = "block";
+});
+
+// Animate with SMOOTH trail
+function animatePointer() {
+    const speed = 0.1; // 👈 this controls SMOOTHNESS
+
+    currentX += (mouseX - currentX) * speed;
+    currentY += (mouseY - currentY) * speed;
+
+    point.style.transform = `translate(${currentX}px, ${currentY}px)`;
+
+    requestAnimationFrame(animatePointer);
+}
+
+animatePointer();

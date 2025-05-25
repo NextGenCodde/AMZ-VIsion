@@ -19,6 +19,20 @@ header {
     line-height: normal !important;
 }
 
+.point {
+    position: fixed;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(0, 0);
+    transition: none; /* DO NOT USE transition here */
+}
+
 .contact-btn {
     border-color: black;
     color: black;
