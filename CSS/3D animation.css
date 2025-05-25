@@ -348,13 +348,24 @@ video {
 
 .conto_last {
     align-items: flex-start;
-    width: 60%;
+    width: 50%;
 }
 
 .pading_zero_div {
     padding: 0;
+    padding-bottom: 100px;
 }
 
+.conto_last .content h2 {
+    font-size: 40px;
+    line-height: 100%;
+
+}
+
+.conto_last .content p {
+    width: 100%;
+    margin: 0;
+}
 
 .white_Area {
     padding: 80px;
