@@ -4,6 +4,20 @@
         width: 90% !important;
     }
 
+    .padding_top_the_side {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+
+    .padding_portfolio {
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }
+
+    #header-container {
+        padding: 20px 63px;
+    }
+
     .content-section-1 {
         gap: 40px !important;
     }
@@ -164,6 +178,17 @@
         white-space: nowrap !important;
     }
 
+    .the-padding {
+        padding: 80px !important;
+    }
+
+    .content_logo_side p {
+        width: 70% !important;
+    }
+
+    .swiper-slide {
+        width: 50% !important;
+    }
 
     .hero_inner h1 {
         width: 100% !important;
@@ -495,7 +520,7 @@
     }
 
     footer {
-        padding: 60px 40px !important;
+        padding: 60px 60px !important;
     }
 
     .footer_main_content {
@@ -550,6 +575,27 @@
     .boxes_content_section img {
         margin: 0px !important;
     }
+
+    .hero-title {
+        font-size: 150px !important;
+    }
+
+    .work-h1 {
+        white-space: nowrap !important;
+    }
+
+    .work-para p {
+        width: 100% !important;
+    }
+
+    .testimonial-head {
+        font-size: 100px !important;
+    }
+
+    .swiper-slide {
+        width: 100% !important;
+    }
+
 }
 
 @media only screen and (max-width: 430px) {
@@ -850,8 +896,70 @@
     .contact_box_side_right {
         width: 100% !important;
     }
-    .main_contact .head p{
+
+    .main_contact .head p {
         width: 100%;
+    }
+
+    #header-container {
+        padding: 0;
+    }
+
+    .the-padding {
+        padding: 30px !important;
+    }
+
+    .left_side_section_grow h1 {
+        font-size: 70px !important;
+        margin-bottom: 10px;
+    }
+
+    .left_side_section_grow p {
+        width: 100%;
+        margin: 0px 0px 10px;
+    }
+
+    .right_side_section_grow {
+        width: 100% !important;
+        margin-top: 40px !important;
+    }
+
+    .Feature_work {
+        padding: 80px !important;
+    }
+
+    .full.row_padding_right {
+        padding: 0 !important;
+    }
+
+    .services-ul li a {
+        line-height: 100%;
+    }
+
+    .padding_top_the_side {
+        padding: 30px !important;
+    }
+
+    .chose_post_content>div {
+        padding: 0px !important;
+    }
+
+    .the-padding {
+        padding: 20px !important;
+    }
+
+
+    .frequently-h1 {
+        font-size: 60px;
+    }
+
+    .frequently-para {
+        width: 70% !important;
+        margin: 20px !important;
+    }
+
+    .padding_portfolio {
+        padding: 30px !important;
     }
 }
 
@@ -910,6 +1018,36 @@
         text-align: center !important;
     }
 
+    .section-1 {
+        margin: 0px !important;
+    }
+
+    .left_side_section_grow h1 {
+        white-space: wrap !important;
+    }
+
+    .Feature_work {
+        padding: 80px 30px !important;
+    }
+
+    .services-ul li {
+        height: 200px !important;
+    }
+
+    .work-para p {
+        margin: 0px !important;
+    }
+
+    .the_bnto {
+        align-self: flex-start;
+    }
+
+    .why-chose {
+        font-size: 80px !important;
+    }
+    .padding_top_the_side{
+        padding: 0px !important;
+    }
 }
 
 
