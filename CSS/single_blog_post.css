@@ -170,11 +170,28 @@
     z-index: 9999;
     pointer-events: none;
     transform: translate(0, 0);
-    transition: none; /* DO NOT USE transition here */
+    transition: none;
+    /* DO NOT USE transition here */
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (max-width: 1500px) {
     section {
-        padding: 120px 70px;
+        padding: 120px 80px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .writen_blog_post .content {
+        width: 80%;
+    }
+
+    .hero-subtitle span {
+        width: 90%;
+    }
+    #hero-caption{
+        padding-top: 0px;
+    }
+    .stretch-up h2{
+        width: 100%;
     }
 }

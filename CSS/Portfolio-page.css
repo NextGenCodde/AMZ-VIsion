@@ -205,8 +205,7 @@
 }
 
 .video_main_img {
-    width: 1201;
-    height: 553;
+    height: 553px;
     margin-top: 70px;
     cursor: pointer;
 }
@@ -219,8 +218,7 @@
 
 .next_project {
     background-image: url('./portfolio_content/next_case_img.png');
-    width: 1441;
-    height: 599;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,23 +285,27 @@
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 210px);
-  column-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 210px);
+    column-gap: 10px;
     grid-template-rows: 256px;
-  row-gap: 20px; /* THIS creates space between rows */
+    row-gap: 20px;
+    /* THIS creates space between rows */
 }
 
 
 
 .grid-item.tall {
-  height: 248px; /* Taller than auto-row height */
-  background-color: #ddd; /* just for visibility */
+    height: 248px;
+    /* Taller than auto-row height */
+    background-color: #ddd;
+    /* just for visibility */
 }
+
 .grid-item.short {
-  background-color: #bbb;
+    background-color: #bbb;
 }
-    
+
 
 /* General box styles */
 .grid-item {
@@ -332,4 +334,87 @@
     justify-content: center;
     font-weight: bold;
     /* border: 1px solid #bbb; */
+}
+
+@media only screen and (max-width: 1500px) {
+    .grids_main_area_section_1 {
+        gap: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .content-section-1 {
+        padding: 0px !important;
+    }
+
+    .thepading_sectin {
+        padding: 0px 80px !important;
+    }
+
+    .section-1-main .img_container {
+        width: 390px !important;
+    }
+
+    .img_showarea {
+        justify-content: space-between;
+    }
+
+    .img_showarea .left_img {
+        width: 50%;
+    }
+
+    .img_showarea .left_img img {
+        width: auto;
+        height: auto;
+    }
+
+    .banner_side_img {
+        height: auto;
+        width: auto;
+    }
+
+    .next_project {
+        padding: 0px !important;
+    }
+
+    .grid-container {
+        grid-template-rows: 257px repeat(2, 200px);
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .side_content {
+        width: 100%;
+        padding: 30px;
+    }
+
+    #hero-styles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+
+    .img_showarea {
+        flex-wrap: wrap;
+    }
+
+    .img_showarea .left_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .stretch-up h1 {
+        font-size: 150px !important;
+    }
+
+    .banner_side_img h3 {
+        width: 100%;
+        font-size: 55px;
+    }
+
+    .head_side_area p{
+        width: 90%;
+    }
 }

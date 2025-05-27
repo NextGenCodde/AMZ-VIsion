@@ -379,3 +379,187 @@ video {
 footer {
     padding: 60px 60px 10px;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .button-text {
+        display: none;
+    }
+
+    .conto {
+        display: none;
+    }
+
+    #content-scroll {
+        overflow: visible !important;
+        /* overflow: auto !important; */
+    }
+
+    main {
+        overflow: visible !important;
+    }
+
+    body.smooth-scroll {
+        overflow: auto !important;
+    }
+
+    .boxes_content_section .bg_box_img {
+        width: 100%;
+    }
+
+    .the_new_one .head {
+        width: 60%;
+    }
+
+    .head_ing {
+        width: auto;
+    }
+
+    .banner_last .head {
+        width: 60%;
+    }
+
+    .head_side_area {
+        width: 80%;
+    }
+
+    .slide_shift.active_slide {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .slide_shift .right_Side {
+        width: auto;
+    }
+
+    .lower_side button {
+        border: 1px solid white;
+    }
+
+    .chose_post_content {
+        flex-wrap: wrap;
+    }
+
+    .chose_post_content>div {
+        width: 50%;
+        flex: none;
+        border: 1px solid black;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .the_new_one .head {
+        width: 100%;
+    }
+
+    .box_area_section .box_side_1_area {
+        width: 50%;
+    }
+
+    .banner_last .head {
+        width: 100%;
+    }
+
+    .head_side_area {
+        width: 100%;
+    }
+
+    .spans_Area .span_1 {
+        white-space: nowrap;
+    }
+
+    .slide_shift.active_slide {
+        gap: 30px;
+    }
+
+    .left_side_area_bok {
+        height: 65%;
+    }
+
+    .chose_post_content>div {
+        width: 100%;
+    }
+
+    .rendering-section {
+        padding: 80px 80px;
+    }
+
+    container .left h2 {
+        white-space: wrap !important;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+    .the_new_one .head h3 {
+        font-size: 59px;
+    }
+
+
+    .box_area_section .box_side_1_area {
+        width: 100%;
+    }
+
+    .head_side_area h3 {
+        font-size: 50px;
+    }
+
+    .spans_Area {
+        flex-direction: column;
+    }
+
+    .spans_Area .span_1 {
+        padding: 10px 0px;
+    }
+
+    .left_side_area_bok {
+        height: 60%;
+    }
+
+    .slide_shift .left_side p {
+        width: 100%;
+    }
+
+    .chose_wrap {
+        display: none;
+    }
+
+    .big-imgs .head {
+        width: 100%;
+    }
+
+    .pading_zero_div {
+        padding: 0 !important;
+    }
+
+    .content_right_side {
+        height: 400px;
+    }
+
+    .container .left h2 {
+        white-space: wrap;
+    }
+
+    .hero-title {
+        font-size: 76px !important;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    #hero {
+        padding-bottom: 0px;
+    }
+
+    .the_nopad {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .section_4 {
+        padding: 30px 0px !important;
+    }
+
+    .the_new_one .head h3 {
+        font-size: 43px;
+    }
+}

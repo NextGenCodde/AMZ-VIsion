@@ -228,6 +228,7 @@ main {
     display: inline-block;
     width: 8px;
     height: 8px;
+    
     background: #000;
     border: 1px solid black;
     /* Black border for the circle */
@@ -268,6 +269,8 @@ main {
 
 .div_1 h4 {
     font-size: 48px;
+        line-height: 100%;
+
 }
 
 .div_1 h4,
@@ -275,6 +278,7 @@ main {
     font-family: 'inter', sans-serif;
     font-weight: 400;
     color: white;
+    line-height: 100%;
 
     margin: 10px 0px;
 }
@@ -356,6 +360,8 @@ main {
     margin: 0;
     font-family: "Instrument Sans", sans-serif;
     margin: 5px 0px;
+        line-height: 100%;
+
 }
 
 .data_content p {
@@ -419,6 +425,8 @@ main {
     font-size: 64px;
     font-weight: 400;
     color: #000;
+        line-height: 100%;
+
 }
 
 
@@ -555,6 +563,8 @@ h1 div span {
     font-weight: 400;
     font-size: 26px;
     margin: 0;
+        line-height: 100%;
+
     line-height: normal !important;
     color: #000;
     margin: 10px 0px;
@@ -589,6 +599,8 @@ h1 div span {
     font-weight: 400;
     font-size: 64px;
     margin: 0;
+        line-height: 100%;
+
 }
 
 
@@ -637,6 +649,8 @@ h1 div span {
     font-weight: 500;
     font-size: 32px;
     color: #000;
+        line-height: 100%;
+
 }
 
 .up_content p {
@@ -716,6 +730,8 @@ h1 div span {
     font-family: "Bebas Neue", sans-serif;
     font-size: 64px;
     font-weight: 400;
+        line-height: 100%;
+
 }
 
 
@@ -769,6 +785,8 @@ h1 div span {
     font-family: "Bebas Neue", sans-serif;
     font-size: 64px;
     font-weight: 400;
+        line-height: 100%;
+
 }
 
 
@@ -821,6 +839,7 @@ h1 div span {
 .main_content_head h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
+    line-height: 100%;
     width: 75%;
     font-size: 64px;
     color: #fff;
@@ -887,6 +906,7 @@ h1 div span {
     font-weight: 500;
     font-size: 32px;
     margin: 0;
+    line-height: 100%;
 }
 
 .content_left_side_last p {
@@ -909,6 +929,8 @@ h1 div span {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 64px;
     font-weight: 400;
+        line-height: 100%;
+
 }
 
 .container .project-p {

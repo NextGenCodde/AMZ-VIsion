@@ -30,7 +30,8 @@ header {
     z-index: 9999;
     pointer-events: none;
     transform: translate(0, 0);
-    transition: none; /* DO NOT USE transition here */
+    transition: none;
+    /* DO NOT USE transition here */
 }
 
 .contact-btn {
@@ -101,7 +102,7 @@ h1 div {
 section {
     padding: 100px 70px 100px 70px;
     background-color: white;
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -196,7 +197,7 @@ section {
 .load-more-container {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 #loadMoreBtn {
@@ -382,7 +383,7 @@ section {
 /* Large Desktop Styles */
 @media screen and (min-width: 1440px) {
     section {
-        padding: 120px 60px;
+        padding: 120px 80px;
     }
 
     .posts {
@@ -558,8 +559,9 @@ side_3 {
     cursor: pointer;
     transition: all .2s linear;
 }
+
 .side_2 ul li a,
-.side_3 ul li a{
+.side_3 ul li a {
     color: inherit !important;
 }
 
@@ -628,9 +630,7 @@ side_3 {
     }
 
     .post-1 {
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: auto;
+        width: 100%;
     }
 }
 
@@ -648,7 +648,8 @@ side_3 {
 
 @media only screen and (max-width: 768px) {
     .airbud_container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 50px;
     }
 
     .left_side_Airbud {
@@ -677,8 +678,19 @@ side_3 {
     .height-title .hero-title {
         column-gap: 10px;
     }
+
     #hero-caption.height-title {
         padding-bottom: 0px !important;
     }
 
+    .blog_h1 div {
+        margin: -15px -2px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .blog_h1 div {
+        margin: -10px -2px;
+    }
 }

@@ -109,6 +109,7 @@
     }
 
 
+
     .section-1-main {
         width: 100% !important;
         margin: auto !important;
@@ -169,7 +170,47 @@
         padding: 15px;
     }
 
+    .section_4 {
+        padding: 100px 80px !important;
+    }
+
+
+    .product_describing {
+        padding: 100px 80px !important;
+    }
+
+    .rendering-section {
+        padding: 0px 80px;
+    }
+
+    .data_content_section {
+        padding: 0px 80px 100px !important;
+    }
+
+
+    .blog_content_post {
+        padding: 80px !important;
+    }
+
+
+    .last_content_area_listing {
+        padding: 100px 80px !important;
+    }
+
+    .content-max-width {
+        padding: 80px !important;
+    }
+
+    .the_nopad {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .the_3d_sec {
+        padding: 100px 30px !important;
+    }
 }
+
 
 
 
@@ -294,9 +335,36 @@
     }
 
     section {
-        padding: 100px 60px !important;
+        padding: 100px 80px !important;
+    }
+
+    .boxes_content_section {
+        padding: 0px !important;
+    }
+
+    .single-column-grid {
+        grid-template-columns: 225px;
+        grid-template-rows: 83px repeat(4, 200px);
+    }
+
+    .repeating_div {
+        gap: 50px;
+    }
+
+
+    .data_content_section .head h2 {
+        line-height: 100%;
+    }
+
+    .data_content_section .head p {
+        width: 70%;
+    }
+
+    .project_section {
+        padding: 0px !important;
     }
 }
+
 
 
 @media only screen and (max-width: 769px) {
@@ -392,7 +460,7 @@
     }
 
     .section-1-main {
-        padding: 100px 60px !important;
+        padding: 100px 80px !important;
     }
 
     .content-section-1 {
@@ -452,7 +520,7 @@
     }
 
     .grid-container {
-        grid-template-columns: repeat(2, 50%) !important;
+        grid-template-columns: repeat(2, 49%) !important;
     }
 
     .single-column-grid {
@@ -596,6 +664,17 @@
         width: 100% !important;
     }
 
+    .first_div_content {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+
+    .the_nopad {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
 }
 
 @media only screen and (max-width: 430px) {
@@ -961,6 +1040,14 @@
     .padding_portfolio {
         padding: 30px !important;
     }
+
+    .content-max-width {
+        padding: 30px !important;
+    }
+
+    .right_project_side_area {
+        top: 0;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1006,7 +1093,8 @@
     }
 
     .main_content_head h2 {
-        font-size: 33px !important;
+        width: 100%;
+        font-size: 32px !important;
     }
 
     content_logo_side p {
@@ -1045,9 +1133,55 @@
     .why-chose {
         font-size: 80px !important;
     }
-    .padding_top_the_side{
+
+    .padding_top_the_side {
         padding: 0px !important;
     }
+
+    .accordion dt span {
+        font-size: 14px !important;
+        line-height: 100% !important;
+
+    }
+
+    .section_2 {
+        padding: 0 !important;
+    }
+
+    .content-max-width {
+        padding: 80px 0px !important;
+    }
+
+    .content_left_side .content h2 {
+        font-size: 34px !important;
+    }
+
+    .content_left_side .content p {
+        width: 100%;
+    }
+
+    .repeating_div {
+        padding: 50px 0px;
+    }
+
+    .the_nopad {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .free_padding {
+        padding: 60px 20px !important;
+    }
+    .chose_post_content > div{
+        padding: 20px 0px;
+    }
+
+    .zero_pd{
+        padding: 0 !important;
+    }
+.frequently-para{
+    margin: auto !important;
+}
 }
 
 
@@ -1100,4 +1234,14 @@
     section {
         padding: 100px 10px;
     }
+
+    .the_project {
+        padding: 80px 20px !important;
+    }
+
+    footer {
+        padding-bottom: 10px !important;
+    }
+
+
 }
