@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
           whitelogo.style.display = "none";
           contactBtn.classList.add("blackside");
           mainmenu.style.marginLeft = "-70px";
+          mainmenu.style.transition = "none"
           burgermenu.forEach((ele) => (ele.style.background = "#000"));
           menulist.forEach((ele) => (ele.style.color = "black"));
         } else {
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
           whitelogo.style.display = "block";
           contactBtn.classList.remove("blackside");
           mainmenu.style.marginLeft = "0px";
+          mainmenu.style.transition = "none"
           burgermenu.forEach((ele) => (ele.style.background = "#fff"));
           menulist.forEach((ele) => {
             ele.style.color = "#fff";
