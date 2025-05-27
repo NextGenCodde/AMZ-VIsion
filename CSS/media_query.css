@@ -670,10 +670,13 @@
     }
 
 
-
     .the_nopad {
         padding-top: 0px !important;
         padding-bottom: 0px !important;
+    }
+    
+    .text-align-center .hero-title {
+        row-gap: 0px;
     }
 }
 
@@ -1047,6 +1050,9 @@
 
     .right_project_side_area {
         top: 0;
+    }
+    .section_2{
+        padding: 0px !important;
     }
 }
 

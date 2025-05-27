@@ -56,7 +56,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     white-space: wrap;
-    row-gap: 15px !important;
+    row-gap: 50px !important;
 }
 
 
@@ -462,8 +462,11 @@ main {
 }
 
 h1 div span {
-    margin: 0px -4px;
     text-transform: uppercase;
+}
+
+.height-title .hero-title div {
+    margin: 0px 5px;
 }
 
 .hero-blur-oval {
@@ -1088,3 +1091,4 @@ side_3 {
 .blackside:hover {
     color: #000;
 }
+

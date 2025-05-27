@@ -167,7 +167,6 @@
 		opacity:0;
 		display: block;
 		margin-top:0;
-		min-width:3vw;
 		transform: translateY(160px);
 		-webkit-transform: translateY(160px);
 	}
