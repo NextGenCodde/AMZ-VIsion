@@ -562,4 +562,15 @@ footer {
     .the_new_one .head h3 {
         font-size: 43px;
     }
+
+    
+    .left_side_area_bok {
+        height: 70%;
+    }
+}
+
+
+.chose_h {
+    margin: 0;
+    white-space: wrap;
 }
