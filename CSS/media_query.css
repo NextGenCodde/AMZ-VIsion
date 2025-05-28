@@ -1,4 +1,4 @@
-@media only screen and (max-width: 2560px) {
+/* @media only screen and (max-width: 2560px) {
     .section-1 {
         margin: auto !important;
         width: 90% !important;
@@ -15,7 +15,7 @@
     }
 
     #header-container {
-        padding: 20px 63px;
+        padding: 20px 80px;
     }
 
     .content-section-1 {
@@ -64,7 +64,6 @@
         font-size: 19px;
     }
 
-    /* //amazon_listing */
     #hero {
         height: 100vh;
         display: flex;
@@ -80,7 +79,6 @@
         display: none !important;
     }
 
-    /* Contact  */
     .contact_box_area {
         height: auto !important;
     }
@@ -96,117 +94,10 @@
     .days div {
         padding: 30px;
     }
-}
+} */
 
 
 
-
-
-@media only screen and (max-width: 1600px) {
-    .section-1 {
-        margin: auto !important;
-        width: 100% !important;
-    }
-
-
-
-    .section-1-main {
-        width: 100% !important;
-        margin: auto !important;
-    }
-
-    .section-1-p {
-        width: 100% !important;
-    }
-
-    .left_side_section_grow h1 {
-        white-space: nowrap;
-        font-size: 120px;
-    }
-
-    .left_side_section_grow p {
-        font-size: 27px;
-        margin: 45px 0px;
-        line-height: normal;
-    }
-
-    .para_2 {
-        margin: 0px;
-        line-height: normal;
-        font-size: 17px;
-    }
-
-    .left_side_section_grow button {
-        padding: 15px 20px !important;
-    }
-
-    .top_brand_p {
-        font-size: 16px !important;
-    }
-
-    /* amazon_listing */
-
-    #hero {
-        height: auto;
-    }
-
-    .hero_inner_amazon {
-        /* margin-top: 200px; */
-    }
-
-    .section-1-main {
-        padding: 60px 100px;
-    }
-
-    .contact_box_area {
-        height: 590px !important;
-    }
-
-    .contact_box_side_left {
-        height: 100% !important;
-    }
-
-    .days div {
-        padding: 15px;
-    }
-
-    .section_4 {
-        padding: 100px 80px !important;
-    }
-
-
-    .product_describing {
-        padding: 100px 80px !important;
-    }
-
-    .rendering-section {
-        padding: 0px 80px;
-    }
-
-    .data_content_section {
-        padding: 0px 80px 100px !important;
-    }
-
-
-    .blog_content_post {
-        padding: 80px !important;
-    }
-
-
-    .last_content_area_listing {
-        padding: 100px 80px !important;
-    }
-
-
-    .the_nopad {
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-    }
-
-    .the_3d_sec {
-        padding: 100px 30px !important;
-    }
-}
 
 
 
@@ -671,7 +562,7 @@
         padding-top: 0px !important;
         padding-bottom: 0px !important;
     }
-    
+
     .text-align-center .hero-title {
         row-gap: 0px !important;
     }
@@ -1021,7 +912,7 @@
     }
 
     .chose_post_content>div {
-        padding:20px 0px !important;
+        padding: 20px 0px !important;
     }
 
     .the-padding {
@@ -1042,12 +933,13 @@
         padding: 30px !important;
     }
 
-  
+
 
     .right_project_side_area {
         top: 0;
     }
-    .section_2{
+
+    .section_2 {
         padding: 0px !important;
     }
 }
@@ -1150,7 +1042,7 @@
         padding: 0 !important;
     }
 
-   
+
 
     .content_left_side .content h2 {
         font-size: 34px !important;
@@ -1245,5 +1137,162 @@
         padding-bottom: 10px !important;
     }
 
+
+}
+
+@media only screen and (max-width: 1920px) {
+    .zero_padding {
+        padding: 0px !important;
+    }
+
+    .the_left_right_pad {
+        padding: 0px 80px !important;
+    }
+
+    #header-container {
+        padding: 20px 63px !important;
+    }
+
+    #child1 .elementor-widget-image,
+    #child2 .elementor-widget-image,
+    #child3 .elementor-widget-image {
+        text-align: right !important;
+    }
+
+    .testminonial-head {
+        margin: 0px;
+    }
+
+    .elementor-widget-reviews .elementor-main-swiper,
+    .elementor-widget-testimonial-carousel .elementor-main-swiper {
+        width: 100%;
+    }
+
+    .right {
+        flex: none;
+        align-self: flex-end;
+    }
+
+    .chose_post_content {
+        margin-top: 80px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1600px) {
+    .section-1 {
+        margin: auto !important;
+        width: 100% !important;
+    }
+
+
+
+    .section-1-main {
+        width: 100% !important;
+        margin: auto !important;
+    }
+
+    .section-1-p {
+        width: 100% !important;
+    }
+
+    .left_side_section_grow h1 {
+        white-space: nowrap;
+        font-size: 120px;
+    }
+
+    .left_side_section_grow p {
+        font-size: 27px;
+        margin: 45px 0px;
+        line-height: normal;
+    }
+
+    .para_2 {
+        margin: 0px;
+        line-height: normal;
+        font-size: 17px;
+    }
+
+    .left_side_section_grow button {
+        padding: 15px 20px !important;
+    }
+
+    .top_brand_p {
+        font-size: 16px !important;
+    }
+
+    /* amazon_listing */
+
+    #hero {
+        height: auto;
+    }
+
+    .hero_inner_amazon {
+        /* margin-top: 200px; */
+    }
+
+    .section-1-main {
+        padding: 60px 100px;
+    }
+
+    .contact_box_area {
+        height: 590px !important;
+    }
+
+    .contact_box_side_left {
+        height: 100% !important;
+    }
+
+    .days div {
+        padding: 15px;
+    }
+
+    .section_4 {
+        padding: 100px 80px !important;
+    }
+
+
+    .product_describing {
+        padding: 100px 80px !important;
+    }
+
+    .rendering-section {
+        padding: 0px 80px;
+    }
+
+    .data_content_section {
+        padding: 0px 80px 100px !important;
+    }
+
+
+    .blog_content_post {
+        padding: 80px !important;
+    }
+
+
+    .last_content_area_listing {
+        padding: 100px 80px !important;
+    }
+
+
+    .the_nopad {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .the_3d_sec {
+        padding: 100px 30px !important;
+    }
+
+    .elementor-widget-reviews .elementor-main-swiper,
+    .elementor-widget-testimonial-carousel .elementor-main-swiper {
+        width: 95%;
+    }
+
+    .testminonial-head {
+        margin: 0px 30px;
+    }
 
 }

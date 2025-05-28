@@ -1022,7 +1022,7 @@ button:hover {
 
 
 .section_grow_scales {
-    padding: 60px 30px;
+    padding: 60px 0px;
 
 }
 
@@ -1074,6 +1074,7 @@ button:hover {
     line-height:150%;
     color: #000;
     opacity: 0.7;
+    line-height: 100%;
     font-size: 18px;
 }
 
@@ -1178,6 +1179,8 @@ button:hover {
     font-weight: 500 !important;
     font-size: 24px !important;
     white-space: nowrap;
+    margin-bottom: 10px;
+    line-height: 100%;
 }
 
 .chose_p {
