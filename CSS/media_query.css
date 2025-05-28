@@ -197,9 +197,6 @@
         padding: 100px 80px !important;
     }
 
-    .content-max-width {
-        padding: 80px !important;
-    }
 
     .the_nopad {
         padding-top: 0px !important;
@@ -941,7 +938,7 @@
     }
 
     footer {
-        padding: 60px 20px !important;
+        padding: 60px 20px 20px !important;
     }
 
     .side_2,
@@ -1023,7 +1020,7 @@
     }
 
     .chose_post_content>div {
-        padding: 0px !important;
+        padding:20px 0px !important;
     }
 
     .the-padding {
@@ -1037,16 +1034,14 @@
 
     .frequently-para {
         width: 70% !important;
-        margin: 20px !important;
+        margin: 20px auto !important;
     }
 
     .padding_portfolio {
         padding: 30px !important;
     }
 
-    .content-max-width {
-        padding: 30px !important;
-    }
+  
 
     .right_project_side_area {
         top: 0;
@@ -1154,9 +1149,7 @@
         padding: 0 !important;
     }
 
-    .content-max-width {
-        padding: 80px 0px !important;
-    }
+   
 
     .content_left_side .content h2 {
         font-size: 34px !important;
