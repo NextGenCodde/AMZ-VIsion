@@ -673,7 +673,7 @@
     }
     
     .text-align-center .hero-title {
-        row-gap: 0px;
+        row-gap: 0px !important;
     }
 }
 
@@ -807,6 +807,7 @@
     }
 
     .testimonial-head {
+        font-size: 60px;
         margin-bottom: 30px;
     }
 
