@@ -202,6 +202,8 @@ main {
     color: black !important;
     font-family: "Bebas Neue", sans-serif !important;
     font-size: 64px;
+
+    line-height: 100%;
     width: 60%;
 }
 
@@ -335,7 +337,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     box-sizing: border-box;
     flex-shrink: 0;
     /* Prevent resizing in flex layout */
@@ -367,11 +369,12 @@ main {
 }
 
 .data_content p {
-    margin: 0;
+    margin: 10px 0px 0px 0px;
     color: #000;
     font-size: 16px;
     font-weight: 400;
-    opacity: 0.7;
+    opacity: 70%;
+    width: 75%;
     font-family: "inter", sans-serif;
 }
 
@@ -1092,3 +1095,55 @@ side_3 {
     color: #000;
 }
 
+#hero img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 1920px) {
+    #hero {
+        height: auto !important;
+    }
+
+    #hero-caption {
+        height: 100% !important;
+    }
+
+    .stretch-up {
+        margin: auto;
+        width: 80%;
+    }
+
+    .section-1-main {
+        justify-content: center !important;
+    }
+
+    .section-1-main .img_container {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .content-section-1,
+    .section_2_main {
+        width: 40% !important;
+    }
+
+    .section1-head {
+        width: 40%;
+    }
+
+    .main_section_3 {
+        justify-content: space-between;
+    }
+
+    .main_section_3 .right {
+        width: auto;
+    }
+    .boxes_content{
+        display: none;
+    }
+}

@@ -1291,8 +1291,12 @@
         width: 95%;
     }
 
+
+
+}
+
+@media only screen and (max-width:1440px) {
     .testminonial-head {
         margin: 0px 30px;
     }
-
 }
