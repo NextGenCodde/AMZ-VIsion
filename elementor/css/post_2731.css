@@ -910,8 +910,14 @@
 
 .elementor-2731 .elementor-element.elementor-element-820d679 .swiper-pagination-bullet-active,
 .elementor-2731 .elementor-element.elementor-element-820d679 .swiper-pagination-progressbar-fill {
-    background-color: #5F5F5F;
+    background-color: #D9D9D9;
+    width: 35px;
 }
+.swiper-pagination-bullet-active{
+    transition: all .3s;
+    width: 35px !important;
+   }
+
 
 .elementor-2731 .elementor-element.elementor-element-820d679 .swiper-pagination-fraction {
     color: #5F5F5F;
@@ -919,6 +925,7 @@
 
 .elementor-2731 .elementor-element.elementor-element-820d679 .elementor-main-swiper .swiper-slide {
     border-width: 1px 1px 1px 1px;
+    border:1px solid #545454;
 }
 
 .elementor-2731 .elementor-element.elementor-element-820d679 .elementor-swiper-button {
@@ -926,8 +933,9 @@
 }
 
 .elementor-2731 .elementor-element.elementor-element-820d679 .swiper-pagination-bullet {
-    height: 6px;
-    width: 6px;
+    height: 12px;
+    width: 12px;
+    border-radius: 32px;
 }
 
 .elementor-2731 .elementor-element.elementor-element-820d679 .swiper-horizontal .swiper-pagination-progressbar {
@@ -935,8 +943,9 @@
 }
 
 .elementor-2731 .elementor-element.elementor-element-820d679 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-    background-color: #FFFFFF;
+    background-color: #D9D9D9;
     opacity: 1;
+    transition: all .3s ;
 }
 
 .elementor-2731 .elementor-element.elementor-element-820d679 .elementor-testimonial__text {
