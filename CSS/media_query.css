@@ -1205,12 +1205,12 @@
 
     .left_side_section_grow p {
         font-size: 27px;
-        margin: 45px 0px;
+        margin: 45px 0px 20px;
         line-height: normal;
     }
 
     .para_2 {
-        margin: 0px;
+        margin: 0px 0px 20px !important;
         line-height: normal;
         font-size: 17px;
     }
