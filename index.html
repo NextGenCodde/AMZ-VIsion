@@ -82,6 +82,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
         integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- ✅ WordPress API -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="CSS/services.css">
@@ -94,20 +96,12 @@
     bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJMSU5LRURJTiI6ImVuYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjIyIiwic2NvcmUiOjIwMDIyMH1d"
     data-new-gr-c-s-check-loaded="14.1235.0" data-gr-ext-installed="" cz-shortcut-listen="true">
 
-    <main class="barba-container" data-barba="container" data-barba-namespace="home"
-        style="background-color: rgb(12, 12, 12);">
+    <main class="barba-container" data-barba="container" data-barba-namespace="home">
         <!-- Preloader -->
         <div class="preloader-wrap" data-centerline="Loading">
             <div class="outer">
                 <div class="inner">
-                    <div class="trackbar">
-                        <div class="preloader-intro"></div>
-                        <div class="loadbar"></div>
-                        <div class="percentage-wrapper">
-                            <div class="percentage" id="precent"></div>
-                        </div>
-                    </div>
-
+                    <div class="img_loader"> <img style="width: 100px;" src="Content Images/white_logo.png" alt=""></div>
                     <div class="percentage-intro">Please wait, content is loading</div>
                 </div>
             </div>
@@ -800,7 +794,7 @@
                                                             <div class="custom-scroll" id="custom-scroll">
                                                                 <div class="scroll-container">
                                                                     <div class="main_slider_content scroll-section">
-                                                                        <div style="padding-left: 20px;" id="child1"
+                                                                        <div style="padding:0px 20px;" id="child1"
                                                                             class="section child
                                                                            left-side-border-black content-row-elementor elementor-element elementor-element-53b9ea3 e-grid e-con-full row_padding_top_elementor wp-section-wrapper dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-con e-child"
                                                                             data-id="53b9ea3"
@@ -1207,7 +1201,8 @@
                                                                                     sizes="(max-width: 371px) 100vw, 371px">
                                                                             </div>
                                                                         </div>
-                                                                        <div id="child2"
+                                                                        <div style="padding:0px 10px 0px 0px;"
+                                                                            id="child2"
                                                                             class="child section content-row-elementor elementor-element elementor-element-fdf5778 e-grid e-con-full row_padding_top_elementor dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-con e-child"
                                                                             data-id="fdf5778"
                                                                             data-element_type="container"
@@ -1529,7 +1524,8 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
                                                                                     sizes="(max-width: 371px) 100vw, 371px">
                                                                             </div>
                                                                         </div>
-                                                                        <div id="child3"
+                                                                        <div style="padding: 0px 10px 0px 0px;"
+                                                                            id="child3"
                                                                             class="child section content-row-elementor elementor-element elementor-element-e215fa7 e-grid e-con-full row_padding_top_elementor dark-section inherit-header-color full_elementor row_padding_left_elementor row_padding_right_elementor e-con e-child"
                                                                             data-id="e215fa7"
                                                                             data-element_type="container"
@@ -2882,18 +2878,45 @@ border-radius: 50%;" class="e-n-accordion-item-title-icon">
                                                                             <label style="   color: white;
                                                                         font-weight: 400; margin-left: 5px;"
                                                                                 for="Services"> Services</label>
-                                                                            <select style="color: white;">
-                                                                                <option value="" disabled=""
-                                                                                    selected="">Select service you are
-                                                                                    interested in</option>
-                                                                                <option value="web">Web Development
-                                                                                </option>
-                                                                                <option value="app">App Development
-                                                                                </option>
-                                                                                <option value="design">UI/UX Design
-                                                                                </option>
-                                                                            </select>
-                                                                            <textarea
+                                                                            <div class="custom-select-wrapper">
+                                                                                <div class="custom-select"
+                                                                                    id="customSelect">Select service you
+                                                                                    are interested in</div>
+                                                                                <div class="select-options"
+                                                                                    id="selectOptions">
+                                                                                    <div data-value="web">Web
+                                                                                        Development</div>
+                                                                                    <div data-value="app">App
+                                                                                        Development</div>
+                                                                                    <div data-value="design">UI/UX
+                                                                                        Design</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <script>
+                                                                                //cusom select
+
+                                                                                const customSelect = document.getElementById('customSelect');
+                                                                                const selectOptions = document.getElementById('selectOptions');
+
+                                                                                customSelect.addEventListener('click', () => {
+                                                                                    selectOptions.classList.toggle('open');
+                                                                                });
+
+                                                                                selectOptions.querySelectorAll('div').forEach(option => {
+                                                                                    option.addEventListener('click', () => {
+                                                                                        customSelect.textContent = option.textContent;
+                                                                                        customSelect.setAttribute('data-value', option.getAttribute('data-value'));
+                                                                                        selectOptions.classList.remove('open');
+                                                                                    });
+                                                                                });
+
+                                                                                // Close dropdown if clicked outside
+                                                                                document.addEventListener('click', (e) => {
+                                                                                    if (!customSelect.contains(e.target) && !selectOptions.contains(e.target)) {
+                                                                                        selectOptions.classList.remove('open');
+                                                                                    }
+                                                                                });
+                                                                            </script> <textarea
                                                                                 placeholder="Tell us about your project"
                                                                                 rows="5"></textarea>
                                                                             <button class="project-btn"

@@ -107,7 +107,7 @@ video {
 }
 
 .left {
-    width: 50%;
+    width: 64%;
     flex: none !important;
 }
 
@@ -916,6 +916,7 @@ form {
 
 .name_label label {
     margin: 10px 0px;
+    color: white;
 }
 
 .input-group input {
@@ -940,32 +941,71 @@ textarea {
     font-size: 14px;
 }
 
-select {
-    padding: 15px 40px 15px 20px;
-    /* Adjusted padding to make space for the arrow */
-    border: 1px solid #444 !important;
-    margin: 10px 0px;
+
+
+
+
+.custom-select-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.custom-select {
     background: #121212;
-    font-weight: 400;
-    color: white;
+    border: 1px solid #444;
     border-radius: 8px;
+    color: white;
+    padding: 15px 20px;
     font-size: 14px;
-    appearance: auto;
-    /* Ensures the arrow appears */
-    -webkit-appearance: menulist;
-    /* For Safari and Chrome */
-    -moz-appearance: menulist;
-    /* For Firefox */
-    background-position: right 15px center;
-    /* Space between arrow and right side */
-    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
 }
 
-
-
-select option {
-    color: #fff;
+.custom-select::after {
+    content: '\f107';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    /* Solid style */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
+
+.select-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #121212;
+    border: none;
+    color: white;
+    border-radius: 0 0 8px 8px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 10;
+}
+
+.select-options.open {
+    max-height: 300px;
+}
+
+.select-options div {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.select-options div:hover {
+    background: #222;
+}
+
 
 textarea {
     height: 200px;
@@ -1071,10 +1111,9 @@ button:hover {
 .left_side_section_grow .para_2 {
     font-family: 'inter', sans-serif;
     font-weight: 400;
-    line-height:150%;
+    line-height: 150%;
     color: #000;
-    opacity: 0.7;
-    line-height: 100%;
+    opacity: 70%;
     font-size: 18px;
 }
 
@@ -1237,7 +1276,7 @@ button:hover {
 
 .padding_portfolio {
     padding-left: 80px !important;
-    padding-right: 80px !important;
+    padding-right: 70px !important;
 
 }
 
@@ -1379,4 +1418,15 @@ side_3 {
 
 .down b a:hover {
     text-decoration: underline;
+}
+
+
+.img_loader {
+    animation: translate .5s infinite alternate linear;
+}
+
+@keyframes translate {
+    to {
+        transform: translateY(15px);
+    }
 }

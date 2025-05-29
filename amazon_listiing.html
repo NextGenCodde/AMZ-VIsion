@@ -175,7 +175,7 @@
                 </div>
                 <!--/Logo -->
 
-                <nav class="menu-main-menu-container " style="background-color: rgb(12, 12, 12);">
+                <nav class="menu-main-menu-container ">
                     <div class="nav-height" bis_skin_checked="1">
                         <div class="outer" bis_skin_checked="1">
                             <div class="inner" bis_skin_checked="1">
@@ -990,17 +990,45 @@
                                                 <label style="   color: white;
                                                                         font-weight: 400; margin-left: 5px;"
                                                     for="Services"> Services</label>
-                                                <select style="color: white;">
-                                                    <option value="" disabled="" selected="">Select service you
-                                                        are
-                                                        interested in</option>
-                                                    <option value="web">Web Development
-                                                    </option>
-                                                    <option value="app">App Development
-                                                    </option>
-                                                    <option value="design">UI/UX Design
-                                                    </option>
-                                                </select>
+                                                 <div class="custom-select-wrapper">
+                                                                                <div class="custom-select"
+                                                                                    id="customSelect">Select service you
+                                                                                    are interested in</div>
+                                                                                <div class="select-options"
+                                                                                    id="selectOptions">
+                                                                                    <div data-value="web">Web
+                                                                                        Development</div>
+                                                                                    <div data-value="app">App
+                                                                                        Development</div>
+                                                                                    <div data-value="design">UI/UX
+                                                                                        Design</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <script>
+                                                                                //cusom select
+
+                                                                                const customSelect = document.getElementById('customSelect');
+                                                                                const selectOptions = document.getElementById('selectOptions');
+
+                                                                                customSelect.addEventListener('click', () => {
+                                                                                    selectOptions.classList.toggle('open');
+                                                                                });
+
+                                                                                selectOptions.querySelectorAll('div').forEach(option => {
+                                                                                    option.addEventListener('click', () => {
+                                                                                        customSelect.textContent = option.textContent;
+                                                                                        customSelect.setAttribute('data-value', option.getAttribute('data-value'));
+                                                                                        selectOptions.classList.remove('open');
+                                                                                    });
+                                                                                });
+
+                                                                                // Close dropdown if clicked outside
+                                                                                document.addEventListener('click', (e) => {
+                                                                                    if (!customSelect.contains(e.target) && !selectOptions.contains(e.target)) {
+                                                                                        selectOptions.classList.remove('open');
+                                                                                    }
+                                                                                });
+                                                                            </script>
                                                 <textarea placeholder="Tell us about your project" rows="5"></textarea>
                                                 <button class="project-btn" type="submit">Send Message</button>
                                             </form>

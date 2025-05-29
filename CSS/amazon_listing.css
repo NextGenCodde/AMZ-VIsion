@@ -301,8 +301,7 @@ main {
 
 .main_section_3 {
     display: flex;
-    flex-direction: row;
-    gap: 50px;
+    gap: 10px;
 }
 
 .main_section_3 .left,
@@ -374,7 +373,7 @@ main {
     font-size: 16px;
     font-weight: 400;
     opacity: 70%;
-    width: 75%;
+    width: 89%;
     font-family: "inter", sans-serif;
 }
 
@@ -385,8 +384,9 @@ main {
 }
 
 .right .img_container_right {
-    width: 500px;
-    height: 500px;
+    width: 505px;
+    height: 560px;
+
     overflow: hidden;
     border-radius: none !important;
 }
@@ -456,6 +456,7 @@ main {
     pointer-events: none;
     /* Mouse clicks won't work on image */
     user-select: none;
+    translate: 40px;
     /* User can't select image */
     -webkit-user-drag: none;
 }
@@ -1070,7 +1071,7 @@ side_3 {
 
 .right_project_side_area {
     position: relative;
-    width: 400px;
+    width: 390px;
     flex: none;
     top: 100px;
 }
@@ -1102,48 +1103,27 @@ side_3 {
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width:1920px) {
+    .boxes_content {
+        display: none !important;
+    }
+}
 
-@media only screen and (max-width: 1920px) {
-    #hero {
-        height: auto !important;
+@media only screen and (max-width:1320px) {
+    .hero_inner h1 {
+        font-size: 160px
     }
 
-    #hero-caption {
-        height: 100% !important;
+    .text-align-center .hero-title {
+        row-gap: 17px !important;
     }
+}
 
-    .stretch-up {
-        margin: auto;
-        width: 80%;
-    }
-
-    .section-1-main {
-        justify-content: center !important;
-    }
-
-    .section-1-main .img_container {
-        width: 300px;
-        height: 300px;
-    }
+.project_section .dark-section-container {
+    padding: 0px 80px;
+}
 
 
-    .content-section-1,
-    .section_2_main {
-        width: 40% !important;
-    }
-
-    .section1-head {
-        width: 40%;
-    }
-
-    .main_section_3 {
-        justify-content: space-between;
-    }
-
-    .main_section_3 .right {
-        width: auto;
-    }
-    .boxes_content{
-        display: none;
-    }
+.project_section .container .right {
+    align-self: center !important;
 }
