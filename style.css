@@ -745,8 +745,6 @@ header.scrolled,
 .gallery-item {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: calc(33.333% - 14px);
     transition: transform 0.5s ease, opacity 0.5s ease, width 0.5s ease, height 0.5s ease;
     transform: scale(0.9);
