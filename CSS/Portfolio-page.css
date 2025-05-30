@@ -4,16 +4,16 @@
     background-size: cover;
     position: relative;
     padding: 0 !important;
-    height: auto !important;
+    height: fit-content !important;
 }
 
 #hero-caption {
-    margin: 150px 0 100px !important;
+    margin: 150px 0px 100px ;
+    margin-top: 0px !important;
     height: 50% !important;
 }
 
 .hero_inner {
-    margin-top: 0px !important;
 }
 
 .hero_inner h1 {

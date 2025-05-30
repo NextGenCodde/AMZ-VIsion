@@ -226,3 +226,13 @@
         height: 204px;
     }
 }
+
+
+#hero-caption.height-title{
+    margin: 0px !important;
+    height: 100% !important;
+}
+
+.hero_inner{
+    margin: 0 !important;
+}

@@ -1150,7 +1150,8 @@
     }
 
     #header-container {
-        padding: 20px 63px !important;
+             padding: 20px 80px !important;
+
     }
 
     #child1 .elementor-widget-image,
@@ -1255,7 +1256,7 @@
 
 
     .product_describing {
-        padding: 100px 80px !important;
+                padding: 100px 57px !important;
     }
 
     .rendering-section {

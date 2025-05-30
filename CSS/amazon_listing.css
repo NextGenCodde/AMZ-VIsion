@@ -456,7 +456,6 @@ main {
     pointer-events: none;
     /* Mouse clicks won't work on image */
     user-select: none;
-    translate: 40px;
     /* User can't select image */
     -webkit-user-drag: none;
 }

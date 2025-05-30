@@ -29,6 +29,15 @@
 
 .main_section_3 {
     margin-top: 100px;
+    gap: 0px;
+}
+
+.main_section_3 .left {
+    margin-right: 0px;
+}
+
+.right {
+    justify-content: flex-end;
 }
 
 .product_describing .head {
@@ -104,7 +113,7 @@
 }
 
 .head_side .left p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -162,7 +171,7 @@
 }
 
 .left_of_show_Work h4 {
-    font-family: 'Instrument Sans' , sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
     font-weight: 500;
     font-size: 28px;
     line-height: 100%;
@@ -173,7 +182,7 @@
 
 
 .left_of_show_Work p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -223,7 +232,7 @@
 
 
 .portfolio-header h2 {
-    font-family:' Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     font-size: 64px;
     line-height: 100%;
@@ -234,7 +243,7 @@
 }
 
 .portfolio-header p {
-    font-family: 'Inter' , sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -539,4 +548,10 @@
     .project_section .content-max-width {
         padding: 80px 20px !important;
     }
+}
+
+
+.custom-btn:hover {
+    background: #fff;
+    border-color: white;
 }

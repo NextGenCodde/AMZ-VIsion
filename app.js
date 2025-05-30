@@ -281,10 +281,8 @@ console.log('menubar clcked');
       });
   
   mainmenu.style.margin = "auto"
-
 })
 //work section scroll
-
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(".wp-section-wrapper");
 
@@ -292,13 +290,25 @@ document.addEventListener("DOMContentLoaded", function () {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          sections.forEach((sec) => sec.classList.remove("active"));
+          // Remove 'active' from all sections and their children
+          sections.forEach((sec) => {
+            sec.classList.remove("active");
+            const children = sec.querySelectorAll("#child1, #child2, #child3"); // adjust as needed
+            children.forEach((child) => child.classList.remove("active"));
+          });
+
+          // Add 'active' to the intersecting section
           entry.target.classList.add("active");
+
+          // Add 'active' to its children
+          const activeChildren = entry.target.querySelectorAll("#child1, #child2, #child3");
+          activeChildren.forEach((child) => child.classList.add("active"));
         }
       });
     },
     {
-      threshold: 0.5,
+      threshold: 0.9,
+      rootMargin: "0px 0px -90px 0px" // use if header fixed
     }
   );
 
@@ -375,39 +385,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//barba.js 
 
-
-barba.init({
-  transitions: [{
-    name: 'fade-transition',
-
-    async leave(data) {
-      // Old page fade out
-      await gsap.to(data.current.container, {
-        opacity: 0,
-        y: -50,
-        duration: 1,
-        ease: "power2.out"
-      });
-    },
-
-    async enter(data) {
-      // New page prepare
-      gsap.set(data.next.container, {
-        opacity: 0,
-        y: 50
-      });
-
-      // New page fade in
-      await gsap.to(data.next.container, {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power2.out",
-        delay: 1.3
-      });
-    }
-  }]
-});
 

@@ -251,7 +251,6 @@ video {
 }
 
 .chose_post_content {
-    border: 1px solid #000;
     margin-top: 60px;
     padding-bottom: 0px !important;
 }
@@ -571,6 +570,6 @@ footer {
 
 
 .chose_h {
-    margin: 0;
+    margin: 0px 0px 10px;
     white-space: wrap;
 }

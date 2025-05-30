@@ -93,14 +93,15 @@
     <link rel="stylesheet" href="CSS/media_query.css">
 </head>
 
-<body>
-    <main class="barba-container" data-barba="container" data-barba-namespace="home"
+<body data-barba="wrapper">
+    <main class="barba-container" data-barba="container" data-barba-namespace="project1"
         style="background-color: rgb(12, 12, 12);">
         <!-- Preloader -->
         <div class="preloader-wrap" data-centerline="Loading">
             <div class="outer">
                 <div class="inner">
-                    <div class="img_loader"> <img style="width: 100px;" src="Content Images/white_logo.png" alt=""></div>
+                    <div class="img_loader"> <img style="width: 100px;" src="Content Images/white_logo.png" alt="">
+                    </div>
                     <div class="percentage-intro">Please wait, content is loading</div>
                 </div>
             </div>
@@ -240,10 +241,10 @@
         <!-- header  -->
         <!-- //Amazon Listing Hero Section  -->
         <div id="content-scroll">
-            <div class="hero-section" id="hero" bis_skin_checked="1">
+            <div style="margin: 0;" class="hero-section" id="hero" bis_skin_checked="1">
                 <div class="overlay-side">
                     <div id="hero-styles" bis_skin_checked="1">
-                        <div id="hero-caption" class="height-title content-full-width text-align-center"
+                        <div id="hero-caption" class="the_top_Area height-title content-full-width text-align-center"
                             style=" translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"
                             bis_skin_checked="1">
                             <div class="inner hero_inner hero_inner_amazon" bis_skin_checked="1">
@@ -460,6 +461,7 @@
     <script type="text/javascript" src="External-JS Files/elements-handlers.min.js"
         id="pro-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://unpkg.com/@barba/core@2.10.3/dist/barba.umd.js"></script>
     <script src="JS/amazon_listing.js" defer></script>
     <script src="JS/services.js"></script>

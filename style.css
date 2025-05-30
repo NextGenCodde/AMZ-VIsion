@@ -361,7 +361,7 @@ dt.accordion-active .acc-button-icon i {
     top: 0px;
     height: 50px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
 }
 
@@ -1013,7 +1013,7 @@ textarea {
 
 button {
     align-self: flex-start;
-    padding: 12px 28px;
+    padding: 16px 24px;
     border: 1px solid white;
     background: transparent;
     color: white;
@@ -1307,7 +1307,7 @@ button:hover {
 
 .padding_portfolio {
     padding-left: 80px !important;
-    padding-right: 70px !important;
+    padding-right: 80px !important;
 
 }
 
@@ -1460,4 +1460,18 @@ side_3 {
     to {
         transform: translateY(15px);
     }
+}
+
+
+body.loading-cursor {
+    cursor: wait;
+}
+
+
+.servies-menu li:hover .bg-img {
+    height: 200px;
+}
+
+.hide-ball a img {
+    transform: translateX(-10px);
 }
